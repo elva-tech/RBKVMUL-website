@@ -7,7 +7,7 @@ export default function HumanResources() {
       {/* Top banner image */}
       <div className="about-banner">
         <img
-          src="/assets/about/human-resources.jpg"
+          src="/images/founder-of-milk verghese Kurien Photo 2.jpg"
           alt="Human Resources Department"
         />
       </div>

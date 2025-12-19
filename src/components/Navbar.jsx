@@ -52,6 +52,8 @@ export default function Navbar() {
               <NavLink to="/about/objectives" onClick={closeMenu}>Objectives</NavLink>
               {/* <NavLink to="/about/quality-policies" onClick={closeMenu}>Quality Policies</NavLink> */}
               {/* <NavLink to="/about/milestones" onClick={closeMenu}>Milestones</NavLink> */}
+              <NavLink to="/about/culture" onClick={closeMenu}>Cultural Heritage</NavLink>
+
             </div>
           </div>
 
@@ -61,64 +63,13 @@ export default function Navbar() {
             <span className="dropdown-title">Products</span>
             <div className="dropdown-menu">
 
-              {!openProductGroup ? (
-                /* --- MAIN VIEW --- */
-                <>
-                  <NavLink to="/products" onClick={closeMenu}>
+              <NavLink to="/products" onClick={closeMenu}>
                     All Products
                   </NavLink>
 
-                  <span
-                    className="dropdown-title"
-                    onClick={() => setOpenProductGroup("rbkvmul")}
-                  >
-                    RBKVMUL ❯
-                  </span>
-
-                  <span
-                    className="dropdown-title"
-                    onClick={() => setOpenProductGroup("kmf")}
-                  >
-                    KMF ❯
-                  </span>
-                </>
-              ) : (
-                /* --- SUB-GROUP VIEW (Flat structure to prevent overflow) --- */
-                <>
-                  <span
-                    className="dropdown-title"
-                    // style={{ color: "#0a4da2", fontWeight: "bold" }}
-                    onClick={() => setOpenProductGroup(null)}
-                  >
-                    ❮ {openProductGroup === "rbkvmul" ? "RBKVMUL" : "KMF"}
-                  </span>
-
-                  {openProductGroup === "rbkvmul" && (
-                    <>
-                      <NavLink to="/products/rbkvmul/milk" onClick={closeMenu}>
-                        Milk
-                      </NavLink>
-                      <NavLink to="/products/rbkvmul/curd" onClick={closeMenu}>
-                        Curd
-                      </NavLink>
-                    </>
-                  )}
-
-                  {openProductGroup === "kmf" && (
-                    <>
-                      <NavLink to="/products/kmf/ghee" onClick={closeMenu}>
-                        Ghee
-                      </NavLink>
-                      <NavLink to="/products/kmf/butter" onClick={closeMenu}>
-                        Butter
-                      </NavLink>
-                      <NavLink to="/products/kmf/paneer" onClick={closeMenu}>
-                        Paneer
-                      </NavLink>
-                    </>
-                  )}
-                </>
-              )}
+             <NavLink to="/products/kmf" onClick={closeMenu}>
+                    KMF Products
+                  </NavLink>
             </div>
           </div>
 

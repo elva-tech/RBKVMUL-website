@@ -1,32 +1,42 @@
 export const products = [
   {
-    id: 1,
-    name: "Toned Milk",
-    image: "/assets/products/categories/homegenized-tonned-milk.jpg",
-  },
-  {
-    id: 2,
-    name: "Full Cream Milk",
-    image: "/assets/products/categories/homegenized-tonned-milk.jpg",
-  },
-  {
-    id: 3,
-    name: "Curd",
-    image: "/assets/products/categories/curd.jpg",
-  },
-  // {
-  //   id: 4,
-  //   name: "Butter Milk",
-  //   image: "https://via.placeholder.com/200x160?text=Butter+Milk",
-  // },
-  {
-    id: 5,
+    id:1,
     name: "Ghee",
-    image: "/assets/products/categories/ghee.jpg",
+    image: "/products/Ghee.jpg",
+  },
+   {id:2,
+    name: "Gudbud",
+    image: "/products/Gudbud.jpg",
+    
+  },
+  {id:2,
+    name: "Ice Cream Mockups",
+    image: "/products/Ice Cream Mockups.png",
   },
   {
-    id: 6,
-    name: "Paneer",
-    image: "/assets/products/categories/paneer.jpg",
+    id:3,
+    name: "Instant Mix",
+    image: "/products/Instant Mix.jpg",
+  },
+  {
+    id:4,
+    name: "Kulfi Ice Creams",
+    image: "/products/Kulfi Ice-Cream.jpg",
+  },
+
+   {
+    id:5,
+    name: "Milk Powder",
+    image: "/products/Milk Proder.jpg",
+  },
+  {
+    id:6,
+    name: "Milk",
+    image: "/products/milk.png",
+  },
+   {
+    id:7,
+    name: "Namkeens",
+    image: "/products/Namkeens.png",
   },
 ];

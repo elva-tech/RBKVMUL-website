@@ -311,6 +311,7 @@
   object-fit: contain;
   object-position: center;
   display: block;
+  border-radius: 6px;
   /* Subtle enhancement so text reads better on bright videos */
   filter: saturate(1.05) contrast(1.05);
   transform: scale(1.01); /* avoids thin edges/gaps in some browsers */

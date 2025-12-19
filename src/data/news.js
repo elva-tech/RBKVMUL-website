@@ -5,7 +5,7 @@ export const news = [
     description:
       "The Honorable Chief Minister laid the foundation stone for our new Mega Dairy project, marking a significant milestone.",
     image:
-      "/images/foundation-stone-ceremony.png",
+      "/images/1.jpg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const news = [
     description:
       "The Honorable Chief Minister of Karnataka inaugurated our state-of-the-art Chilling Center in Hunsur.",
     image:
-      "/images/chilling-center.png",
+      "/images/2.jpg",
   },
   {
     id: 3,
@@ -21,6 +21,8 @@ export const news = [
     description:
       "The Honorable Chief Minister inaugurated our state-of-the-art Mega Dairy facility at Alanahalli, Mysore.",
     image:
-      "/images/mega-dairy-inauguration.jpg",
+      "/images/3.jpg",
   },
 ];
+
+

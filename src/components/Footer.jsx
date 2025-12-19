@@ -16,7 +16,7 @@ export default function Footer() {
             {/* <li><Link to="/units">Chilling Centers</Link></li> */}
             {/* <li><Link to="/units">Sub Offices</Link></li> */}
             <li><Link to="/news">News & Events</Link></li>
-            <li><Link to="/notifications">Notifications</Link></li>
+            {/* <li><Link to="/notifications">Notifications</Link></li> */}
           </ul>
         </div>
 
@@ -24,9 +24,9 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Address</h4>
           <p>
-            Ballari District Co-Operative<br />
+            Ballari,Raichur & Koppal Co-Operative
             Milk Producers' Societies Union Ltd.<br /><br />
-            Mega Dairy Complex, Infantary Road,<br />
+            Sanjay Gandhi Nagar,<br />
             
             Ballari - 583104, Karnataka
           </p>
@@ -40,7 +40,6 @@ export default function Footer() {
             Toll free: 1800 425 6108
           </p>
           <p>
-            misrbkmul@gmail.com<br />
             misrbkmul@gmail.com<br />
           </p>
         </div>

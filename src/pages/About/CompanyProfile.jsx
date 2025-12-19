@@ -7,7 +7,7 @@ export default function CompanyProfile() {
       {/* Top banner image */}
       <div className="about-banner">
         <img
-          src="/assets/about/company-profile.jpg"
+          src="/images/Bellary Dairy Photo.jpg"
           alt="Company Profile"
         />
       </div>

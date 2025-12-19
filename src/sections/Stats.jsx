@@ -55,10 +55,10 @@ export default function Stats() {
     <section className="stats">
       <div className="stats-container">
 
-        <StatItem value={32469} label="Farmer Members" />
+        <StatItem value={32000} label="Farmer Members" />
         <StatItem value={2.4} label="Milk Processing Capacity (LLPD)" />
         <StatItem value={150} label="Product Varieties" />
-        <StatItem value={800} label="Milk Collection Centers" />
+        <StatItem value={850} label="Milk Collection Centers" />
 
       </div>
     </section>

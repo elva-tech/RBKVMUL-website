@@ -6,17 +6,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 export default function TopBanner() {
-  const bannerImages = [
-    "/images/statue.jpeg",
-    "/images/kanaka-d1.png",
-    // "/images/kanaka-d2.png",
+  // const bannerImages = [
+  //   "/images/statue.jpeg",
+  //   "/images/kanaka-d1.png",
+  //   // "/images/kanaka-d2.png",
 
-  ];
+  // ];
 
   return (
     <section className="hero-banner-section">
       <div className="hero-banner-wrapper">
-        <Swiper
+        {/* <Swiper
           autoplay={{ delay: 3500, disableOnInteraction: false }}
           loop={true}
           pagination={{ clickable: true }}
@@ -31,7 +31,22 @@ export default function TopBanner() {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+         <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="products-video"
+        >
+          <source
+            src="/assets/Durga.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h6 style={{ fontWeight: '-moz-initial', fontSize: 'clamp(0.53rem, 1vw, 0.2rem)', marginTop:'7px'}}>
+  Shot @Sky_View_9
+</h6>
       </div>
     </section>
   );

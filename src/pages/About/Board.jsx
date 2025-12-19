@@ -9,40 +9,54 @@ import "../../styles/pages.css";
 
 const boardMembers = [
   {
-    name: "Shri R. Chaluvaraju",
-    role: "President",
+    name: "Shri K. Raghavendra hitnal",
+    role: "President R.B.C.O. Milk Union and M.L.A",
     contact: "president@example.com",
-    image: "/assets/board/chaluvaraju.jpg",
+    city:"Koppal Assembly Constituency",
+    image: "/public/board/1.png",
   },
   {
-    name: "Shri A. T. Somashekar",
-    role: "Director",
+    name: "Mr. N Satyanarayana",
+    role: "Vice President",
     contact: "director1@example.com",
-    image: "/assets/board/somashekar.jpg",
+    image: "/public/board/2.png",
   },
   {
-    name: "Shri K. G. Mahesh",
-    role: "Director",
+    name: "Shri L.B.P Bheemanayaka",
+    role: "Director and Former M.L.A,",
     contact: "director2@example.com",
-    image: "/assets/board/mahesh.jpg",
+    city: " H.B Halli",
+    image: "/public/board/3.png",
   },
   {
-    name: "Smt. B. K. Leela",
+    name: "Shri Amargundappa",
     role: "Director",
     contact: "director3@example.com",
-    image: "/assets/board/leela.jpg",
+    image: "/public/board/4.png",
   },
   {
-    name: "Shri Guruswamy B.",
-    role: "Nominated Director",
+    name: "Shri Bheemanagouda",
+    role: " Director",
     contact: "nominated@example.com",
-    image: "/assets/board/guruswamy.jpg",
+    image: "/public/board/5.png",
   },
   {
-    name: "Shri K. N. Suresh Naik",
-    role: "Managing Director",
+    name: "Shri H. Muralasidappa",
+    role: "Director",
     contact: "md@example.com",
-    image: "/assets/board/sureshnaik.jpg",
+    image: "/public/board/6.png",
+  },
+  {
+    name: "Shrimati N. Sitaramalakshmi",
+    role: "Director",
+    contact: "nominated@example.com",
+    image: "/public/board/7.png",
+  },
+  {
+    name: "Shri Krishna Reddy",
+    role: "Director",
+    contact: "md@example.com",
+    image: "/public/board/8.png",
   },
 ];
 
@@ -53,7 +67,7 @@ export default function Board() {
       {/* Top Banner */}
       <div className="about-banner">
         <img
-          src="/assets/about/board.jpg"
+          src="/images/Raichur Dairy photo.jpg"
           alt="Board of Directors"
         />
       </div>
@@ -75,7 +89,8 @@ export default function Board() {
               <div className="board-info">
                 <h3>{member.name}</h3>
                 <p className="board-role">{member.role}</p>
-                <p className="board-contact">{member.contact}</p>
+                <p className="board-role">{member.city}</p>
+                {/* <p className="board-contact">{member.contact}</p> */}
               </div>
 
             </div>

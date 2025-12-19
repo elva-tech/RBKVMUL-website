@@ -11,6 +11,7 @@ import Objectives from "./pages/About/Objectives";
 import QualityPolicies from "./pages/About/QualityPolicies";
 import Milestones from "./pages/About/Milestones";
 import Activities from "./pages/About/Activities";
+import Cultural from "./pages/About/Cultural"
 
 /* PRODUCTS */
 import AllProducts from "./pages/Products/AllProducts";
@@ -53,6 +54,8 @@ export default function AppRouter() {
       <Route path="/about/objectives" element={<Objectives />} />
       <Route path="/about/quality-policies" element={<QualityPolicies />} />
       <Route path="/about/milestones" element={<Milestones />} />
+      <Route path="/about/culture" element={<Cultural />} />
+
 
 
       <Route path="/about/activities" element={<Activities />} />

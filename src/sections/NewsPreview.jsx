@@ -13,8 +13,8 @@ export default function NewsPreview() {
             <div key={item.id} className="news-card">
               <img src={item.image} alt={item.title} />
               <div className="news-content">
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
+                {/* <h4>{item.title}</h4> */}
+                {/* <p>{item.description}</p> */}
                 <a href="/news">Read More</a>
               </div>
             </div>
