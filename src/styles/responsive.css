@@ -1,0 +1,236 @@
+/* top-banner */
+/* @media (max-width: 768px) {
+  .products-preview .product-card img {
+    max-height: 240px;
+  }
+}
+ */
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-col ul {
+    align-items: center;
+  }
+
+  .footer-col a:hover {
+    transform: none;
+  }
+}
+
+/* Hero section resonsive */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 16px 60px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-image img {
+    margin: 40px auto 0;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Aboutpreview responsive */
+@media (max-width: 768px) {
+  .hero-container,
+  .about-preview-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .highlights-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* Stats responsive */
+
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+
+/* news responsive */
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* notidication responsive */
+@media (max-width: 768px) {
+  .notification-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .notifications-cta {
+    text-align: center;
+  }
+}
+
+
+/* aboutpreview responsie */
+@media (max-width: 768px) {
+  .about-container h1 {
+    font-size: 24px;
+  }
+
+  .about-container p {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-banner {
+    height: 180px;
+  }
+}
+
+
+
+/* mission-vision page */
+
+@media (max-width: 768px){
+  .about-banner {
+    height: 180px;
+  }
+
+  .about-container h1 {
+    font-size: 24px;
+  }
+
+  .about-block h2 {
+    font-size: 18px;
+  }
+
+  .about-block p,
+  .values-list li,
+  .about-note {
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+
+/* --- Desktop Styles (Keep your existing styles, but add these) --- */
+.hamburger {
+  display: none;
+}
+
+/* --- MOBILE RESPONSIVE FIXES --- */
+@media (max-width: 992px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-blue);
+    transition: 0.3s;
+  }
+
+  .navbar-links {
+    position: fixed;
+    left: -100%; /* Hidden by default */
+    top: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 280px; /* Sidebar width */
+    height: 100vh;
+    padding: 80px 20px 20px 20px;
+    transition: 0.4s ease-in-out;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    gap: 10px;
+    overflow-y: auto; /* Scroll inside the menu if too many links */
+    align-items: flex-start;
+  }
+
+  .navbar-links.open {
+    left: 0; /* Slide in menu */
+  }
+
+  /* Hamburger transform to X */
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* Adjust Dropdowns for Mobile */
+  .dropdown {
+    width: 100%;
+    display: block;
+  }
+
+  .dropdown-title {
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-gray);
+  }
+
+  .dropdown-menu {
+    position: static; /* Remove absolute positioning */
+    opacity: 1;
+    visibility: visible;
+    display: none; /* Hide submenu */
+    transform: none;
+    box-shadow: none;
+    border: none;
+    padding-left: 20px; /* Indent sub-links */
+    width: 100%;
+    background-color: transparent;
+  }
+
+  /* Show sub-menu on hover/click of the parent dropdown div */
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: none;
+  }
+}

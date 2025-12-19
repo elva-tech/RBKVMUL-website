@@ -1,0 +1,51 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Layout fix so footer stays at bottom */
+html, body, #root {
+  height: 100%;
+   width: 100%;
+  /* overflow-x: hidden; */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+:root {
+  --primary-blue: #0b4da2;
+  --secondary-blue: #1f6fd8;
+  --accent-yellow: #f4c430;
+  --white: #ffffff;
+  --light-gray: #f5f7fa;
+  --dark-gray: #333333;
+  --border-gray: #e0e0e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-gray);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
