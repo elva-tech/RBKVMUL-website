@@ -58,7 +58,26 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Karnataka Milk Federation. All rights reserved.</p>
+
+           <div className="developer-credit">
+    <a
+      href="https://elvatech.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>Built by</span>
+      <video
+        src="/assets/elva.mp4"
+        autoPlay
+        muted
+        playsInline
+        className="dev-logo-video"
+      />
+    </a>
+  </div>
       </div>
+
+      
     </footer>
   );
 }

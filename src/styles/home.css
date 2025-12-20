@@ -721,3 +721,47 @@
     height: 250px;
   }
 }
+
+
+/* Developer Credit Styling */
+.developer-credit {
+  font-size: 0.55rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.developer-credit:hover {
+  opacity: 1;
+}
+
+.developer-credit a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+   justify-content: flex-end;
+  /* color: #777; */
+}
+
+
+/* Video Logo Styling */
+.dev-logo-video {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 4px;
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .developer-credit a {
+    justify-content: center;
+  }
+}
+

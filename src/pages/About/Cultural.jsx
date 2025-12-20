@@ -57,16 +57,17 @@ export default function Cultural() {
         {/* Vijayapura Section */}
         <div className="culture-card reverse">
           <div className="culture-text-content">
-            <h3>Vijayapura: The Architectural Marvel</h3>
+            <h3>Vijaynagara: The Eternal City</h3>
             <p>
-              Vijayapura is a living museum of Indo-Islamic brilliance, headlined by the world-famous 
-              <strong> Gol Gumbaz</strong>. This monumental mausoleum features the second-largest 
-              unsupported dome in the world and a "Whispering Gallery" where even the softest sound 
-              echoes seven times.
-            </p>
+    The ruins of Vijayanagara at <strong>Hampi</strong> stand as a breathtaking 
+    testament to the height of South Indian Hindu architecture. A UNESCO World 
+    Heritage site, it features the iconic Stone Chariot, the towering Virupaksha 
+    Temple, and intricate musical pillars that resonate with history, reflecting 
+    the grandeur of one of India's most powerful historical empires.
+  </p>
           </div>
           <div className="culture-image-wrapper">
-            <img className="culture-img" src="/images/gol.png" alt="Gol Gumbaz" />
+            <img className="culture-img" src="/images/hampi.png" alt="Gol Gumbaz" />
           </div>
         </div>
 
