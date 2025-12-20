@@ -13,43 +13,19 @@ export default function AboutOverview() {
         <h1>About Us</h1>
 
         <p>
-          Under the World Bank aided Karnataka Dairy Development Projects, the
-          activities on Dairy Development were taken up in the year 1975. The
-          Mysore Coop Milk Producers Societies Union Ltd was established on
-          23.11.1976, having the jurisdiction extended to the entire Mysore
-          District and Five Taluks of Mandya District. The Union undertook the
-          work of organization of Milk Co-operatives in ‘AMUL Pattern’ with the
-          main objective of socio-economic reformation of the farmers in the
-          rural areas through Dairying as main subsidiary occupation.
+         The development of the dairy sector in the region was formally initiated in 1989 with the establishment of the Raichur & Bellary Co-operative Milk Producers’ Societies Union Ltd. during 1989–90. The Union was formed to strengthen organized milk production and marketing by bringing rural milk producers under a structured co-operative framework. From its inception, the Union aimed to create a sustainable system that would benefit farmers economically while ensuring a steady supply of quality milk to consumers.
         </p>
 
         <p>
-          Mysore Dairy with the capacity of 10 TLPD was started in the year 1965
-          under the control of the Department of Animal Husbandry and Veterinary
-          Services of Karnataka State, which was transferred to Karnataka Dairy
-          Development Corporation in the year 1974. The capacity was expanded to
-          60 TLPD in 1980 and transferred to the Karnataka Milk Federation in
-          1984. The capacity was expanded to 100 TLPD under the Operation Flood
-          II and further expanded to 150 TLPD under OF III Programme. As per the
-          Government policy the Dairy and its Chilling Centres were handed over
-          to MYMUL on 01.06.1987. Present main dairy capacity was expanded to 3
-          LKPD in the year 2008-2009.
+          The operational jurisdiction of the Union initially extended across the entire Raichur District, covering four talukas, and the Bellary District, comprising seven talukas. By organizing village-level milk producers into co-operative societies, the Union enabled farmers to collectively market their milk, access veterinary and technical services, and receive fair and timely payments. This approach significantly reduced exploitation by middlemen and improved income stability for rural households.
         </p>
 
         <p>
-          Later the Union was bifurcated into Mysore and Mandya District
-          Co-Operative Milk Producers Societies Union Ltd from 01.04.1987.
-          Consequent to the bifurcation of Mysore District into Mysore and
-          Chamarajanagar Districts, this Union is renamed as
-          Mysore-Chamarajanagar District Coop Milk Producers Societies Union Ltd.
+         The Union adopted the AMUL co-operative model, which emphasizes farmer ownership, democratic management, and transparent operations. Dairying was promoted as a major subsidiary occupation, particularly for small and marginal farmers, with the objective of achieving socio-economic upliftment in rural areas. Through this model, the Union not only enhanced milk production and productivity but also contributed to employment generation and improved livelihoods.
         </p>
 
         <p>
-          Later the Union was bifurcated into Mysore and Chamarajanagara District
-          Co-Operative Milk Producers Societies Union Ltd from 01.04.2015, this
-          Union is named as Mysore-District Coop Milk Producers Societies Union
-          Ltd. In the year 2019 new Mega dairy was started with capacity of 6
-          LLPD expandable to 8 LLPD.
+        Subsequently, the Union expanded its operational area by including Koppal District, leading to its reconstitution as the Raichur, Bellary & Koppal Co-operative Milk Producers’ Societies Union Ltd. This expansion strengthened the regional dairy network and reinforced the Union’s role in rural development, making dairying a reliable and sustainable source of income for farmers across the three districts.
         </p>
       </div>
     </section>

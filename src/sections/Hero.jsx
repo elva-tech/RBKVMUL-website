@@ -18,6 +18,9 @@ export default function Hero() {
             nutrition, and care.
           </p>
 
+          <p>
+            Up Coming Mega Dairy at Bellary Taluka Kolagal Garma.  Approved by  Karnataka Mining Environment Restoration Corporation (KMERC)
+          </p>
           <a
             href="/products"
             className="hero-btn animate-slide-up delay-2"

@@ -61,9 +61,8 @@ export default function Footer() {
 
            <div className="developer-credit">
     <a
-      href="https://elvatech.in/"
+      href="https://www.elvatech.in/"
       target="_blank"
-      rel="noopener noreferrer"
     >
       <span>Built by</span>
       <video
