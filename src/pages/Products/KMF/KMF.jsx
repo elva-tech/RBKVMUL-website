@@ -3,11 +3,51 @@ import "../../../styles/home.css";
 
 /* ===== PRODUCT CATEGORIES DATA ===== */
 const productCategories = [
+  //  {
+  //   title: "Milk",
+  //   image: "/products/milk.png",
+  //   route: "/products/good-life",
+  // },
+  //   {
+  //   title: "Curd",
+  //   image: "/products/curd.png",
+  //   route: "/products/sweets",
+  // },
+
+  //  {
+  //   title: "Ghee",
+  //   image: "/products/Ghee.jpg",
+  //   route: "/products/good-life",
+  // },
+
+  //  {
+  //   title: "Paneer",
+  //   image: "/products/paneer.jpg",
+  //   route: "/products/good-life",
+  // },
+
+    {
+    title: "Butter",
+    image: "/products/Butter.jpg",
+    route: "/products/cheese",
+  },
+
+  {
+    title: "Milk Powder",
+    image: "/products/Milk Proder.jpg",
+    route: "/products/instant-mixes",
+  },
+ {
+    title: "Trupti milk",
+    image: "/products/Bly Products Trupti.jpg",
+    route: "/products/butter",
+  },
   {
     title: "Good life",
     image: "/products/Bly Products Good Life.jpg",
     route: "/products/milk",
   },
+  
   {
     title: "Mysore Pak's",
     image: "/products/Bly Products Mysore.jpg",
@@ -18,21 +58,13 @@ const productCategories = [
     image: "/products/Bly Products Pada.jpg",
     route: "/products/ghee",
   },
-  {
-    title: "Trupti milk",
-    image: "/products/Bly Products Trupti.jpg",
-    route: "/products/butter",
-  },
+ 
   {
     title: "Bread & Bun",
     image: "/products/Bread & Bun.jpg",
     route: "/products/paneer",
   },
-  {
-    title: "Butter",
-    image: "/products/Butter.jpg",
-    route: "/products/cheese",
-  },
+
   {
     title: "cassata",
     image: "/products/Cassata.png",
@@ -68,11 +100,7 @@ const productCategories = [
     image: "/products/Cup Ice-Cream.png",
     route: "/products/good-life",
   },
-   {
-    title: "Curd",
-    image: "/products/curd.png",
-    route: "/products/sweets",
-  },
+ 
   {
     title: "Family Pack Ice Cream",
     image: "/products/Family Pack Ice-Cream.png",
@@ -93,11 +121,7 @@ const productCategories = [
     image: "/products/Frozen Foods.png",
     route: "/products/instant-mixes",
   },
-  {
-    title: "Ghee",
-    image: "/products/Ghee.jpg",
-    route: "/products/good-life",
-  },
+ 
    {
     title: "Gudbud",
     image: "/products/Gudbud.jpg",
@@ -118,17 +142,7 @@ const productCategories = [
     image: "/products/Kulfi Ice-Cream.jpg",
     route: "/products/good-life",
   },
-
-   {
-    title: "Milk Powder",
-    image: "/products/Milk Proder.jpg",
-    route: "/products/instant-mixes",
-  },
-  {
-    title: "Milk",
-    image: "/products/milk.png",
-    route: "/products/good-life",
-  },
+ 
    {
     title: "Namkeens",
     image: "/products/Namkeens.png",
@@ -143,11 +157,6 @@ const productCategories = [
     title: "natural ice cream",
     image: "/products/natural Ice -Cream.png",
     route: "/products/instant-mixes",
-  },
-  {
-    title: "Paneer",
-    image: "/products/paneer.jpg",
-    route: "/products/good-life",
   },
 
    {

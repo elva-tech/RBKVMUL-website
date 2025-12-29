@@ -21,8 +21,8 @@ export default function Navbar() {
             RBKVMUL
           </NavLink>
         </div>
-        <img style={{height:"60px", borderRadius:"5px"}} src="/images/puneet-rajumumar-nandini.jpeg" alt="logo" srcset="" />
-         <img style={{height:"53px", borderRadius:"5px"}} src="/images/logo.png" alt="logo" srcset="" />
+        <img style={{ height: "60px", borderRadius: "5px" }} src="/images/puneet-rajumumar-nandini.jpeg" alt="logo" srcset="" />
+        <img style={{ height: "53px", borderRadius: "5px" }} src="/images/logo.png" alt="logo" srcset="" />
 
         {/* Hamburger */}
         <div
@@ -57,39 +57,46 @@ export default function Navbar() {
             </div>
           </div>
 
-          
+
           {/* PRODUCTS */}
           <div className="dropdown">
             <span className="dropdown-title">Products</span>
             <div className="dropdown-menu">
 
               <NavLink to="/products" onClick={closeMenu}>
-                    All Products
-                  </NavLink>
+                All Products
+              </NavLink>
 
-             <NavLink to="/products/kmf" onClick={closeMenu}>
-                    KMF Products
-                  </NavLink>
+              <NavLink to="/products/kmf" onClick={closeMenu}>
+                KMF Products
+              </NavLink>
+
+               <NavLink to="/products/rbkvmul" onClick={closeMenu}>
+                RBKVMUL Products
+              </NavLink>
             </div>
           </div>
 
           {/* <NavLink to="/units" onClick={closeMenu}>Units</NavLink> */}
           <NavLink to="/news" onClick={closeMenu}>News</NavLink>
           {/* <NavLink to="/notifications" onClick={closeMenu}>Notifications</NavLink> */}
-          <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
 
-          {/* ACTIVITIES */}
-<div className="dropdown">
-  <span className="dropdownititle">Activities</span>
-  <div className="dropdown-menu">
+         {/* ACTIVITIES */}
+          <div className="dropdown">
+            <span className="dropdownititle">Activities</span>
+            <div className="dropdown-menu">
               <NavLink to="/about/activities" onClick={closeMenu}>Activities</NavLink>
               <NavLink to="/about/animal-health-services" onClick={closeMenu}>Animal Health</NavLink>
               <NavLink to="/about/artificial-insemination" onClick={closeMenu}>Artificial Insemination Emergency activities</NavLink>
               <NavLink to="/about/fodder-activity" onClick={closeMenu}>Fooder Activity</NavLink>
               <NavLink to="/about/step-processing" onClick={closeMenu}>Step & Production Activities</NavLink>
 
-  </div>
-</div>
+            </div>
+          </div>
+
+          <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+
+         
         </nav>
       </div>
     </header>

@@ -2,33 +2,54 @@ import { NavLink } from "react-router-dom";
 import "../../../styles/pages.css";
 
 const rbkvmulProducts = [
-  {
+ {
     title: "Milk",
-    image: "/assets/products/categories/homegenized-tonned-milk.jpg",
-    route: "/products/rbkvmul/milk",
+    image: "/products/milk.png",
+    route: "/products/good-life",
   },
-  {
+    {
     title: "Curd",
-    image: "/assets/products/categories/curd.jpg",
-    route: "/products/rbkvmul/curd",
+    image: "/products/curd.png",
+    route: "/products/sweets",
+  },
+
+   {
+    title: "Ghee",
+    image: "/products/Ghee.jpg",
+    route: "/products/good-life",
+  },
+   {
+    title: "Paneer",
+    image: "/products/paneer.jpg",
+    route: "/products/good-life",
   },
 ];
 
 export default function RBKVMUL() {
   return (
-    <section className="page">
-      <h1 style={{ textAlign: "center", marginBottom: "32px" }}>
-        RBKVMUL Products
-      </h1>
+   <section className="products-page">
+  {/* ===== PAGE HEADER ===== */}
+  <div className="products-header">
+    <h1 style={{ textAlign: "center", marginBottom: "32px" }}>
+      RBKVMUL Products
+    </h1>
+  </div>
 
-      <div className="product-grid">
-        {rbkvmulProducts.map((item, i) => (
-          <NavLink key={i} to={item.route} className="product-card">
+  {/* ===== PRODUCT CATEGORIES ===== */}
+  <div className="about-container">
+    <div className="product-grid">
+      {rbkvmulProducts.map((item, i) => (
+        <div key={i} className="product-card">
+          <div className="product-image">
             <img src={item.image} alt={item.title} />
-            <h4>{item.title}</h4>
-          </NavLink>
-        ))}
-      </div>
-    </section>
+          </div>
+          <div className="product-info">
+            <h3>{item.title}</h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
   );
 }

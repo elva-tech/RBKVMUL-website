@@ -13,13 +13,9 @@ export default function Hero() {
           </h1>
 
           <p className="hero-subtitle animate-slide-up delay-1">
-            Karnataka Milk Federation ensures high quality dairy products
+            <strong>RBKVMUL</strong> ensures high quality dairy products
             sourced directly from farmers and delivered with trust,
             nutrition, and care.
-          </p>
-
-          <p>
-            Up Coming Mega Dairy at Bellary Taluka Kolagal Garma.  Approved by  Karnataka Mining Environment Restoration Corporation (KMERC)
           </p>
           <a
             href="/products"

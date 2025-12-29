@@ -80,6 +80,57 @@
   }
 }
 
+
+/* Base arrow (invisible by default) */
+.compact-swiper .swiper-button-next,
+.compact-swiper .swiper-button-prev {
+  --swiper-navigation-size: 12px;
+
+  color: var(--primary-blue);
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+
+  background: transparent;
+  opacity: 0.35;
+  transition: 
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Arrow icon */
+.compact-swiper .swiper-button-next::after,
+.compact-swiper .swiper-button-prev::after {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Hover = discoverable */
+.compact-swiper:hover .swiper-button-next,
+.compact-swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+/* Micro motion feedback */
+.compact-swiper .swiper-button-next:hover {
+  transform: translateX(2px);
+}
+
+.compact-swiper .swiper-button-prev:hover {
+  transform: translateX(-2px);
+}
+
+/* Pagination dots (tiny & quiet) */
+.compact-swiper .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  opacity: 0.35;
+}
+
+.compact-swiper .swiper-pagination-bullet-active {
+  opacity: 0.9;
+}
+
 /* ================= HERO ================= */
 
 .hero {
@@ -739,7 +790,7 @@
   align-items: center;
   gap: 4px;
   text-decoration: none;
-   justify-content: flex-end;
+   justify-content: center;
   /* color: #777; */
    cursor: pointer;
 }
@@ -747,8 +798,8 @@
 
 /* Video Logo Styling */
 .dev-logo-video {
-  width: 28px;
-  height: 28px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   border-radius: 4px;
   background: #eee;

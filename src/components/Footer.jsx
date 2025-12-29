@@ -24,10 +24,9 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Address</h4>
           <p>
-            Ballari,Raichur & Koppal Co-Operative
-            Milk Producers' Societies Union Ltd.<br /><br />
+            RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA Milk Union Ltd.<br /><br />
             Sanjay Gandhi Nagar,<br />
-            
+
             Ballari - 583104, Karnataka
           </p>
         </div>
@@ -57,26 +56,28 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Karnataka Milk Federation. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA Milk Union Ltd. All rights reserved.</p>
 
-           <div className="developer-credit">
-    <a
-      href="https://www.elvatech.in/"
-      target="_blank"
-    >
-      <span>Built by</span>
-      <video
-        src="/assets/elva.mp4"
+      <br />
+        <div className="developer-credit">
+          <a
+            href="https://www.elvatech.in/"
+            target="_blank"
+          >
+            <span style={{ fontSize: "12px" }}>Designed & Developed by</span>
+            {/* <video
+        src="/assets/Elva.svg"
         autoPlay
         muted
         playsInline
         className="dev-logo-video"
-      />
-    </a>
-  </div>
+      /> */}
+            <img className="dev-logo-video"
+              src="/assets/Elva.svg" alt="Elva Logo" />
+          </a>
+        </div>
       </div>
 
-      
     </footer>
   );
 }

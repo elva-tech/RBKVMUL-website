@@ -176,3 +176,24 @@
   .hamburger.active .bar:nth-child(2) { opacity: 0; }
   .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 }
+
+.top-info-bar {
+  width: 100%;
+  background: #0a4da2;
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;            
+  font-weight: 600;
+    line-height: 2.5;  
+  padding: 12px 18px;
+  letter-spacing: 0.2px;       
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .top-info-bar {
+    font-size: 17px;
+    line-height: 2.1;
+    padding: 10px 14px;
+  }
+}
