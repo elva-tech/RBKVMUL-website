@@ -10,9 +10,9 @@ import AboutOverview from "./About/AboutOverview";
 import { useLocation } from "react-router-dom";
 
 export default function Home() {
-  const location = useLocation();
+  // const location = useLocation();
 
-  console.log("ROUTE CHANGED:", location.pathname, location.key);
+  // console.log("ROUTE CHANGED:", location.pathname, location.key);
   return (
     <>
     <TopBanner/>

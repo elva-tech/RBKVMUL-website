@@ -1,0 +1,650 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "products": "Products",
+    "news": "News",
+    "activities": "Activities",
+    "contact": "Contact",
+
+    "aboutUsDropdown": {
+      "companyProfile": "Company Profile",
+      "missionVision": "Mission & Vision",
+      "boardOfDirectors": "Board of Directors",
+      "humanResources": "Human Resources",
+      "objectives": "Objectives",
+      "culturalHeritage": "Cultural Heritage"
+    },
+
+    "activitiesDropdown": {
+      "animalHealthServices": "Animal Health Services",
+      "activities": "Activities",
+      "artificialInsemination": "Artificial Insemination & Emergency Activities",
+      "fodderActivity": "Fodder Activity",
+      "stepProcessing": "STEP & Processing Activities"
+    }
+  },
+
+  
+
+
+
+  "footer": {
+    "quickLinks": "Quick Links",
+    "addressTitle": "Address",
+    "contactTitle": "Contact",
+    "legalTitle": "Legal",
+
+    "links": {
+      "home": "Home",
+      "companyProfile": "Company Profile",
+      "products": "Products",
+      "newsEvents": "News & Events",
+      "privacyPolicy": "Privacy Policy",
+      "termsConditions": "Terms and Conditions",
+      "refundPolicy": "Refund Policy"
+    },
+
+    "address": {
+      "line1": "RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA Milk Union Ltd.",
+      "line2": "Sanjay Gandhi Nagar,",
+      "line3": "Ballari - 583104, Karnataka"
+    },
+
+    "contact": {
+      "phoneLabel": "Ph:",
+      "phone": "9591999522",
+      "tollFreeLabel": "Toll free:",
+      "tollFree": "1800 425 6108",
+      "email": "misrbkmul@gmail.com"
+    },
+
+    "copyright": "All rights reserved.",
+    "designedBy": "Designed & Developed by"
+  },
+
+
+
+
+  "topInfoBar": {
+    "unionName": "RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA MILK UNION LIMITED"
+  },
+
+
+
+  
+  "hero": {
+    "titleLine1": "Fresh & Truly Pure.",
+    "titleLine2": "A Taste of Countryside.",
+    "subtitle": " ensures high quality dairy products sourced directly from farmers and delivered with trust, nutrition, and care.",
+    "cta": "Explore Our Products"
+  },
+
+
+
+
+  
+  "highlights": {
+    "quality": {
+      "title": "Quality You Can Trust",
+      "description": "Milk and dairy products processed under strict quality standards to ensure purity, safety, and nutrition."
+    },
+    "farmers": {
+      "title": "From Farmers to Families",
+      "description": "Supporting thousands of farmers while delivering fresh dairy products directly to consumers."
+    },
+    "processing": {
+      "title": "Modern Processing Units",
+      "description": "State-of-the-art chilling and processing facilities across Karnataka ensure consistent quality."
+    }
+  },
+
+
+
+
+   "aboutOverview": {
+    "title": "About Us",
+
+    "para1": "The development of the dairy sector in the region was formally initiated in 1989 with the establishment of the Raichur & Bellary Co-operative Milk Producers’ Societies Union Ltd. during 1989–90. The Union was formed to strengthen organized milk production and marketing by bringing rural milk producers under a structured co-operative framework. From its inception, the Union aimed to create a sustainable system that would benefit farmers economically while ensuring a steady supply of quality milk to consumers.",
+
+    "para2": "The operational jurisdiction of the Union initially extended across the entire Raichur District, covering four talukas, and the Bellary District, comprising seven talukas. By organizing village-level milk producers into co-operative societies, the Union enabled farmers to collectively market their milk, access veterinary and technical services, and receive fair and timely payments. This approach significantly reduced exploitation by middlemen and improved income stability for rural households.",
+
+    "para3": "The Union adopted the AMUL co-operative model, which emphasizes farmer ownership, democratic management, and transparent operations. Dairying was promoted as a major subsidiary occupation, particularly for small and marginal farmers, with the objective of achieving socio-economic upliftment in rural areas. Through this model, the Union not only enhanced milk production and productivity but also contributed to employment generation and improved livelihoods.",
+
+    "para4": "Subsequently, the Union expanded its operational area by including Koppal District, leading to its reconstitution as the Raichur, Bellary & Koppal Co-operative Milk Producers’ Societies Union Ltd. This expansion strengthened the regional dairy network and reinforced the Union’s role in rural development, making dairying a reliable and sustainable source of income for farmers across the three districts."
+  },
+
+
+
+
+   "productsPreview": {
+    "dairyProductsTitle": "Our Dairy Products",
+    "dairyProductsSubtitle": "A wide range of fresh and high-quality milk and milk products delivered with care and trust.",
+    "viewAllProducts": "View All Products"
+  },
+
+
+
+
+  "stats": {
+    "farmers": "Farmer Members",
+    "processingCapacity": "Milk Processing Capacity (LLPD)",
+    "products": "Product Varieties",
+    "collectionCenters": "Milk Collection Centers"
+  },
+
+
+
+
+    "privacy": {
+    "title": "Privacy Policy",
+
+    "overview": {
+      "title": "Overview",
+      "text": "This Privacy Policy describes the information collected by us (RBKVMUL – Raichur, Ballari, Koppala & Vijayanagara Milk Union Ltd.) through our mobile applications and related services and how we use that information."
+    },
+
+    "children": {
+      "title": "Information of Children",
+      "text": "Our services do not address anyone under the age of 13 as our services are not relevant to children. We do not knowingly collect personally identifiable information from children under 13."
+    },
+
+    "personalInfo": {
+      "title": "Personal Information",
+      "text": "For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to location, name, address, mobile number, device model, and Android version."
+    },
+
+    "location": {
+      "title": "Location",
+      "para1": "This app collects location data to enable Check-in/Check-out functionality even when the app is closed or not in use. A notification is displayed to the user when location is being captured. Users are prompted before location capture starts.",
+      "para2": "Once the user enables check-out, the location capture is stopped. We do not share the captured location with external sources."
+    },
+
+    "advertising": {
+      "title": "Advertising",
+      "text": "We do not allow third-party banner advertisements. We have no intention to introduce them, but if we ever do, this policy will be updated accordingly."
+    },
+
+    "sharing": {
+      "title": "Sharing of Information",
+      "para1": "We value your trust in providing your personal information and strive to use commercially acceptable means of protecting it. We do not share personally identifiable information such as name, address, email, or phone number with other companies.",
+      "para2": "However, please note that no method of transmission over the internet or method of electronic storage is 100% secure, and we cannot guarantee absolute security.",
+      "para3": "Payment gateways and payment processing services are compliant with industry standards (PCI compliant service providers). Users are advised not to share full credit or debit card details through unencrypted platforms.",
+      "para4": "Where a Customer ID and password are used to access the platform, users are responsible for keeping these credentials confidential and should not share them with anyone."
+    },
+
+    "support": {
+      "title": "When You Request Support, You May Send Us Email",
+      "text": "Users may contact us with questions about the use of our mobile applications. If a support request is submitted, we may receive the user's email address and other information provided in relation to the request."
+    },
+
+    "contact": {
+      "title": "Contact Us",
+      "text": "If you have any questions or concerns regarding this Privacy Policy, please contact us at:",
+      "emailLabel": "Email:",
+      "email": "misrbkmul@gmail.com"
+    },
+
+    "changes": {
+      "title": "Changes to this Privacy Policy",
+      "text": "This Privacy Policy may be updated from time to time. The use of information we collect is subject to the Privacy Policy in effect at the time such information is collected."
+    }
+  },
+
+
+
+
+   "companyProfile": {
+    "title": "Company Profile",
+    "description": "The development of the dairy sector was initiated in the year 1989. RBKVMUL (Raichur, Ballari, Koppala & Vijayanagara Milk Union Ltd.) was established during 1989–90, with its operational area extending across the entire Raichur District comprising four talukas and the Ballari District comprising seven talukas. The Union undertook the organization of milk co-operatives following the AMUL co-operative model, with the primary objective of achieving socio-economic upliftment of farmers in rural areas by promoting dairying as a major subsidiary occupation. Subsequently, the Union expanded its jurisdiction by including Koppala District, leading to its reconstitution as the Raichur, Ballari & Koppala Co-operative Milk Producers’ Societies Union Ltd."
+  },
+
+
+
+
+   "missionVision": {
+    "title": "Mission & Vision",
+
+    "mission": {
+      "title": "Our Mission",
+      "points": [
+        "1.To promote producer-oriented viable co-operative societies to impart impetus to rural income, dairy productivity, and rural employment.",
+        "2.To bridge the gap between the price of milk procurement and the sale price.",
+        "3.To develop business acumen in marketing and trading disciplines to serve consumers with quality milk and enhance the income of milk producers."
+      ],
+      "note": "Our Union is committed to the socio-economic development of its member milk producers by adopting advanced technology to make dairying a profitable business. Through dedicated workmanship, the Union aims to provide the best services to its members and consumers and achieve a leading position in Karnataka."
+    },
+
+    "values": {
+      "title": "Our Values",
+      "list": [
+        "Honesty",
+        "Discipline / Timeliness",
+        "Quality",
+        "Trust",
+        "Impartiality",
+        "Savings",
+        "Transparency"
+      ]
+    }
+  },
+
+
+
+
+
+   "humanResources": {
+    "title": "HR Department",
+
+    "objectives": {
+      "title": "Objectives",
+      "description": "Human Resource policies in the dairy industry cover core areas such as recruitment (skilled and unskilled), training (safety and technical), compensation, performance management, and statutory compliance. These policies place strong emphasis on workplace safety, prevention of harassment, leave management, and ethical conduct, along with specific regulations related to youth and child labour. Effective HR practices improve quality and productivity, reduce employee turnover, and enhance farm profitability by aligning people management with dairy operations and sustainability goals."
+    },
+
+    "functions": {
+      "title": "Main Functions",
+      "list": [
+        "Matching technical and physical skills with operational requirements and forecasting labour demand.",
+        "Establishing clear processes, communicating organizational culture and values, providing job descriptions, assigning trainers, and explaining workers’ compensation.",
+        "Ensuring mandatory safety training, accident and injury reporting, emergency preparedness, personal hygiene standards, and drug and alcohol policies.",
+        "Promoting professionalism, respect, anti-harassment practices, confidentiality, conflict-of-interest management, and attendance discipline.",
+        "Providing fair wages and benefits to attract and retain skilled personnel while ensuring employee satisfaction.",
+        "Encouraging feedback, skill enhancement, and linking performance outcomes to quality and productivity goals.",
+        "Defining clear policies related to holidays, sick leave, and other statutory leave provisions.",
+        "Implementing strict regulations on minimum working age, working hours, and mandatory fitness certification.",
+        "Aligning HR practices with environmental and sustainability goals to promote values-driven commitment.",
+        "Ensuring that skilled and motivated employees directly contribute to improved milk quality and quantity.",
+        "Reducing high employee turnover commonly associated with farm-related work through effective HR management.",
+        "Ensuring compliance with all legal requirements, particularly those related to safety and youth employment.",
+        "Achieving operational efficiency and financial success through effective workforce management."
+      ],
+      "summary": "Organizations should begin with essential policies related to safety, conduct, and leave, and gradually build comprehensive HR systems. Special focus should be given to integrating human resource practices with the unique operational requirements of dairy farming."
+    }
+  },
+
+
+
+
+
+  "objectives": {
+    "title": "Objectives",
+
+    "key": {
+      "title": "Our Key Objectives",
+      "list": [
+        "Profit maximization from the dairy sector.",
+        "Socio-economic stability of dairy farmers across the state.",
+        "Compliance with the Food Safety and Standards Act, 2006.",
+        "Ensuring the supply of fresh and safe milk to consumers.",
+        "Increasing rural employment opportunities through entrepreneurship.",
+        "Sustainable development of the dairy sector.",
+        "Strengthening organized dairy farming through co-operative institutions.",
+        "Value addition and improved marketing to ensure fair prices for farmers.",
+        "Innovation, research, and development for cost-effective production.",
+        "Providing adequate and quality services at the farmers’ doorstep.",
+        "Technology transfer through effective extension activities.",
+        "Automation of milk collection and pricing systems of dairy co-operatives.",
+        "Unification of accounting and management systems of dairy co-operatives.",
+        "Creating strong networks among dairy co-operatives, the Dairy Development Department, and other stakeholders for efficient management."
+      ],
+      "note": "These objectives guide the Union’s operations and ensure continued service to farmer members and urban consumers while promoting rural development and sustainable dairy practices."
+    },
+
+    "quality": {
+      "title": "Quality & Food Safety",
+      "list": [
+        "Ensuring healthy animals, clean housing, balanced feeding, and responsible use of antimicrobials.",
+        "Strict hand hygiene, use of clean protective attire, and reporting of illnesses to prevent contamination.",
+        "Maintaining cleanable facilities with proper drainage and regular sanitation of equipment such as milking machines and storage tanks.",
+        "Immediate cooling of milk, testing for antibiotics and contaminants at collection points, and maintaining the cold chain during transport.",
+        "Implementation of HACCP, pasteurization, and Good Manufacturing Practices (GMP) to control biological, chemical, and physical hazards.",
+        "Regular laboratory testing for fat, protein, bacterial counts, somatic cells, residues, and adulterants.",
+        "Maintaining detailed records at all stages to enable traceability, accountability, and rapid product recalls.",
+        "Commitment to producing safe and superior quality milk and milk products.",
+        "Meeting or exceeding all statutory requirements and consumer expectations.",
+        "Continuous improvement in quality and food safety performance.",
+        "Ensuring transparent communication of quality and food safety policies to all stakeholders."
+      ]
+    }
+  },
+
+
+
+
+   "cultural": {
+    "title": "Cultural Heritage",
+
+    "ballari": {
+      "title": "Ballari: The Spiritual Guardian",
+      "text": "Ballari’s identity is deeply rooted in its spiritual heritage, centered around the revered <strong>Kanaka Durgamma Temple</strong>. As the presiding deity of the city, Durgamma is regarded as the protector of the region, and the temple stands as a powerful symbol of faith that unites the local community."
+    },
+
+    "koppal": {
+      "title": "Koppal: The Kashi of the South",
+      "text": "Koppal carries a profound legacy of peace and service, anchored by the magnificent <strong>Gavi Siddeshwara Matha</strong>. This ancient cave monastery is a cornerstone of the Lingayat tradition, renowned for its concept of “Trividha Dasoha” — the selfless service of providing free food, education, and spiritual shelter to all."
+    },
+
+    "raichur": {
+      "title": "Raichur: The Land of Forts and Gold",
+      "text": "Raichur is a region where historical strength meets industrial pride, most notably represented by the <strong>Hatti Gold Mines</strong>. As one of the oldest gold mines in the world, it reflects the district’s rich mineral heritage and its strategic importance between the Krishna and Tungabhadra rivers."
+    },
+
+    "vijayanagara": {
+      "title": "Vijayanagara: The Eternal City",
+      "text": "The ruins of Vijayanagara at <strong>Hampi</strong> stand as a breathtaking testament to the pinnacle of South Indian Hindu architecture. A UNESCO World Heritage Site, the region features the iconic Stone Chariot, the towering Virupaksha Temple, and intricate musical pillars that echo the grandeur of one of India’s most powerful historical empires."
+    }
+  },
+
+
+
+
+
+   "products": {
+    "categories": {
+      "milk": "Milk",
+      "curd": "Curd",
+      "ghee": "Ghee",
+      "paneer": "Paneer",
+      "butter": "Butter",
+      "milkPowder": "Milk Powder",
+      "truptiMilk": "Trupti Milk",
+      "goodLife": "Good Life",
+      "mysorePak": "Mysore Pak",
+      "doodhPeda": "Doodh Peda",
+      "breadBun": "Bread & Bun",
+      "cassata": "Cassata",
+      "cheese": "Cheese",
+      "chocoBar": "Choco Bar",
+      "chocolates": "Chocolates",
+      "coneIceCream": "Cone Ice Creams",
+      "cookies": "Cookies",
+      "cupIceCream": "Cup Ice Cream",
+      "familyPack": "Family Pack Ice Cream",
+      "flavouredMilkTetra": "Flavoured Milk Tetra",
+      "flavouredBottles": "Flavoured Bottles",
+      "frozenFoods": "Frozen Foods",
+      "gudbud": "Gudbud",
+      "iceCreamMockups": "Ice Cream Mockups",
+      "instantMix": "Instant Mix",
+      "kulfi": "Kulfi Ice Creams",
+      "namkeens": "Namkeens",
+      "nandiniGoodLife": "Nandini Good Life Milk",
+      "naturalIceCream": "Natural Ice Cream",
+      "petBottles": "PET Bottles",
+      "rusk": "Rusk",
+      "strawberrySundae": "Strawberry Sundae",
+      "sweets": "Sweets",
+        "filterAll": "All Products",
+      "filterKMF": "KMF Products",
+      "filterRBKVMUL": "RBKVMUL Products"
+    }
+    
+  },
+
+
+
+
+   "contact": {
+    "title": "Verghese Kurien",
+    "subtitle": "Father of the White Revolution"
+  },
+
+
+
+
+
+   "activities": {
+    "title": "Activities",
+
+    "procurementIntro": "The procurement process involves collecting milk from producers, ensuring quality through rigorous testing (fat, SNF, adulteration), rapid chilling for freshness, and transportation to the dairy plant through village collection and chilling centers. Farmers are paid based on milk quality, ensuring transparency and consistent, high-quality supply.",
+    "breakdown": "Here's a breakdown of the key stages:",
+
+    "sourcing": {
+      "title": "Sourcing & Collection",
+      "points": [
+        "Milk is delivered by farmers, often twice daily, to local collection centers managed by cooperatives or the dairy.",
+        "Dairies establish their own collection centers or appoint agents to collect milk from producers.",
+        "Farmers are trained in hygienic milking and handling practices to ensure clean milk."
+      ]
+    },
+
+    "testing": {
+      "title": "Quality Testing & Chilling",
+      "points": [
+        "Milk is weighed and tested for fat, Solids-Not-Fat (SNF), and adulteration at village level centers.",
+        "Milk is rapidly cooled to preserve freshness and prevent bacterial growth.",
+        "Samples are taken for detailed laboratory analysis before dispatch."
+      ]
+    },
+
+    "transport": {
+      "title": "Transportation & Processing",
+      "p1": "Chilled milk is transported in insulated tankers to the main dairy plant, often via chilling centers.",
+      "p2": "Upon arrival, milk undergoes further quality checks before pasteurization and processing."
+    },
+
+    "payment": {
+      "title": "Payment & Management",
+      "points": [
+        "Farmers are paid based on milk quantity and quality, usually at regular intervals.",
+        "Payment slips include quality parameters and payable amounts, with funds transferred to bank accounts."
+      ]
+    },
+
+    "goals": {
+      "title": "Key Goals",
+      "points": [
+        "Ensuring fair prices for milk producers.",
+        "Educating farmers on fodder enrichment, silage preparation, and azolla cultivation.",
+        "Maintaining high standards from farm to plant.",
+        "Building strong cold chains and organized collection routes."
+      ],
+      "summary": "This system relies heavily on technology and strong farmer relationships to ensure a reliable, high-quality milk supply chain."
+    }
+  },
+
+  "animalHealth": {
+    "title": "Animal Health Services",
+    "intro": "The animal health system is designed to ensure animal welfare, reduce operational costs, and maintain high-quality milk production.",
+    "coreTitle": "Core Components",
+    "coreP1": "The system focuses on prevention through biosecurity, vaccination, nutrition, housing, and staff training.",
+    "coreP2": "Early detection and prompt treatment help protect animal health and milk safety.",
+    "bioTitle": "Biosecurity & Prevention",
+    "bioPoints": [
+      "Limiting and screening new animal introductions.",
+      "Strategic vaccination and preventive treatments.",
+      "Maintaining clean housing, equipment, and water supplies.",
+      "Providing balanced feed and stress-free housing."
+    ]
+  },
+
+  "ai": {
+    "title": "Artificial Insemination & Emergency Activities",
+    "intro": "Artificial Insemination (AI) is a scientific breeding method that improves genetic quality without natural mating.",
+    "processTitle": "AI Process Overview",
+    "processDesc": "The AI procedure includes heat detection, semen thawing, insemination, and uterine deposition to ensure conception.",
+    "semenTitle": "Semen Collection & Processing",
+    "semenPoints": [
+      "Semen is collected from genetically superior bulls.",
+      "Semen is mixed with extenders for protection and nutrition.",
+      "Semen straws are frozen in liquid nitrogen at −196°C for long-term storage."
+    ]
+  },
+
+  "fodder": {
+    "title": "Fodder Activity",
+    "intro": "Fodder production ensures balanced nutrition, improves milk yield, and supports sustainable dairy farming.",
+    "traditionalTitle": "Traditional & Field-Based Fodder Production",
+    "traditionalPoints": [
+      "Assessment of herd size, land, water, and climate.",
+      "Land preparation, sowing, irrigation, and pest control.",
+      "Harvesting at optimal growth stages for nutrition."
+    ],
+    "conservationTitle": "Conservation (Silage & Hay)",
+    "conservationPoints": [
+      "Fermenting green fodder in airtight silos as silage.",
+      "Sun-drying fodder to produce hay for storage."
+    ]
+  },
+
+  "step": {
+    "title": "STEP & Processing Activities",
+    "stepTitle": "Support to Training and Employment Programme for Women (STEP)",
+    "stepDesc": "STEP empowers women through training, employment, and financial inclusion in the dairy sector.",
+    "stepPoints": [
+      "STEP: Financial and technical support for Women Dairy Cooperative Societies.",
+      "NPDD: Training on clean milk production, animal health, and nutrition.",
+      "NABARD: Support through Self Help Groups and concessional credit."
+    ],
+    "processingTitle": "Processing and Production Activity",
+    "processingDesc": "Dairy processing converts raw milk into safe products through systematic treatment and packaging.",
+    "coreSteps": [
+      "Milk collection, testing, cooling, and storage.",
+      "Filtration to remove physical impurities.",
+      "Cream separation and fat standardization.",
+      "Pasteurization and homogenization."
+    ],
+    "productSteps": [
+      "Fermentation for cultured products.",
+      "Butter production through churning.",
+      "Milk powder production via evaporation and spray drying.",
+      "Hygienic packaging and cold storage."
+    ]
+  },
+
+
+
+
+
+  "popup": {
+    "ribbon": "New",
+    "close": "Close popup",
+    "title": "Announcement",
+    "subtitle": "Mega Dairy Outline",
+    "description": "Upcoming Mega Dairy at Bellary Taluka Kolagal Grama. Approved by Karnataka Mining Environment Restoration Corporation (KMERC).",
+    "imageAlt": "Mega Dairy Outline Announcement"
+  },
+
+
+
+
+
+  
+  "refund": {
+    "title": "Refund Policy",
+    "cancellation_returns": {
+      "title": "Cancellation & Returns",
+      "paragraph1": "We, at RBKVMUL, are committed to providing the highest level of customer satisfaction. Due to our strict quality standards, products once opened cannot be repackaged or resold. Therefore, we do not accept returns on opened merchandise.",
+      "paragraph2": "In unusual circumstances, if a product is damaged during delivery, we offer a replacement. Any product damage must be reported to the respective marketing representative within 24 hours of delivery. The product must be self‑shipped to our address for verification.",
+      "paragraph3": "Upon receipt of the product, quality checks will be performed and a replacement or refund claim will be issued as per the requirement. Refund claims will be adjusted in the invoice.",
+      "paragraph4": "Please note that exchanges or refunds are not offered on opened or used products. RBKVMUL is not responsible for damages occurring after delivery."
+    },
+    "processing_time": {
+      "title": "Processing Time",
+      "paragraph1": "Please allow one to three working days from the date of return for your request to be processed. You will be contacted once the return process is complete.",
+      "paragraph2": "All claims for damages or missing items must be reported within 24 hours of delivery. Requests made after 24 hours will not be processed.",
+      "contactText": "Concerns may be raised at:",
+      "websiteLabel": "Website:",
+      "websiteUrl": "http://rbkvmul.in/complaints-and-suggestions"
+    },
+    "exclusions": {
+      "title": "Exclusions",
+      "paragraph1": "Damages caused due to negligence or incorrect application are not covered under the Returns Policy.",
+      "paragraph2": "No exchange or return will be processed in cases where there are no quality‑related issues.",
+      "paragraph3": "Consumers are advised to ensure lactose tolerance before consuming the products."
+    },
+    "cancellation_policy": {
+      "title": "Cancellation Policy",
+      "paragraph1": "Orders placed through https://www.rbkvmul.in can be cancelled before dispatch. Once the order has been dispatched or delivered, it cannot be cancelled and no refunds will be issued."
+    },
+    "out_of_stock": {
+      "title": "Out of Stock Items",
+      "paragraph1": "In case of out‑of‑stock items, customers may add products to their wishlist. Once the products are back in stock, an automated notification will be sent, allowing the order to be placed easily."
+    },
+    "payments": {
+      "title": "Payments",
+      "paragraph1": "RBKVMUL offers the following payment options:",
+      "list": {
+        "credit_cards": "Credit Cards (Visa, MasterCard)",
+        "debit_cards": "Debit Cards (Visa Electron, Maestro)",
+        "net_banking": "Net Banking (all major banks in India)",
+        "cash_on_delivery": "Cash on Delivery",
+        "upi": "UPI Payments",
+        "bank_transfer": "Bank Transfer"
+      },
+      "paragraph2": "All online payments are processed through trusted payment gateways using encryption technology to ensure secure transactions. Payments made via card or net banking are safe and secure."
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "introduction": {
+      "paragraph": "The rbkvmul.in (the “Site”) provides its services to you subject to the terms and conditions in this agreement (the \"Agreement\"). In addition, when you use any RBKVMUL service (e.g. sharing Product listing, Checking Price, Product availability), you will be subject to the policies, guidelines, terms, and conditions applicable to such services, as incorporated in this Agreement. RBKVMUL reserves the right to change this site and these terms and conditions mentioned herein at any time. RBKVMUL reserves the right to deny access to the Site to anyone who we believe has violated any of these Terms of Use. If you are under 18, you may use RBKVMUL only with supervision/participation/involvement of a parent or guardian. USING THE SITE (WHICH INCLUDES ACCESSING AND BROWSING) INDICATES YOUR AGREEMENT TO ALL THE TERMS AND CONDITIONS IN THIS AGREEMENT, SO PLEASE READ THIS AGREEMENT CAREFULLY BEFORE PROCEEDING."
+    },
+    "contents_posted": {
+      "title": "Contents Posted on Site",
+      "paragraph": "You are responsible for all text, e‑mails, posts, photos, profile information, opinion, graphic, images, videos, audio, or files and materials or information that you post on or submit or transmit to the Sites (referred to as \"Content\"). Such Content will become the property of RBKVMUL throughout the universe. RBKVMUL shall be entitled to, consistent with our Privacy Policy, use the Content or any of its elements for any type of use forever, including but not limited to promotional and advertising purposes and in any media whether now known or hereafter devised, including the creation of derivative works that may include Content you provide. You agree that any Content you post may be used by RBKVMUL, consistent with our Privacy Policy and Rules of Conduct on Site as mentioned herein, and you are not entitled to any payment or other compensations for such use."
+    },
+    "conduct": {
+      "title": "Conduct on Site",
+      "paragraph1": "You may not post, distribute, or reproduce in any way any copyrighted material, trademarks, or any other proprietary information without obtaining the prior written consent of the owner of such proprietary rights.",
+      "paragraph2": "RBKVMUL may review, edit, reject, refuse to post and/or delete any content that in the sole judgment of RBKVMUL violate these Terms of Use or which might be offensive, illegal, or that might violate the rights, harm, or threaten the safety of another person.",
+      "paragraph3": "Any information provided by you on this site will not be misleading in any way. You may not post or submit or transmit Content, (even if made in a joking, sarcastic or unintended manner), if it in any way: is patently offensive to the online community, such as sexually explicit content, or content that promotes obscenity, paedophilia, racism, bigotry, hatred or physical harm of any kind against any group or individual; harasses or advocates harassment of another person; involves the transmission of \"junk mail,\" \"chain letters,\" or unsolicited mass mailing or \"spamming\"; promotes illegal activities or conduct that is abusive, threatening, obscene, defamatory or libellous.",
+      "paragraph4": "You may not infringe upon or violate any third party's rights [(including, but not limited to, intellectual property rights, rights of privacy (including without limitation unauthorized disclosure of a person's name, email address, physical address or phone number) or rights of publicity]; promote an illegal or unauthorized copy of another person's copyrighted work, such as providing pirated computer programs or links to them, providing information to circumvent manufacture‑installed copy‑protect devices, or providing pirated music or links to pirated music files.",
+      "paragraph5": "You must use the Site in a manner consistent with any and all applicable laws and regulations. Illegal and/or unauthorized uses of the Site, including without limitation, collecting usernames and/or email addresses of registered members by electronic or other means for the purpose of sending unsolicited email and unauthorized framing of or linking to the Sites, are not permitted.",
+      "paragraph6": "You may not engage in advertising to, or solicitation of, other users through the Sites to buy or sell any products or services, including, but not limited to, products or services related to the Sites.",
+      "paragraph7": "RBKVMUL reserves the right, but has no obligation, to monitor the materials posted in the public areas of the Sites. RBKVMUL shall have the right to remove or edit any Content that in its sole discretion violates, or is alleged to violate, any applicable law or either the spirit or letter of these Terms of Use. Notwithstanding this right of RBKVMUL, YOU REMAIN SOLELY RESPONSIBLE FOR THE CONTENT OF THE MATERIALS YOU POST IN THE PUBLIC AREAS OF THE SITES AND IN YOUR PRIVATE MESSAGES.",
+      "paragraph8": "RBKVMUL shall have all the rights to take necessary action and claim damages that may occur due to your involvement/participation in any way on your own or through group/s of People, intentionally or unintentionally in DoS/DDoS (Distributed Denial of Services).",
+      "paragraph9": "Affiliates, other businesses RBKVMUL does not take responsibility or liability or warrant including but not limited to, the actions, products, content and services on RBKVMUL‘s website, which are linked through including but not limited to Affiliates and sites that use RBKVMUL‘s APIs or other integration tools."
+    },
+    "links": {
+      "title": "Links",
+      "paragraph": "This site may contain links to other web sites or you may be linked through other websites (\"Linked Sites\"). The Linked Sites are for your convenience only and you access them at your own risk. We are not responsible for the content of the Linked Sites, whether or not RBKVMUL is affiliated with sponsors of the sites. We do not in any way endorse the Linked Sites. We welcome links to this site. You may establish a hypertext link to this site, provided that the link does not state or imply any sponsorship or endorsement of your site by RBKVMUL. You must not use on your site or in any other manner any trademarks, service marks or any other materials appearing on the RBKVMUL site, including any logos or characters, without the express written consent of the owner of the mark or materials. You must not frame or otherwise incorporate into another web site or present in conjunction with or juxtaposed against such a web site any of the content or other materials on the RBKVMUL site without our prior written consent."
+    },
+    "your_account": {
+      "title": "Your Account",
+      "paragraph": "You agree that any use on the site is at your own risk and RBKVMUL is not responsible for it. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer, and you agree to accept responsibility for all activities that occur under your account or password. Products sold on/by RBKVMUL are not for people who are lactose intolerance."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "paragraph": "Use of the Site is governed by our Privacy Policy, which can be located at Privacy Policy."
+    },
+    "mandatory_declaration": {
+      "title": "Mandatory Declaration",
+      "paragraph": "You hereby declare that you have provided all necessary Legal Details for the shipment of the product to the destination specified by you in the Order. You further declare that the Product will be acquired for personal use of the Consignee and/or Buyer. The Product will not be sold, resold, bartered or in any way disposed for profit."
+    },
+    "disclaimer": {
+      "title": "Disclaimer of Warranties and Liability",
+      "paragraph1": "This website, all the milk and products (including but not limited to software) and services, included on or otherwise made available to you through this site are provided by RBKVMUL “as is” and “as available” basis without any representation or warranties, express or implied except otherwise specified in writing. Without prejudice to the forgoing paragraph, RBKVMUL does not warrant that: This website will be constantly available, or available at all; or the information on this website is complete, true, accurate or non‑misleading.",
+      "paragraph2": "RBKVMUL will not be liable to you in any way or in relation to the contents of, or use of, or otherwise in connection with, this website. RBKVMUL does not warrant that this site; information, content, materials, product (including software) or services included on or otherwise made available to you through this site; their servers; or electronic communication sent from RBKVMUL are free of viruses or other harmful components. Nothing on this website constitutes, or is meant to constitute, advice of any kind.",
+      "paragraph3": "Certain state laws do not allow limitations on implied warranties or the exclusion or limitation of certain damages. If these laws apply to you, some or all of the above disclaimers, exclusions, or limitations may not apply to you, and you might have additional rights."
+    },
+    "applicable_laws": {
+      "title": "Applicable Laws of the Land",
+      "paragraph": "This Agreement shall be governed by and interpreted and construed in accordance with the laws of India. The place of jurisdiction shall be in Bangalore."
+    },
+    "sale_in_india": {
+      "title": "Sale in India Only",
+      "paragraph": "Unless otherwise specified, the material on RBKVMUL is presented solely for the purpose of sale in India. RBKVMUL makes no representation that materials in RBKVMUL are appropriate or available for use in other locations/Countries other than India. Those who choose to access this site from other locations/Countries other than India do so on their own initiative and RBKVMUL is not responsible for supply of goods/refund for the goods ordered from other locations/Countries other than India, compliance with local laws, if and to the extent local laws are applicable."
+    },
+    "trademark_copyright": {
+      "title": "Trademark, Copyright and Restriction",
+      "paragraph": "This site is controlled and operated by RBKVMUL. All material on this site, including images, illustrations, audio clips, and video clips, are protected by copyrights, trademarks, and other intellectual property rights that are owned and controlled by us or by other parties that have licensed their material to us. Material on RBKVMUL web site owned, operated, licensed or controlled by us is solely for your personal, non‑commercial use. You must not copy, reproduce, republish, upload, post, transmit or distribute such material in any way, including by e‑mail or other electronic means and whether directly or indirectly and you must not assist any other person to do so. Without the prior written consent of the owner, modification of the materials, use of the materials on any other web site or networked computer environment or use of the materials for any purpose other than personal, non‑commercial use is a violation of the copyrights, trademarks and other proprietary rights, and is prohibited. Any use for which you receive any remuneration, whether in money or otherwise, is a commercial use for the purposes of this clause."
+    },
+    "risk_of_loss": {
+      "title": "Risk of loss",
+      "paragraph": "All items purchased from RBKVMUL are made pursuant to a shipment contract. This means that the risk of loss and title for such items pass to you upon our delivery to the carrier."
+    },
+    "product_description": {
+      "title": "Product Description",
+      "paragraph": "RBKVMUL tries to be as accurate as possible. However, RBKVMUL does not warrant that the product description or other content of this site is accurate, complete, reliable, current, or error‑free. If a product offered by RBKVMUL itself is not as described, your sole remedy is to return it in unused condition."
+    },
+    "cancellation_of_order": {
+      "title": "Cancellation of order",
+      "paragraph": "RBKVMUL reserves the right to cancel any order without any explanation for doing so, under situation where RBKVMUL is not able to meet the requirement of the order placed or order so placed/cancelled does not comply with the RBKVMUL policy or for any other reason. However, RBKVMUL will ensure that any communication of cancellation of an order, so cancelled, is intimated within appropriate time to the concerned person and any applicable refund will be made in reasonable time."
+    }
+  }
+}
+
+
+
+

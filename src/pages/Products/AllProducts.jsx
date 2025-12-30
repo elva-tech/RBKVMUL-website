@@ -1,187 +1,46 @@
-import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../styles/pages.css";
 
 /* ===== PRODUCT CATEGORIES DATA ===== */
 const productCategories = [
-  {
-    title: "Milk",
-    image: "/products/milk.png",
-    route: "/products/good-life",
-  },
-    {
-    title: "Curd",
-    image: "/products/curd.png",
-    route: "/products/sweets",
-  },
-
-   {
-    title: "Ghee",
-    image: "/products/Ghee.jpg",
-    route: "/products/good-life",
-  },
-   {
-    title: "Paneer",
-    image: "/products/paneer.jpg",
-    route: "/products/good-life",
-  },
-
-    {
-    title: "Butter",
-    image: "/products/Butter.jpg",
-    route: "/products/cheese",
-  },
-
-
-  {
-    title: "Milk Powder",
-    image: "/products/Milk Proder.jpg",
-    route: "/products/instant-mixes",
-  },
- {
-    title: "Trupti milk",
-    image: "/products/Bly Products Trupti.jpg",
-    route: "/products/butter",
-  },
-  {
-    title: "Good life",
-    image: "/products/Bly Products Good Life.jpg",
-    route: "/products/milk",
-  },
-  
-  {
-    title: "Mysore Pak's",
-    image: "/products/Bly Products Mysore.jpg",
-    route: "/products/curd",
-  },
-  {
-    title: "Doodh Peda's",
-    image: "/products/Bly Products Pada.jpg",
-    route: "/products/ghee",
-  },
- 
-  {
-    title: "Bread & Bun",
-    image: "/products/Bread & Bun.jpg",
-    route: "/products/paneer",
-  },
-
-  {
-    title: "cassata",
-    image: "/products/Cassata.png",
-    route: "/products/flavoured-milk",
-  },
-  {
-    title: "Cheese",
-    image: "/products/Cheese.jpg",
-    route: "/products/chocolates",
-  },
-  {
-    title: "Choco Bar",
-    image: "/products/Choco Bar.png",
-    route: "/products/namkeens",
-  },
-  {
-    title: "Chocolates",
-    image: "/products/Chocolates.png",
-    route: "/products/sweets",
-  },
-  {
-    title: "Cone ice creams",
-    image: "/products/Cine Ice-Cream.png",
-    route: "/products/khova",
-  },
-  {
-    title: "Cookies",
-    image: "/products/Cookies.jpg",
-    route: "/products/instant-mixes",
-  },
-  {
-    title: "Cup Ice Cream",
-    image: "/products/Cup Ice-Cream.png",
-    route: "/products/good-life",
-  },
- 
-  {
-    title: "Family Pack Ice Cream",
-    image: "/products/Family Pack Ice-Cream.png",
-    route: "/products/khova",
-  },
-  {
-    title: "Flavoured Milk Tatra",
-    image: "/products/Flavored Milk Tatra.png",
-    route: "/products/instant-mixes",
-  },
-  {
-    title: "Flavoured Bottles",
-    image: "/products/Floavored Bottles.png",
-    route: "/products/good-life",
-  },
-   {
-    title: "Frozen Foods",
-    image: "/products/Frozen Foods.png",
-    route: "/products/instant-mixes",
-  },
- 
-   {
-    title: "Gudbud",
-    image: "/products/Gudbud.jpg",
-    route: "/products/sweets",
-  },
-  {
-    title: "Ice Cream Mockups",
-    image: "/products/Ice Cream Mockups.png",
-    route: "/products/khova",
-  },
-  {
-    title: "Instant Mix",
-    image: "/products/Instant Mix.jpg",
-    route: "/products/instant-mixes",
-  },
-  {
-    title: "Kulfi Ice Creams",
-    image: "/products/Kulfi Ice-Cream.jpg",
-    route: "/products/good-life",
-  },
- 
-   {
-    title: "Namkeens",
-    image: "/products/Namkeens.png",
-    route: "/products/sweets",
-  },
-  {
-    title: "Nandini Good Life Milk",
-    image: "/products/Nandini Good Life Milk.png",
-    route: "/products/khova",
-  },
-  {
-    title: "natural ice cream",
-    image: "/products/natural Ice -Cream.png",
-    route: "/products/instant-mixes",
-  },
-
-   {
-    title: "Pet Bottles",
-    image: "/products/Pet Bottles.png",
-    route: "/products/instant-mixes",
-  },
-  {
-    title: "Rusk",
-    image: "/products/Rusk.png",
-    route: "/products/good-life",
-  },
-   {
-    title: "Strawberry sundae",
-    image: "/products/Sundae.jpg",
-    route: "/products/sweets",
-  },
-  {
-    title: "Sweets",
-    image: "/products/Sweets.png",
-    route: "/products/khova",
-  }
+  { key: "milk", image: "/products/milk.png", route: "/products/good-life" },
+  { key: "curd", image: "/products/curd.png", route: "/products/sweets" },
+  { key: "ghee", image: "/products/Ghee.jpg", route: "/products/good-life" },
+  { key: "paneer", image: "/products/paneer.jpg", route: "/products/good-life" },
+  { key: "butter", image: "/products/Butter.jpg", route: "/products/cheese" },
+  { key: "milkPowder", image: "/products/Milk Proder.jpg", route: "/products/instant-mixes" },
+  { key: "truptiMilk", image: "/products/Bly Products Trupti.jpg", route: "/products/butter" },
+  { key: "goodLife", image: "/products/Bly Products Good Life.jpg", route: "/products/milk" },
+  { key: "mysorePak", image: "/products/Bly Products Mysore.jpg", route: "/products/curd" },
+  { key: "doodhPeda", image: "/products/Bly Products Pada.jpg", route: "/products/ghee" },
+  { key: "breadBun", image: "/products/Bread & Bun.jpg", route: "/products/paneer" },
+  { key: "cassata", image: "/products/Cassata.png", route: "/products/flavoured-milk" },
+  { key: "cheese", image: "/products/Cheese.jpg", route: "/products/chocolates" },
+  { key: "chocoBar", image: "/products/Choco Bar.png", route: "/products/namkeens" },
+  { key: "chocolates", image: "/products/Chocolates.png", route: "/products/sweets" },
+  { key: "coneIceCream", image: "/products/Cine Ice-Cream.png", route: "/products/khova" },
+  { key: "cookies", image: "/products/Cookies.jpg", route: "/products/instant-mixes" },
+  { key: "cupIceCream", image: "/products/Cup Ice-Cream.png", route: "/products/good-life" },
+  { key: "familyPack", image: "/products/Family Pack Ice-Cream.png", route: "/products/khova" },
+  { key: "flavouredMilkTetra", image: "/products/Flavored Milk Tatra.png", route: "/products/instant-mixes" },
+  { key: "flavouredBottles", image: "/products/Floavored Bottles.png", route: "/products/good-life" },
+  { key: "frozenFoods", image: "/products/Frozen Foods.png", route: "/products/instant-mixes" },
+  { key: "gudbud", image: "/products/Gudbud.jpg", route: "/products/sweets" },
+  { key: "iceCreamMockups", image: "/products/Ice Cream Mockups.png", route: "/products/khova" },
+  { key: "instantMix", image: "/products/Instant Mix.jpg", route: "/products/instant-mixes" },
+  { key: "kulfi", image: "/products/Kulfi Ice-Cream.jpg", route: "/products/good-life" },
+  { key: "namkeens", image: "/products/Namkeens.png", route: "/products/sweets" },
+  { key: "nandiniGoodLife", image: "/products/Nandini Good Life Milk.png", route: "/products/khova" },
+  { key: "naturalIceCream", image: "/products/natural Ice -Cream.png", route: "/products/instant-mixes" },
+  { key: "petBottles", image: "/products/Pet Bottles.png", route: "/products/instant-mixes" },
+  { key: "rusk", image: "/products/Rusk.png", route: "/products/good-life" },
+  { key: "strawberrySundae", image: "/products/Sundae.jpg", route: "/products/sweets" },
+  { key: "sweets", image: "/products/Sweets.png", route: "/products/khova" }
 ];
 
 export default function AllProducts() {
+  const { t } = useTranslation();
+
   return (
     <section className="products-page">
 
@@ -194,35 +53,28 @@ export default function AllProducts() {
           playsInline
           className="products-video"
         >
-          <source
-            src="/assets/our-product.mp4"
-            type="video/mp4"
-          />
+          <source src="/assets/our-product.mp4" type="video/mp4" />
         </video>
 
         <div className="products-video-overlay">
-          {/* <h1>Our Products</h1> */}
+          {/* intentionally empty */}
         </div>
       </div>
 
-      {/* ===== PRODUCT CATEGORIES ===== */}
+      {/* ===== PRODUCT GRID ===== */}
       <div className="about-container">
         <div className="product-grid">
           {productCategories.map((category, index) => (
-            <div
-              // to={category.route}
-              key={index}
-              className="product-card"
-            >
+            <div key={index} className="product-card">
               <div className="product-image">
                 <img
                   src={category.image}
-                  alt={category.title}
+                  alt={t(`products.categories.${category.key}`)}
                 />
               </div>
 
               <div className="product-info">
-                <h3>{category.title}</h3>
+                <h3>{t(`products.categories.${category.key}`)}</h3>
               </div>
             </div>
           ))}

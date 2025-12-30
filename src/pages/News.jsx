@@ -15,12 +15,11 @@ export default function News() {
               <div className="news-content">
                 {/* <h4>{item.title}</h4> */}
                 {/* <p>{item.description}</p> */}
-                {/* <a href="/news">Read More</a> */}
+                <a href="/news">Read More</a>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

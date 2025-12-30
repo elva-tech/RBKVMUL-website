@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import "../styles/home.css";
 import { FaCheckCircle, FaUsers, FaIndustry } from "react-icons/fa";
 
 export default function Highlights() {
+  const { t } = useTranslation();
+
   return (
     <section className="highlights">
       <div className="highlights-container">
@@ -10,33 +13,24 @@ export default function Highlights() {
           <div className="highlight-icon">
             <FaCheckCircle />
           </div>
-          <h3>Quality You Can Trust</h3>
-          <p>
-            Milk and dairy products processed under strict quality
-            standards to ensure purity, safety, and nutrition.
-          </p>
+          <h3>{t("highlights.quality.title")}</h3>
+          <p>{t("highlights.quality.description")}</p>
         </div>
 
         <div className="highlight-card animate-slide-up delay-1">
           <div className="highlight-icon">
             <FaUsers />
           </div>
-          <h3>From Farmers to Families</h3>
-          <p>
-            Supporting thousands of farmers while delivering fresh
-            dairy products directly to consumers.
-          </p>
+          <h3>{t("highlights.farmers.title")}</h3>
+          <p>{t("highlights.farmers.description")}</p>
         </div>
 
         <div className="highlight-card animate-slide-up delay-2">
           <div className="highlight-icon">
             <FaIndustry />
           </div>
-          <h3>Modern Processing Units</h3>
-          <p>
-            State-of-the-art chilling and processing facilities
-            across Karnataka ensure consistent quality.
-          </p>
+          <h3>{t("highlights.processing.title")}</h3>
+          <p>{t("highlights.processing.description")}</p>
         </div>
 
       </div>

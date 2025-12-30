@@ -197,3 +197,94 @@
     padding: 10px 14px;
   }
 }
+
+
+
+
+/* toggle button */
+.lang-toggle {
+  background-color: var(--primary);   /* your blue */
+  color: black;
+
+  border: none;
+  border-radius: 999px;
+
+  padding: 6px 14px;
+  min-width: 42px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.55);
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Hover — subtle, professional */
+.lang-toggle:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(10, 77, 162, 0.45);
+}
+
+/* Active / click */
+.lang-toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(10, 77, 162, 0.5);
+}
+
+/* Small pulse when language switches */
+.lang-toggle.animate {
+  animation: langTogglePulse 0.35s ease;
+}
+
+@keyframes langTogglePulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .lang-toggle {
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+}
+
+
+
+/* popup toggle  */
+.popup-lang-toggle {
+  background-color: #ffffff !important;
+  color: #000 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover still visible on white */
+.popup-lang-toggle:hover {
+  background-color: #f2f2f2 !important;
+}
+
+/* Mobile tuning */
+@media (max-width: 768px) {
+  .popup-lang-toggle {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+}

@@ -1,53 +1,34 @@
+import { useTranslation } from "react-i18next";
 import "../../styles/pages.css";
 
 export default function ArtificialInsemination() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-page">
-      {/* Banner */}
+      {/* banner */}
       <div className="about-banner">
-        <img
-          src="/activities/AI -1.jpg"
-          alt="Artificial Insemination Services"
-        />
+        <img src="/activities/AI -1.jpg" alt="Artificial Insemination" />
       </div>
 
-      {/* Content */}
       <div className="about-container">
-        <h1>Artificial Insemination & Emergency Activities</h1>
+        <h1>{t("ai.title")}</h1>
 
         <div className="about-block">
-          <p>
-            Artificial Insemination (AI) in dairy farming is a scientific
-            breeding method that improves genetic quality and productivity
-            without natural mating. The process involves collecting semen
-            from genetically superior bulls, processing and freezing it,
-            and depositing it into cows at the correct stage of heat
-            (estrus) by trained technicians.
-          </p>
+          <p>{t("ai.intro")}</p>
         </div>
 
         <div className="about-block">
-          <h2>AI Process Overview</h2>
-          <p>
-            The AI procedure includes heat detection, thawing frozen semen
-            straws, guiding the insemination gun through the cervix using
-            rectal palpation, and depositing semen in the uterine body to
-            ensure conception.
-          </p>
+          <h2>{t("ai.processTitle")}</h2>
+          <p>{t("ai.processDesc")}</p>
         </div>
 
         <div className="about-block">
-          <h2>Semen Collection & Processing (At AI Centers)</h2>
+          <h2>{t("ai.semenTitle")}</h2>
           <ul className="values-list">
-            <li>Semen is collected from genetically superior bulls.</li>
-            <li>
-              Semen is mixed with extenders such as milk, sugars, and
-              antibiotics for nutrition and protection.
-            </li>
-            <li>
-              The diluted semen is filled into plastic straws and frozen
-              in liquid nitrogen at −196°C for long-term storage.
-            </li>
+            {t("ai.semenPoints", { returnObjects: true }).map(
+              (point, i) => <li key={i}>{point}</li>
+            )}
           </ul>
         </div>
       </div>

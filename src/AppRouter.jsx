@@ -21,9 +21,9 @@ import Milk from "./pages/Products/RBKVMUL/Milk";
 import Curd from "./pages/Products/RBKVMUL/Curd";
 
 import KMF from "./pages/Products/KMF/KMF";
-import Ghee from "./pages/Products/KMF/Ghee";
-import Butter from "./pages/Products/KMF/Butter";
-import Paneer from "./pages/Products/KMF/Paneer";
+// import Ghee from "./pages/Products/KMF/Ghee";
+// import Butter from "./pages/Products/KMF/Butter";
+// import Paneer from "./pages/Products/KMF/Paneer";
 
 /* OTHER */
 import Units from "./pages/Units";
@@ -88,9 +88,9 @@ export default function AppRouter() {
       <Route path="/products/rbkvmul/curd" element={<Curd />} />
 
       <Route path="/products/kmf" element={<KMF />} />
-      <Route path="/products/kmf/ghee" element={<Ghee />} />
-      <Route path="/products/kmf/butter" element={<Butter />} />
-      <Route path="/products/kmf/paneer" element={<Paneer />} />
+      {/* <Route path="/products/kmf/ghee" element={<Ghee />} /> */}
+      {/* <Route path="/products/kmf/butter" element={<Butter />} /> */}
+      {/* <Route path="/products/kmf/paneer" element={<Paneer />} /> */}
 
       {/* OTHER */}
       <Route path="/units" element={<Units />} />

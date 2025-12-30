@@ -1,42 +1,10 @@
 export const products = [
-  {
-    id:1,
-    name: "Ghee",
-    image: "/products/Ghee.jpg",
-  },
-   {id:2,
-    name: "Gudbud",
-    image: "/products/Gudbud.jpg",
-    
-  },
-  {id:2,
-    name: "Ice Cream Mockups",
-    image: "/products/Ice Cream Mockups.png",
-  },
-  {
-    id:3,
-    name: "Instant Mix",
-    image: "/products/Instant Mix.jpg",
-  },
-  {
-    id:4,
-    name: "Kulfi Ice Creams",
-    image: "/products/Kulfi Ice-Cream.jpg",
-  },
-
-   {
-    id:5,
-    name: "Milk Powder",
-    image: "/products/Milk Proder.jpg",
-  },
-  {
-    id:6,
-    name: "Milk",
-    image: "/products/milk.png",
-  },
-   {
-    id:7,
-    name: "Namkeens",
-    image: "/products/Namkeens.png",
-  },
+  { id: 1, key: "ghee", image: "/products/Ghee.jpg" },
+  { id: 2, key: "gudbud", image: "/products/Gudbud.jpg" },
+  { id: 3, key: "iceCreamMockups", image: "/products/Ice Cream Mockups.png" },
+  { id: 4, key: "instantMix", image: "/products/Instant Mix.jpg" },
+  { id: 5, key: "kulfi", image: "/products/Kulfi Ice-Cream.jpg" },
+  { id: 6, key: "milkPowder", image: "/products/Milk Proder.jpg" },
+  { id: 7, key: "milk", image: "/products/milk.png" },
+  { id: 8, key: "namkeens", image: "/products/Namkeens.png" }
 ];

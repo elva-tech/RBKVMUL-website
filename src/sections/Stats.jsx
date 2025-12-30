@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "../styles/home.css";
 
 function StatItem({ value, label }) {
@@ -17,7 +18,6 @@ function StatItem({ value, label }) {
     );
 
     if (ref.current) observer.observe(ref.current);
-
     return () => observer.disconnect();
   }, [started]);
 
@@ -51,14 +51,16 @@ function StatItem({ value, label }) {
 }
 
 export default function Stats() {
+  const { t } = useTranslation();
+
   return (
     <section className="stats">
       <div className="stats-container">
 
-        <StatItem value={32000} label="Farmer Members" />
-        <StatItem value={2.4} label="Milk Processing Capacity (LLPD)" />
-        <StatItem value={150} label="Product Varieties" />
-        <StatItem value={850} label="Milk Collection Centers" />
+        <StatItem value={32000} label={t("stats.farmers")} />
+        <StatItem value={2.4} label={t("stats.processingCapacity")} />
+        <StatItem value={150} label={t("stats.products")} />
+        <StatItem value={850} label={t("stats.collectionCenters")} />
 
       </div>
     </section>

@@ -1,73 +1,38 @@
+import { useTranslation } from "react-i18next";
 import "../../styles/pages.css";
 
 export default function AnimalHealthServices() {
+  const { t } = useTranslation();
+
   return (
     <section className="about-page">
-      {/* Banner */}
       <div className="about-banner">
-        <img
-          src="/activities/Animal _2.jpg"
-          alt="Animal Health Services"
-        />
+        <img src="/activities/Animal _2.jpg" alt="Animal Health Services" />
       </div>
 
-      {/* Content */}
       <div className="about-container">
-        <h1>Animal Health Services</h1>
+        <h1>{t("animalHealth.title")}</h1>
 
         <div className="about-block">
-          <p>
-            The animal health process is a proactive and integrated system
-            designed to ensure animal welfare, reduce operational costs,
-            and maintain high-quality milk production. It focuses on
-            prevention, early detection, and swift treatment, supported
-            by detailed records and modern technology.
-          </p>
+          <p>{t("animalHealth.intro")}</p>
         </div>
 
         <div className="about-block">
-          <h2>Core Components</h2>
-          <p>
-            The system emphasizes prevention through biosecurity,
-            vaccination, proper nutrition, housing, and staff training.
-            Continuous monitoring of animal behaviour, temperature, and
-            milk quality allows early detection of health issues.
-          </p>
-          <p>
-            When illness is identified, targeted veterinary treatment,
-            isolation of affected animals, and strict adherence to
-            withdrawal periods are followed to protect both animal health
-            and milk safety.
-          </p>
+          <h2>{t("animalHealth.coreTitle")}</h2>
+          <p>{t("animalHealth.coreP1")}</p>
+          <p>{t("animalHealth.coreP2")}</p>
         </div>
 
         <div className="about-banner">
-        <img
-          src="/activities/Animal -1.png"
-          alt="animal health Services"
-        />
-      </div>
+          <img src="/activities/Animal -1.png" alt="Animal Health" />
+        </div>
 
         <div className="about-block">
-            <br />
-          <h2>Biosecurity &amp; Prevention</h2>
+          <h2>{t("animalHealth.bioTitle")}</h2>
           <ul className="values-list">
-            <li>
-              Limiting new animal introductions and thoroughly screening
-              them to prevent disease entry.
-            </li>
-            <li>
-              Strategic use of vaccines and preventive treatments to build
-              immunity.
-            </li>
-            <li>
-              Maintaining clean housing, milking equipment, and water
-              supplies to reduce pathogen load.
-            </li>
-            <li>
-              Providing balanced feed and suitable housing to minimize
-              stress and disease risk.
-            </li>
+            {t("animalHealth.bioPoints", { returnObjects: true }).map(
+              (point, i) => <li key={i}>{point}</li>
+            )}
           </ul>
         </div>
       </div>

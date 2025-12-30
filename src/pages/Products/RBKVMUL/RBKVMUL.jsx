@@ -1,55 +1,45 @@
-import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../../styles/pages.css";
 
 const rbkvmulProducts = [
- {
-    title: "Milk",
-    image: "/products/milk.png",
-    route: "/products/good-life",
-  },
-    {
-    title: "Curd",
-    image: "/products/curd.png",
-    route: "/products/sweets",
-  },
-
-   {
-    title: "Ghee",
-    image: "/products/Ghee.jpg",
-    route: "/products/good-life",
-  },
-   {
-    title: "Paneer",
-    image: "/products/paneer.jpg",
-    route: "/products/good-life",
-  },
+  { key: "milk", image: "/products/milk.png", route: "/products/good-life" },
+  { key: "curd", image: "/products/curd.png", route: "/products/sweets" },
+  { key: "ghee", image: "/products/Ghee.jpg", route: "/products/good-life" },
+  { key: "paneer", image: "/products/paneer.jpg", route: "/products/good-life" }
 ];
 
 export default function RBKVMUL() {
-  return (
-   <section className="products-page">
-  {/* ===== PAGE HEADER ===== */}
-  <div className="products-header">
-    <h1 style={{ textAlign: "center", marginBottom: "32px" }}>
-      RBKVMUL Products
-    </h1>
-  </div>
+  const { t } = useTranslation();
 
-  {/* ===== PRODUCT CATEGORIES ===== */}
-  <div className="about-container">
-    <div className="product-grid">
-      {rbkvmulProducts.map((item, i) => (
-        <div key={i} className="product-card">
-          <div className="product-image">
-            <img src={item.image} alt={item.title} />
-          </div>
-          <div className="product-info">
-            <h3>{item.title}</h3>
-          </div>
+  return (
+    <section className="products-page">
+
+      {/* ===== PAGE HEADER ===== */}
+      <div className="products-header">
+        <h1 style={{ textAlign: "center", marginBottom: "32px" }}>
+          {t("products.categories.filterRBKVMUL")}
+        </h1>
+      </div>
+
+      {/* ===== PRODUCT GRID ===== */}
+      <div className="about-container">
+        <div className="product-grid">
+          {rbkvmulProducts.map((item, i) => (
+            <div key={i} className="product-card">
+              <div className="product-image">
+                <img
+                  src={item.image}
+                  alt={t(`products.categories.${item.key}`)}
+                />
+              </div>
+              <div className="product-info">
+                <h3>{t(`products.categories.${item.key}`)}</h3>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </div>
+
+    </section>
   );
 }

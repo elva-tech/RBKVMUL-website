@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import "../styles/navbar.css";
 
 export default function TopInfoBar() {
+  const { t } = useTranslation();
+
   return (
     <div className="top-info-bar">
-      RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA MILK UNION LIMITED
+      {t("topInfoBar.unionName")}
     </div>
   );
 }

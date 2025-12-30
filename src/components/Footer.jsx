@@ -1,83 +1,77 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../styles/pages.css";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="footer">
       <div className="footer-container">
 
         {/* Quick Links */}
         <div className="footer-col">
-          <h4>Quick Links</h4>
+          <h4>{t("footer.quickLinks")}</h4>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about/company-profile">Company Profile</Link></li>
-            <li><Link to="/products">Products</Link></li>
-            {/* <li><Link to="/units">Chilling Centers</Link></li> */}
-            {/* <li><Link to="/units">Sub Offices</Link></li> */}
-            <li><Link to="/news">News & Events</Link></li>
-            {/* <li><Link to="/notifications">Notifications</Link></li> */}
+            <li><Link to="/">{t("footer.links.home")}</Link></li>
+            <li><Link to="/about/company-profile">{t("footer.links.companyProfile")}</Link></li>
+            <li><Link to="/products">{t("footer.links.products")}</Link></li>
+            <li><Link to="/news">{t("footer.links.newsEvents")}</Link></li>
           </ul>
         </div>
 
         {/* Address */}
         <div className="footer-col">
-          <h4>Address</h4>
+          <h4>{t("footer.addressTitle")}</h4>
           <p>
-            RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA Milk Union Ltd.<br /><br />
-            Sanjay Gandhi Nagar,<br />
-
-            Ballari - 583104, Karnataka
+            {t("footer.address.line1")}<br /><br />
+            {t("footer.address.line2")}<br />
+            {t("footer.address.line3")}
           </p>
         </div>
 
         {/* Contact */}
         <div className="footer-col">
-          <h4>Contact</h4>
+          <h4>{t("footer.contactTitle")}</h4>
           <p>
-            Ph: 9591999522<br />
-            Toll free: 1800 425 6108
+            {t("footer.contact.phoneLabel")} {t("footer.contact.phone")}<br />
+            {t("footer.contact.tollFreeLabel")} {t("footer.contact.tollFree")}
           </p>
-          <p>
-            misrbkmul@gmail.com<br />
-          </p>
+          <p>{t("footer.contact.email")}</p>
         </div>
 
         {/* Legal */}
         <div className="footer-col">
-          <h4>Legal</h4>
+          <h4>{t("footer.legalTitle")}</h4>
           <ul>
-            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link to="/terms">Terms and Conditions</Link></li>
-            <li><Link to="/refund-policy">Refund Policy</Link></li>
+            <li><Link to="/privacy-policy">{t("footer.links.privacyPolicy")}</Link></li>
+            <li><Link to="/terms">{t("footer.links.termsConditions")}</Link></li>
+            <li><Link to="/refund-policy">{t("footer.links.refundPolicy")}</Link></li>
           </ul>
         </div>
 
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA Milk Union Ltd. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} {t("footer.address.line1")}. {t("footer.copyright")}
+        </p>
 
-      <br />
+        <br />
+
         <div className="developer-credit">
-          <a
-            href="https://www.elvatech.in/"
-            target="_blank"
-          >
-            <span style={{ fontSize: "12px" }}>Designed & Developed by</span>
-            {/* <video
-        src="/assets/Elva.svg"
-        autoPlay
-        muted
-        playsInline
-        className="dev-logo-video"
-      /> */}
-            <img className="dev-logo-video"
-              src="/assets/Elva.svg" alt="Elva Logo" />
+          <a href="https://www.elvatech.in/" target="_blank" rel="noopener noreferrer">
+            <span style={{ fontSize: "12px" }}>
+              {t("footer.designedBy")}
+            </span>
+            <img
+              className="dev-logo-video"
+              src="/assets/Elva.svg"
+              alt="Elva Logo"
+            />
           </a>
         </div>
       </div>
-
     </footer>
   );
 }
