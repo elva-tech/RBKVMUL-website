@@ -6,13 +6,17 @@ import "../styles/pages.css";
 
 export default function PopupBanner() {
   const { t, i18n } = useTranslation();
-  const lang = i18n.language || "en";
+  
+  // 1. Define the language variable (fixes ReferenceError)
+  const currentLang = i18n.language || "en";
+
   const [open, setOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     const seen = sessionStorage.getItem("popupSeen");
-    if (!seen) {
+    // Only trigger if popup is active in data and not seen in this session
+    if (!seen && popupData?.active) {
       setOpen(true);
       sessionStorage.setItem("popupSeen", "true");
 
@@ -33,7 +37,6 @@ export default function PopupBanner() {
       });
 
       const end = Date.now() + 2000;
-
       (function frame() {
         confetti({
           particleCount: 3,
@@ -61,30 +64,54 @@ export default function PopupBanner() {
     setTimeout(() => setAnimate(false), 350);
   };
 
-  if (!open || !popupData.active) return null;
+  // Exit if popup is closed or disabled
+  if (!open || !popupData?.active) return null;
 
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        {/* Ribbon - Still using translation file */}
-        <span className="popup-ribbon">{t("popup.ribbon")}</span>
+        {/* Ribbon */}
+        <span className="popup-ribbon">
+          {t("popup.ribbon")}
+        </span>
 
-        {/* Close Button - Still using translation file */}
-        <button className="popup-close" onClick={() => setOpen(false)}>
+        {/* Language Toggle Container */}
+        <div
+          style={{
+            position: "absolute",
+            top: "22px",
+            right: "72px",
+            zIndex: 2,
+          }}
+        >
+          <button
+            className={`lang-toggle popup-lang-toggle ${animate ? "animate" : ""}`}
+            onClick={() => switchLang(currentLang === "en" ? "ka" : "en")}
+          >
+            {currentLang === "en" ? "ಕ" : "EN"}
+          </button>
+        </div>
+
+        {/* Close button */}
+        <button
+          className="popup-close"
+          aria-label={t("popup.close")}
+          onClick={() => setOpen(false)}
+        >
           ✕
         </button>
 
-        {/* Dynamic Content - NOW USING ADMIN DATA */}
+        {/* Content using popupData from Admin */}
         <h2 className="popup-header">
-          {popupData.title?.[lang] || popupData.title?.en}
+          {popupData.title?.[currentLang] || popupData.title?.en}
         </h2>
 
         <h3 className="popup-subtitle">
-          {popupData.subtitle?.[lang] || popupData.subtitle?.en}
+          {popupData.subtitle?.[currentLang] || popupData.subtitle?.en}
         </h3>
 
         <p className="popup-description">
-          {popupData.description?.[lang] || popupData.description?.en}
+          {popupData.description?.[currentLang] || popupData.description?.en}
         </p>
 
         <div className="popup-image-wrapper">
