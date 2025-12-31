@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import confetti from "canvas-confetti";
+import { popupData } from "../data/popupData";
 import "../styles/pages.css";
 
 export default function PopupBanner() {
@@ -59,61 +60,36 @@ export default function PopupBanner() {
     setTimeout(() => setAnimate(false), 350);
   };
 
-  if (!open) return null;
+if (!open || !popupData.active) return null;
 
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        {/* Ribbon */}
-        <span className="popup-ribbon">
-          {t("popup.ribbon")}
-        </span>
+        {/* Ribbon - Still using translation file */}
+        <span className="popup-ribbon">{t("popup.ribbon")}</span>
 
-        <div
-          style={{
-            position: "absolute",
-            top: "22px",
-            right: "72px",
-            zIndex: 2,
-          }}
-        >
-          <button
-            className={`lang-toggle popup-lang-toggle ${animate ? "animate" : ""
-              }`}
-            onClick={() =>
-              switchLang(i18n.language === "en" ? "ka" : "en")
-            }
-          >
-            {i18n.language === "en" ? "ಕ" : "EN"}
-          </button>
-        </div>
-
-        {/* Close button */}
-        <button
-          className="popup-close"
-          aria-label={t("popup.close")}
-          onClick={() => setOpen(false)}
-        >
+        {/* Close Button - Still using translation file */}
+        <button className="popup-close" onClick={() => setOpen(false)}>
           ✕
         </button>
 
-        {/* Content */}
+        {/* Dynamic Content - NOW USING ADMIN DATA */}
         <h2 className="popup-header">
-          {t("popup.title")}
+          {popupData.title[lang] || popupData.title.en}
         </h2>
 
         <h3 className="popup-subtitle">
-          {t("popup.subtitle")}
+          {popupData.subtitle[lang] || popupData.subtitle.en}
         </h3>
 
         <p className="popup-description">
-          {t("popup.description")}
+          {popupData.description[lang] || popupData.description.en}
         </p>
 
         <div className="popup-image-wrapper">
           <img
-            src="/assets/Announcement-image.png"
-            alt={t("popup.imageAlt")}
+            src={popupData.image}
+            alt="Announcement"
             className="popup-image"
           />
         </div>
