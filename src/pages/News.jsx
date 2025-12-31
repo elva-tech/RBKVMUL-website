@@ -13,16 +13,19 @@ export default function News() {
         <div className="news-grid">
           {news.map((item) => (
             <div key={item.id} className="news-card">
-              <img src={item.image} alt="" />
+              {/* Added leading / to ensure correct pathing from root */}
+              <img 
+                src={`/${item.image}`} 
+                alt="" 
+                onError={(e) => { e.target.src = "/images/placeholder.png"; }}
+              />
               <div className="news-content">
-                {/* Fix for Title */}
                 <h4>
                   {typeof item.title === 'object'
                     ? (item.title[lang] || item.title.en)
                     : item.title}
                 </h4>
 
-                {/* Fix for Description */}
                 <p>
                   {typeof item.description === 'object'
                     ? (item.description[lang] || item.description.en)
