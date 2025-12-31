@@ -6,6 +6,7 @@ import "../styles/pages.css";
 
 export default function PopupBanner() {
   const { t, i18n } = useTranslation();
+  const lang = i18n.language || "en";
   const [open, setOpen] = useState(false);
   const [animate, setAnimate] = useState(false);
 
@@ -60,7 +61,7 @@ export default function PopupBanner() {
     setTimeout(() => setAnimate(false), 350);
   };
 
-if (!open || !popupData.active) return null;
+  if (!open || !popupData.active) return null;
 
   return (
     <div className="popup-overlay">
@@ -75,15 +76,15 @@ if (!open || !popupData.active) return null;
 
         {/* Dynamic Content - NOW USING ADMIN DATA */}
         <h2 className="popup-header">
-          {popupData.title[lang] || popupData.title.en}
+          {popupData.title?.[lang] || popupData.title?.en}
         </h2>
 
         <h3 className="popup-subtitle">
-          {popupData.subtitle[lang] || popupData.subtitle.en}
+          {popupData.subtitle?.[lang] || popupData.subtitle?.en}
         </h3>
 
         <p className="popup-description">
-          {popupData.description[lang] || popupData.description.en}
+          {popupData.description?.[lang] || popupData.description?.en}
         </p>
 
         <div className="popup-image-wrapper">
