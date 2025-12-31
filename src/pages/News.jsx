@@ -13,11 +13,16 @@ export default function News() {
         <div className="news-grid">
           {news.map((item) => (
             <div key={item.id} className="news-card">
-              {/* Added leading / to ensure correct pathing from root */}
-              <img 
-                src={`/${item.image}`} 
-                alt="" 
-                onError={(e) => { e.target.src = "/images/placeholder.png"; }}
+              <img
+                src={item.image}
+                alt="News"
+                style={{ width: '100%', borderRadius: '8px' }}
+                onError={(e) => {
+                  // If /images/filename fails, it tries images/filename (without slash)
+                  if (!e.target.src.includes('placeholder')) {
+                    e.target.src = item.image.startsWith('/') ? item.image.substring(1) : `/${item.image}`;
+                  }
+                }}
               />
               <div className="news-content">
                 <h4>
