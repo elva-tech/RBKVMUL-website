@@ -1,13 +1,5 @@
 export const notifications = [
   {
-    "id": 1767187203657,
-    "title": {
-      "en": "RBKVMUL",
-      "ka": "ಆರ್‌ಬಿಕೆಮುಲ್"
-    },
-    "date": "31-12-2025"
-  },
-  {
     "id": 1,
     "title": {
       "en": "Mega Dairy inaugurated at  Bellary Taluka Kolagal Grama",
