@@ -36,4 +36,3 @@ export const news = [
     "image": "/images/3.jpg"
   }
 ];
-
