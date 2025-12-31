@@ -1,17 +1,5 @@
 export const news = [
   {
-    "id": 1767196999973,
-    "title": {
-      "en": "Foundation Stone",
-      "ka": "ಮೆಗಾ"
-    },
-    "description": {
-      "en": "The Honorable Chief Minister",
-      "ka": "ಮಾನ್ಯ ಮುಖ್ಯಮಂತ್ರಿಗಳು"
-    },
-    "image": "/images/1767196999971-Screenshot-2024-11-25-122137.png"
-  },
-  {
     "id": 1,
     "title": {
       "en": "Foundation Stone Laying Ceremony of Mega Dairy",
