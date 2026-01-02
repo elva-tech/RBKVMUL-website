@@ -116,6 +116,10 @@ export default function Navbar() {
             {t("nav.news")}
           </NavLink>
 
+       <NavLink to="/notifications" onClick={closeMenu}>
+            {t("nav.notifications", "Notifications")}
+          </NavLink> 
+
           {/* ACTIVITIES */}
           <div className="dropdown">
             <span className="dropdown-title">

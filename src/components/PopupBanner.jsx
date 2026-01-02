@@ -67,23 +67,14 @@ export default function PopupBanner() {
   // Exit if popup is closed or disabled
   if (!open || !popupData?.active) return null;
 
-  return (
+ return (
     <div className="popup-overlay">
       <div className="popup-content">
         {/* Ribbon */}
-        <span className="popup-ribbon">
-          {t("popup.ribbon")}
-        </span>
+        <span className="popup-ribbon">{t("popup.ribbon")}</span>
 
-        {/* Language Toggle Container */}
-        <div
-          style={{
-            position: "absolute",
-            top: "22px",
-            right: "72px",
-            zIndex: 2,
-          }}
-        >
+        {/* Language Toggle */}
+        <div style={{ position: "absolute", top: "22px", right: "72px", zIndex: 2 }}>
           <button
             className={`lang-toggle popup-lang-toggle ${animate ? "animate" : ""}`}
             onClick={() => switchLang(currentLang === "en" ? "ka" : "en")}
@@ -92,16 +83,10 @@ export default function PopupBanner() {
           </button>
         </div>
 
-        {/* Close button */}
-        <button
-          className="popup-close"
-          aria-label={t("popup.close")}
-          onClick={() => setOpen(false)}
-        >
-          ✕
-        </button>
+        {/* Close */}
+        <button className="popup-close" onClick={() => setOpen(false)}>✕</button>
 
-        {/* Content using popupData from Admin */}
+        {/* Dynamic Content */}
         <h2 className="popup-header">
           {popupData.title?.[currentLang] || popupData.title?.en}
         </h2>
@@ -119,6 +104,7 @@ export default function PopupBanner() {
             src={popupData.image}
             alt="Announcement"
             className="popup-image"
+            onError={(e) => { e.target.src = "https://rbkvmul-website.vercel.app" + popupData.image; }}
           />
         </div>
       </div>

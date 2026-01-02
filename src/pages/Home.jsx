@@ -23,7 +23,7 @@ export default function Home() {
       <ProductsPreview />
       <Stats />
       {/* <NewsPreview /> */}
-      {/* <NotificationsPreview /> */}
+      {/* <Notifications/> */}
     </>
   );
 }
