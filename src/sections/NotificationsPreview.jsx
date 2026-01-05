@@ -1,24 +1,25 @@
 import { useState, useEffect } from "react";
 import "../styles/home.css";
-// Remove the static import: import { notifications } from "../data/notofications";
 
 export default function NotificationsPreview() {
   const [liveNotifications, setLiveNotifications] = useState([]);
 
-  useEffect(() => {
-    // Fetch directly from the raw GitHub URL to bypass Vercel's build cache
-    const GITHUB_RAW_URL = "https://raw.githubusercontent.com/vithesh45/rbkvmul-admin/main/src/data/notofications.js";
+ useEffect(() => {
+    const DATA_URL = "https://raw.githubusercontent.com/elva-tech/RBKVMUL-website/main/src/data/notofications.js";
 
-    fetch(GITHUB_RAW_URL)
+    fetch(DATA_URL)
       .then(res => res.text())
       .then(text => {
-        // This logic extracts the JSON array from the "export const..." string
-        const match = text.match(/\[[\s\S]*\]/);
-        if (match) {
-          setLiveNotifications(JSON.parse(match[0]));
+        try {
+          // Removes 'export const notifications =' and the ';' at the end
+          const jsonPart = text.split('=')[1].trim().replace(/;$/, '');
+          const data = JSON.parse(jsonPart);
+          setLiveNotifications(data);
+        } catch (e) {
+          console.error("Data is still messy, check your GitHub file content!");
         }
       })
-      .catch(err => console.error("Live fetch failed:", err));
+      .catch(err => console.error("Fetch failed:", err));
   }, []);
 
   return (
@@ -27,7 +28,7 @@ export default function NotificationsPreview() {
         <h2 className="section-title">Notifications</h2>
         <ul className="notifications-list">
           {liveNotifications.map((item) => (
-            <li key={item.id} className="notification-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <li key={item.id} className="notification-item" style={styles.li}>
               <div>
                 <span className="notification-date">{item.date}</span>
                 <span className="notification-title">
@@ -36,7 +37,12 @@ export default function NotificationsPreview() {
               </div>
 
               {item.fileUrl && (
-                <a href={item.fileUrl} target="_blank" rel="noreferrer" className="view-btn" style={styles.btn}>
+                <a 
+                  href={item.fileUrl} 
+                  target="_blank" 
+                  rel="noreferrer" 
+                  style={styles.btn}
+                >
                   View File
                 </a>
               )}
@@ -49,5 +55,6 @@ export default function NotificationsPreview() {
 }
 
 const styles = {
-  btn: { padding: '5px 10px', backgroundColor: '#007bff', color: '#fff', borderRadius: '4px', fontSize: '12px', textDecoration: 'none' }
+  li: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 0', borderBottom: '1px solid #eee' },
+  btn: { padding: '6px 12px', backgroundColor: '#007bff', color: '#fff', borderRadius: '4px', fontSize: '12px', textDecoration: 'none' }
 };
