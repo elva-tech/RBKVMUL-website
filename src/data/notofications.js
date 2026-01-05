@@ -6,6 +6,6 @@ export const notifications = [
       "ka": "ವಾಹನ ಟೆಂಡರ್"
     },
     "date": "03/01/2026",
-    "fileUrl": "https://github.com/elva-tech/RBKVMUL-website/tree/main/public/pdfs"
+    "fileUrl": "https://github.com/elva-tech/RBKVMUL-website/tree/main/public/pdfs/1767610865893-logo2.png"
   }
 ];
