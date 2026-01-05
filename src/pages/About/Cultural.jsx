@@ -1,92 +1,103 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
+// Import Swiper React components and modules
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import "../../styles/pages.css";
 
 export default function Cultural() {
   const { t } = useTranslation();
 
+  // 1. Updated to arrays to support the carousel
+  const districtImages = {
+    ballari: [
+      "kanaka-d1.png", 
+      "Daroji Sloth Bear Sanctuary.png",
+      "kumarswamy-temple.png", 
+    ],
+    koppal: [
+      "Gavi-sid.jpg",
+      "mahadeva-temple.png",
+      "navlinga-temple.png"
+
+    ], // Add your new images to these arrays as you get them
+    raichur: [
+      "hatti.png",
+      "raichur-fort.png",
+      "maski-Ashokan.png"
+    ],
+    vijayanagara: [
+      "hampi.png",
+    "TB-dam.png",
+  "mylara.png"]
+  };
+
+  const districtKeys = Object.keys(districtImages);
+
   return (
     <section className="culture-page-wrapper">
       <div className="culture-container">
-        <h1 className="culture-main-title">
-          {t("cultural.title")}
-        </h1>
+        <h1 className="culture-main-title">{t("cultural.title")}</h1>
 
-        {/* Ballari */}
-        <div className="culture-card">
-          <div className="culture-text-content">
-            <h3>{t("cultural.ballari.title")}</h3>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: t("cultural.ballari.text")
-              }}
-            />
-          </div>
-          <div className="culture-image-wrapper">
-            <img
-              className="culture-img"
-              src="/images/kanaka-d1.png"
-              alt="Kanaka Durgamma Temple"
-            />
-          </div>
-        </div>
+        {districtKeys.map((key, dIndex) => {
+          const sites = t(`cultural.${key}.sites`, { returnObjects: true });
+          const images = districtImages[key];
 
-        {/* Koppal */}
-        <div className="culture-card reverse">
-          <div className="culture-text-content">
-            <h3>{t("cultural.koppal.title")}</h3>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: t("cultural.koppal.text")
-              }}
-            />
-          </div>
-          <div className="culture-image-wrapper">
-            <img
-              className="culture-img"
-              src="/images/Gavi-sid.jpg"
-              alt="Gavi Siddeshwara Matha"
-            />
-          </div>
-        </div>
+          return (
+            <div key={key} className="district-section">
+              <h2 className="district-header">{t(`cultural.${key}.title`)}</h2>
 
-        {/* Raichur */}
-        <div className="culture-card">
-          <div className="culture-text-content">
-            <h3>{t("cultural.raichur.title")}</h3>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: t("cultural.raichur.text")
-              }}
-            />
-          </div>
-          <div className="culture-image-wrapper">
-            <img
-              className="culture-img"
-              src="/images/hatti.png"
-              alt="Hatti Gold Mines"
-            />
-          </div>
-        </div>
+              <div className={`culture-card ${dIndex % 2 !== 0 ? "reverse" : ""}`}>
+                
+                {/* Text Content */}
+                <div className="culture-text-content">
+                  {Array.isArray(sites) &&
+                    sites.map((site, sIndex) => (
+                      <div key={sIndex} className="site-detail">
+                        <h4>{site.name}</h4>
+                        <p className="site-info-text">{site.info}</p>
+                      </div>
+                    ))}
+                </div>
 
-        {/* Vijayanagara */}
-        <div className="culture-card reverse">
-          <div className="culture-text-content">
-            <h3>{t("cultural.vijayanagara.title")}</h3>
-            <p
-              dangerouslySetInnerHTML={{
-                __html: t("cultural.vijayanagara.text")
-              }}
-            />
-          </div>
-          <div className="culture-image-wrapper">
-            <img
-              className="culture-img"
-              src="/images/hampi.png"
-              alt="Hampi"
-            />
-          </div>
-        </div>
+                {/* Swiper Image Carousel */}
+                <div className="culture-image-wrapper">
+                  <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 4000, disableOnInteraction: false }}
+                    className="culture-swiper"
+                  >
+                    {/* If district has 3 images, it shows them. 
+                        If it has 1, we repeat it 3 times for now as requested. */}
+                    {(images.length >= 3 ? images : [images[0], images[0], images[0]]).map((imgName, i) => (
+                      <SwiperSlide key={i}>
+                        <img
+                          src={`/images/${imgName}`}
+                          alt={`${key} ${i}`}
+                          className="culture-img"
+                        />
+                        <div className="image-overlay-label">
+                           {key.toUpperCase()} HERITAGE
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
 
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

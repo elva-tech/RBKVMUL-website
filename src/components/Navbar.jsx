@@ -30,13 +30,13 @@ export default function Navbar() {
         </div>
 
         <img
-          style={{ height: "60px", borderRadius: "5px" }}
+          style={{ height: "55px", borderRadius: "5px" }}
           src="/images/puneet-rajumumar-nandini.jpeg"
           alt="logo"
         />
         <img
-          style={{ height: "53px", borderRadius: "5px" }}
-          src="/images/logo.png"
+          style={{ height: "83px", borderRadius: "5px" }}
+          src="/images/logo2.png"
           alt="logo"
         />
 

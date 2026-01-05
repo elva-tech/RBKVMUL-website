@@ -181,20 +181,43 @@
   width: 100%;
   background: #0a4da2;
   color: #ffffff;
-  text-align: center;
-  font-size: 25px;            
-  font-weight: 600;
-    line-height: 2.5;  
-  padding: 12px 18px;
-  letter-spacing: 0.2px;       
+  
+  /* Flexbox logic */
+  display: flex;
+  align-items: center;         
+  justify-content: space-between; 
+  
+  padding: 8px 24px;           /* Adjust horizontal padding as needed */
+  box-sizing: border-box;
 }
 
-/* Mobile */
+.topbar-img {
+  height: 60px;                /* Controls image size */
+  width: auto;
+  object-fit: contain;
+}
+
+.topbar-text {
+  flex: 1;                     /* Takes up remaining space */
+  text-align: center;          /* Centers text within that space */
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.2;
+  padding: 0 15px;             /* Prevents text from touching images */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .top-info-bar {
-    font-size: 17px;
-    line-height: 2.1;
-    padding: 10px 14px;
+    padding: 6px 12px;
+  }
+  
+  .topbar-img {
+    height: 40px;        
+  }
+  
+  .topbar-text {
+    font-size: 16px;
   }
 }
 
@@ -288,3 +311,4 @@
     font-size: 11px;
   }
 }
+

@@ -697,82 +697,163 @@
 
 
 /* --- Cultural Heritage Custom Styles --- */
+
+.culture-page-wrapper {
+  padding: 40px 0;
+  background-color: #f8fafc;
+}
+
 .culture-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 24px;
 }
 
 .culture-main-title {
   text-align: center;
-  margin-bottom: 50px;
   font-size: 2.5rem;
-  color: #333;
+  color: #0056b3;
+  margin-bottom: 50px;
+  font-weight: 800;
 }
 
+/* --- District Sections --- */
+.district-section {
+  margin-bottom: 80px;
+}
+
+/* Restoring the horizontal blue header style */
+.district-header {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0056b3; /* Horizontal blue line */
+  width: 100%;
+}
+
+/* --- The Layout Fix --- */
 .culture-card {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
 }
 
-/* Alternates the layout: Image Right, then Image Left */
 .culture-card.reverse {
   flex-direction: row-reverse;
 }
 
+/* Paragraphs get 60% width - no squeezing */
 .culture-text-content {
-  flex: 1;
+  flex: 0 0 60%; 
+  min-width: 0;
 }
 
-.culture-text-content h3 {
-  font-size: 1.5rem;
+/* Carousel gets 40% width - stays beside content */
+.culture-image-wrapper {
+  flex: 0 0 40%;
+  width: 100%;
+}
+
+/* --- Content Styling --- */
+.site-detail {
+  margin-bottom: 35px;
+}
+
+.site-detail h4 {
+  font-size: 1.3rem;
   color: #0056b3;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.culture-text-content p {
+.site-info-text {
+  white-space: pre-line;
   line-height: 1.7;
-  color: #444;
+  font-size: 16px;
+  color: #475569;
   text-align: justify;
 }
 
-.culture-image-wrapper {
-  flex: 0 0 300px; /* This controls the "Small" size */
+/* --- Swiper Fix --- */
+.culture-swiper {
+  width: 100%;
+  height: 400px; /* Reduced height so it doesn't look "too big" */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .culture-img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  display: block;
 }
 
-.culture-img:hover {
-  transform: scale(1.05);
-}
-
-/* Responsive adjustments for Mobile */
-@media (max-width: 768px) {
+/* --- Responsive --- */
+@media (max-width: 992px) {
   .culture-card, .culture-card.reverse {
-    flex-direction: column; /* Stack image and text */
+    flex-direction: column;
     gap: 20px;
   }
-
+  
+  .culture-text-content, 
   .culture-image-wrapper {
-    flex: 0 0 auto;
-    width: 100%; /* Image takes full width on small screens */
+    flex: 0 0 100%;
   }
 
-  .culture-img {
-    height: 250px;
+  .culture-swiper {
+    height: 300px;
   }
 }
 
+/* Swiper specific styling */
+.culture-swiper {
+  width: 100%;
+  height: 400px; /* Adjust height to match your design */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.culture-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images look good regardless of size */
+  display: block;
+}
+
+/* Ensure Swiper navigation buttons are visible on top of images */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important;
+  transform: scale(0.5); /* Makes buttons slightly more elegant */
+}
+
+.swiper-pagination-bullet-active {
+  background: #0a4da2 !important;
+}
+
+/* Maintain the sticky behavior you wanted */
+.culture-image-wrapper {
+  flex: 1;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  min-width: 400px; /* Prevents swiper from getting too small */
+}
+
+@media (max-width: 992px) {
+  .culture-image-wrapper {
+    position: static;
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+  .culture-swiper {
+    height: 350px;
+  }
+}
 
 /* Developer Credit Styling */
 .developer-credit {

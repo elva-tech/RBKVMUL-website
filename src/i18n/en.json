@@ -312,28 +312,75 @@
 
 
 
-   "cultural": {
-    "title": "Cultural Heritage",
-
-    "ballari": {
-      "title": "Ballari: The Spiritual Guardian",
-      "text": "Ballari’s identity is deeply rooted in its spiritual heritage, centered around the revered <strong>Kanaka Durgamma Temple</strong>. As the presiding deity of the city, Durgamma is regarded as the protector of the region, and the temple stands as a powerful symbol of faith that unites the local community."
-    },
-
-    "koppal": {
-      "title": "Koppal: The Kashi of the South",
-      "text": "Koppal carries a profound legacy of peace and service, anchored by the magnificent <strong>Gavi Siddeshwara Matha</strong>. This ancient cave monastery is a cornerstone of the Lingayat tradition, renowned for its concept of “Trividha Dasoha” — the selfless service of providing free food, education, and spiritual shelter to all."
-    },
-
-    "raichur": {
-      "title": "Raichur: The Land of Forts and Gold",
-      "text": "Raichur is a region where historical strength meets industrial pride, most notably represented by the <strong>Hatti Gold Mines</strong>. As one of the oldest gold mines in the world, it reflects the district’s rich mineral heritage and its strategic importance between the Krishna and Tungabhadra rivers."
-    },
-
-    "vijayanagara": {
-      "title": "Vijayanagara: The Eternal City",
-      "text": "The ruins of Vijayanagara at <strong>Hampi</strong> stand as a breathtaking testament to the pinnacle of South Indian Hindu architecture. A UNESCO World Heritage Site, the region features the iconic Stone Chariot, the towering Virupaksha Temple, and intricate musical pillars that echo the grandeur of one of India’s most powerful historical empires."
-    }
+"cultural": {
+  "title": "Heritage & Cultural Landmarks",
+  "ballari": {
+    "title": "Ballari: The Heartland of History & Wildlife",
+    "sites": [
+      {
+        "name": "Kanaka Durgamma Temple",
+        "info": "The Kanaka Durgamma Temple is the spiritual heart of Ballari, dedicated to the city's presiding deity. Historically, the goddess is viewed as the celestial protector of the region, and the temple sits at a point that has seen the rise and fall of various local dynasties.\n\nDuring the annual Jatra festival, the city transforms into a vibrant hub of devotion. Thousands of pilgrims participate in the chariot pulling, representing a deep-rooted cultural bond that transcends modern urban life and keeps ancient traditions alive."
+      },
+      {
+        "name": "Daroji Sloth Bear Sanctuary",
+        "info": "Established in 1994, this is Asia's first dedicated sanctuary for the Sloth Bear. The terrain is a rugged, boulder-strewn landscape of dry deciduous forests, providing a perfect natural fortress for bears that have inhabited these rocky hillocks for centuries.\n\nVisitors can observe bears emerging from caves at dusk from a safe watchtower. The sanctuary is also a biodiversity hotspot, home to leopards, hyenas, and over 200 bird species, making it a premier eco-tourism destination in North Karnataka."
+      },
+      {
+        "name": "Kumaraswamy Temple, Sandur",
+        "info": "Located in the lush green mountains of Sandur, this 8th-11th century temple complex is a rare architectural gem from the Chalukya and Rashtrakuta eras. The temple is famous for being the first to be dedicated to Lord Kartikeya in South India.\n\nSandur was famously described by Mahatma Gandhi as 'See Sandur in September' due to its breathtaking monsoon beauty. The temple offers a serene spiritual retreat, surrounded by iron-ore rich hills that create a unique red-and-green landscape unlike anywhere else."
+      }
+    ]
+  },
+  "koppal": {
+    "title": "Koppal: The Kashi of the South",
+    "sites": [
+      {
+        "name": "Gavi Siddeshwara Matha",
+        "info": "An ancient cave monastery that stands as a powerhouse of social service and the Lingayat tradition. It is globally recognized for its 'Trividha Dasoha'—the selfless provision of free food, education, and spiritual shelter to all seekers regardless of caste.\n\nThe annual Koppal Jatra held here is the largest in the region, often called the 'Fair of the South.' It is a massive display of community spirit where millions gather to celebrate the philosophy of 'Work is Worship' and witness the grand chariot procession."
+      },
+      {
+        "name": "Mahadeva Temple, Itagi",
+        "info": "Built in 1112 AD by the Western Chalukyas, this temple is hailed in historical inscriptions as the 'Devalaya Chakravarti' (Emperor among Temples). Its soapstone carvings and intricate pillar designs are considered the pinnacle of medieval craftsmanship.\n\nThe temple is dedicated to Lord Shiva and features a large closed hall with 68 pillars. Its architectural finesse rivals that of Belur and Halebidu, making it a mandatory stop for students of Indian art history and architecture."
+      },
+      {
+        "name": "Kuknur Navalinga Temple",
+        "info": "This 9th-century complex consists of nine shrines dedicated to Lord Shiva, representing the early evolution of Dravidian architecture. The temples were built by the Rashtrakutas and are known for their distinct clusters and ancient scripts carved into the stone.\n\nKuknur is a significant center for pilgrims and historians alike. The site provides a quiet, meditative atmosphere where one can appreciate the transition of temple building styles from the early medieval period to the later Chalukyan glory."
+      }
+    ]
+  },
+  "raichur": {
+    "title": "Raichur: The Land of Forts and Gold",
+    "sites": [
+      {
+        "name": "Hatti Gold Mines",
+        "info": "Hatti is one of the oldest gold mines in the world, with a history of extraction dating back to the Ashokan period. It remains the only functional gold-producing mine in India today, blending ancient mining heritage with modern industrial technology.\n\nThe site is a symbol of Raichur's strategic economic importance through the ages. It offers a fascinating look at how natural mineral wealth has shaped the migration, economy, and geopolitical struggles of the Krishna-Tungabhadra Doab."
+      },
+      {
+        "name": "Raichur Fort",
+        "info": "Built in 1294 AD, the Raichur Fort is famous for its massive stone masonry and 12-meter high walls constructed without the use of mortar. It contains inscriptions in Sanskrit, Telugu, and Arabic, reflecting the diverse cultures that ruled here.\n\nThe fort has been a bone of contention between the Vijayanagara Empire and the Bahmani Sultanate. Today, it stands as a testament to medieval military engineering, featuring the iconic 'Navrang' wall and a massive stone lift used to move heavy blocks."
+      },
+      {
+        "name": "Maski Ashokan Edict",
+        "info": "Maski is a world-renowned archaeological site where a minor rock edict of Emperor Ashoka was discovered in 1915. It was the first edict to explicitly mention the name 'Ashoka' instead of the usual title 'Devanampriya.'\n\nThis discovery was a turning point in Indian historiography, confirming the identity of the great Mauryan emperor. The site is a pilgrimage for history buffs, proving Raichur’s ancient connection to one of the greatest empires in human history."
+      }
+    ]
+  },
+  "vijayanagara": {
+    "title": "Vijayanagara: The Eternal Empire",
+    "sites": [
+      {
+        "name": "Hampi UNESCO World Heritage Site",
+        "info": "Hampi is the sprawling ruin of the 14th-century Vijayanagara Empire capital. It is an open-air museum featuring over 1,600 surviving monuments, including the active Virupaksha Temple, royal palaces, and aquatic structures.\n\nAs a UNESCO site, it attracts global travelers who come to see the musical pillars and the Stone Chariot. It represents the height of South Indian Hindu culture, art, and administrative brilliance before the city was destroyed in 1565."
+      },
+      {
+        "name": "Tungabhadra (TB) Dam",
+        "info": "A marvel of modern Indian engineering, this multipurpose dam was constructed across the Tungabhadra River. It provides vital irrigation and power to three states and is a symbol of post-independence progress in the region.\n\nThe dam area features a beautiful Japanese garden, musical fountains, and a deer park. During the monsoon, when the gates are opened, the roaring waters create a spectacular sight that draws thousands of tourists for weekend getaways."
+      },
+      {
+        "name": "Mylara Lingeshwara Temple",
+        "info": "Located in Hoovina Hadagali, this temple is dedicated to Lord Mylara, an incarnation of Shiva. It is famous for the unique 'Goravara Kunitha' folk dance and the 'Karnika' (prophecy) delivered during the annual fair.\n\nThe temple acts as a cultural anchor for the farming community, where ancient folk traditions are preserved by the 'Goravas'—devotees dressed in black woolen blankets and bear-skin headgear, performing ancient rhythmic rituals."
+      }
+    ]
   },
 
 
@@ -648,3 +695,4 @@
 
 
 
+}
