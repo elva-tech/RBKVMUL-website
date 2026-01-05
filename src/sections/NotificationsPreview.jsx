@@ -2,46 +2,52 @@ import { useState, useEffect } from "react";
 import "../styles/home.css";
 
 export default function NotificationsPreview() {
-  const [liveNotifications, setLiveNotifications] = useState([]);
+  const [list, setList] = useState([]);
 
- useEffect(() => {
-    const DATA_URL = "https://raw.githubusercontent.com/elva-tech/RBKVMUL-website/main/src/data/notofications.js";
-
-    fetch(DATA_URL)
+  useEffect(() => {
+    // Fetching the file as text to avoid caching issues
+    fetch(`https://raw.githubusercontent.com/elva-tech/RBKVMUL-website/main/src/data/notofications.js?v=${Date.now()}`)
       .then(res => res.text())
       .then(text => {
-        try {
-          // Removes 'export const notifications =' and the ';' at the end
-          const jsonPart = text.split('=')[1].trim().replace(/;$/, '');
-          const data = JSON.parse(jsonPart);
-          setLiveNotifications(data);
-        } catch (e) {
-          console.error("Data is still messy, check your GitHub file content!");
-        }
+        // Cleaning the JS to get the JSON array
+        const json = JSON.parse(text.split('=')[1].trim().replace(/;$/, ''));
+        setList(json);
       })
-      .catch(err => console.error("Fetch failed:", err));
+      .catch(err => console.error("Load error:", err));
   }, []);
 
   return (
     <section className="notifications-preview">
       <div className="notifications-container">
         <h2 className="section-title">Notifications</h2>
-        <ul className="notifications-list">
-          {liveNotifications.map((item) => (
-            <li key={item.id} className="notification-item" style={styles.li}>
+        <ul className="notifications-list" style={{ listStyle: 'none', padding: 0 }}>
+          {list.map((item) => (
+            <li key={item.id} className="notification-item" style={{ 
+              display: 'flex', 
+              justifyContent: 'space-between', 
+              alignItems: 'center', 
+              padding: '15px', 
+              borderBottom: '1px solid #ddd' 
+            }}>
               <div>
-                <span className="notification-date">{item.date}</span>
-                <span className="notification-title">
-                  {item.title?.en || item.title}
-                </span>
+                <span className="notification-date" style={{ fontSize: '12px', color: '#888' }}>{item.date}</span>
+                <p style={{ margin: '5px 0', fontWeight: '500' }}>{item.title.en || item.title}</p>
               </div>
-
+              
+              {/* Only show button if a file was uploaded */}
               {item.fileUrl && (
                 <a 
                   href={item.fileUrl} 
                   target="_blank" 
                   rel="noreferrer" 
-                  style={styles.btn}
+                  style={{ 
+                    backgroundColor: '#007bff', 
+                    color: '#fff', 
+                    padding: '6px 15px', 
+                    borderRadius: '4px', 
+                    textDecoration: 'none',
+                    fontSize: '13px'
+                  }}
                 >
                   View File
                 </a>
@@ -53,8 +59,3 @@ export default function NotificationsPreview() {
     </section>
   );
 }
-
-const styles = {
-  li: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 0', borderBottom: '1px solid #eee' },
-  btn: { padding: '6px 12px', backgroundColor: '#007bff', color: '#fff', borderRadius: '4px', fontSize: '12px', textDecoration: 'none' }
-};
