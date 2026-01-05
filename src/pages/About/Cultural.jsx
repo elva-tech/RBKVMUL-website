@@ -22,8 +22,9 @@ export default function Cultural() {
       "kumarswamy-temple.png", 
     ],
     koppal: [
-      "Gavi-sid.jpg",
-      "mahadeva-temple.png",
+      "gavi-sid.jpeg",
+      "gavi-sid2.jpeg",
+      "mahadev-temple.png",
       "navlinga-temple.png"
 
     ], // Add your new images to these arrays as you get them
@@ -34,7 +35,7 @@ export default function Cultural() {
     ],
     vijayanagara: [
       "hampi.png",
-    "TB-dam.png",
+    "TB-Dam2.png",
   "mylara.png"]
   };
 

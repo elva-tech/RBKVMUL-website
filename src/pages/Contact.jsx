@@ -9,7 +9,7 @@ const Contact = () => {
       <br />
 
       <h1 style={{ textAlign: "center" }}>
-        {t("contact.title")}
+        {t('contact.title')}
       </h1>
 
       <h4 style={{ textAlign: "center" }}>
