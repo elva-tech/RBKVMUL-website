@@ -1,14 +1,5 @@
 export const notifications = [
   {
-    "id": 1767638411905,
-    "title": {
-      "en": "tender",
-      "ka": "tender"
-    },
-    "date": "2026-01-06",
-    "fileUrl": ""
-  },
-  {
     "id": 1767637404499,
     "title": {
       "en": "vehicle tender",
