@@ -6,36 +6,26 @@ export default function NotificationsPreview() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch with cache buster
     const url = `https://raw.githubusercontent.com/elva-tech/RBKVMUL-website/main/src/data/notofications.js?t=${Date.now()}`;
 
     fetch(url, { cache: "no-store" })
       .then(res => res.text())
       .then(text => {
-        console.log("📥 Raw file content:", text); // Debug
-        
-        // Extract the array
         const start = text.indexOf("[");
         const end = text.lastIndexOf("]") + 1;
-        const arrayStr = text.substring(start, end);
-        
-        const data = JSON.parse(arrayStr);
-        console.log("✅ Parsed data:", data); // Debug
-        
+        const data = JSON.parse(text.substring(start, end));
         setList(data);
       })
-      .catch(err => {
-        console.error("❌ Fetch error:", err);
-      })
+      .catch(err => console.error(err))
       .finally(() => setLoading(false));
   }, []);
 
   if (loading) {
     return (
-      <section className="notifications-preview" style={styles.section}>
-        <div className="notifications-container" style={styles.container}>
-          <h2 className="section-title" style={styles.title}>📢 Notifications</h2>
-          <p style={styles.loading}>Loading...</p>
+      <section style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.title}>📢 Notifications</h2>
+          <p style={styles.empty}>Loading...</p>
         </div>
       </section>
     );
@@ -43,50 +33,41 @@ export default function NotificationsPreview() {
 
   if (list.length === 0) {
     return (
-      <section className="notifications-preview" style={styles.section}>
-        <div className="notifications-container" style={styles.container}>
-          <h2 className="section-title" style={styles.title}>📢 Notifications</h2>
-          <p style={styles.empty}>No notifications at the moment</p>
+      <section style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.title}>📢 Notifications</h2>
+          <p style={styles.empty}>No notifications</p>
         </div>
       </section>
     );
   }
 
   return (
-    <section className="notifications-preview" style={styles.section}>
-      <div className="notifications-container" style={styles.container}>
-        <h2 className="section-title" style={styles.title}>📢 Notifications</h2>
+    <section style={styles.section}>
+      <div style={styles.container}>
+        <h2 style={styles.title}>📢 Notifications</h2>
         
         <ul style={styles.list}>
-          {list.map((item) => {
-            console.log(`Item ${item.id}:`, item); // Debug each item
-            
-            return (
-              <li key={item.id} style={styles.item}>
-                <div style={styles.content}>
-                  <span style={styles.date}>📅 {item.date}</span>
-                  <h3 style={styles.itemTitle}>{item.title?.en || item.title}</h3>
-                  
-                  {/* DEBUG: Show what's in item.file */}
-                  <div style={{fontSize: '10px', color: '#999', marginTop: '4px'}}>
-                    Debug: file = {item.file ? `"${item.file}"` : "null/empty"}
-                  </div>
-                </div>
-                
-                {/* Super simple check */}
-                {item.file && (
-                  <a 
-                    href={item.file} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    style={styles.button}
-                  >
-                    📎 View File
-                  </a>
-                )}
-              </li>
-            );
-          })}
+          {list.map((item) => (
+            <li key={item.id} style={styles.item}>
+              <div style={styles.content}>
+                <span style={styles.date}>📅 {item.date}</span>
+                <h3 style={styles.itemTitle}>{item.title?.en || item.title}</h3>
+              </div>
+              
+              {/* CONSISTENT: Only check fileUrl */}
+              {item.fileUrl && item.fileUrl.trim() && (
+                <a 
+                  href={item.fileUrl}
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  style={styles.button}
+                >
+                  📎 View File
+                </a>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
     </section>
@@ -109,20 +90,12 @@ const styles = {
     marginBottom: "40px",
     color: "#222"
   },
-  loading: {
-    textAlign: "center",
-    color: "#999",
-    fontSize: "16px",
-    padding: "40px"
-  },
   empty: {
     textAlign: "center",
     color: "#999",
-    fontSize: "16px",
     padding: "40px",
     backgroundColor: "#fff",
-    borderRadius: "12px",
-    border: "2px dashed #ddd"
+    borderRadius: "12px"
   },
   list: {
     listStyle: "none",
@@ -167,8 +140,6 @@ const styles = {
     textDecoration: "none",
     fontSize: "15px",
     fontWeight: "bold",
-    display: "inline-block",
-    whiteSpace: "nowrap",
-    transition: "all 0.3s"
+    whiteSpace: "nowrap"
   }
 };
