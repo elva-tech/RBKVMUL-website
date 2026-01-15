@@ -30,9 +30,9 @@ export default function Objectives() {
             )}
           </ul>
 
-          <p className="about-note">
+          {/* <p className="about-note">
             {t("objectives.key.note")}
-          </p>
+          </p> */}
         </div>
 
         {/* Quality & Food Safety */}

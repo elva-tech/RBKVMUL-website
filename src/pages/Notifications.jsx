@@ -24,7 +24,7 @@ export default function Notifications() {
     return (
       <section style={styles.section}>
         <div style={styles.container}>
-          <h2 style={styles.title}>📢 Notifications</h2>
+          <h2 style={styles.title}> Notifications</h2>
           <p style={styles.empty}>Loading...</p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function Notifications() {
     return (
       <section style={styles.section}>
         <div style={styles.container}>
-          <h2 style={styles.title}>📢 Notifications</h2>
+          <h2 style={styles.title}>Notifications</h2>
           <p style={styles.empty}>No notifications</p>
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Notifications() {
   return (
     <section style={styles.section}>
       <div style={styles.container}>
-        <h2 style={styles.title}>📢 Notifications</h2>
+        <h2 style={styles.title}> Notifications</h2>
         
         <ul style={styles.list}>
           {list.map((item) => (
@@ -65,7 +65,37 @@ export default function Notifications() {
                 >
                   📎 View File
                 </a>
+                
               )}
+          <button
+  onClick={async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    try {
+      const response = await fetch(item.fileUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      
+      // Extract filename from URL or use a default
+      const fileName = item.fileUrl.split('/').pop() || 'download';
+      link.setAttribute('download', fileName);
+      
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Download failed:", error);
+      // Fallback: just open in new tab if fetch fails
+      window.open(item.fileUrl, '_blank');
+    }
+  }}
+  style={{ ...styles.button, backgroundColor: '#6c757d', border: 'none', cursor: 'pointer' }}
+>
+  📥 Download
+</button>
             </li>
           ))}
         </ul>

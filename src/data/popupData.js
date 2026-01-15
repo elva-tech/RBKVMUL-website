@@ -10,7 +10,7 @@ export const popupData = {
   },
   "description": {
     "en": "Upcoming Mega Dairy at Bellary Taluka Kolagal Grama. Approved by Karnataka Mining Environment Restoration Corporation (KMERC).",
-    "ka": "ಬಳ್ಳಾರಿ ತಾಲ್ಲೂಕಿನ ಕೊಳಗಲ್ ಗ್ರಾಮದಲ್ಲಿ ಸ್ಥಾಪನೆಯಾಗಲಿರುವ ಮೆಗಾ ಡೈರಿ ಯೋಜನೆಗೆ ಕರ್ನಾಟಕ ಮೈನಿಂಗ್ ಪರಿಸರ ಪುನರುತ್ಥಾನ ನಿಗಮ (KMERC) ಅನುಮೋದನೆ ನೀಡಲಾಗಿದೆ."
+    "ka": "ಬಳ್ಳಾರಿ ತಾಲೂಕು ಕೊಳಗಲ್ ಗಾರ್ಮಾದಲ್ಲಿ ಬರಲಿರುವ ಮೆಗಾ ಡೈರಿ. ಕರ್ನಾಟಕ ಗಣಿಗಾರಿಕೆ ಪರಿಸರ ಪುನಃಸ್ಥಾಪನೆ ನಿಗಮ (ಕೆಎಂಇಆರ್‌ಸಿ) ನಿಂದ ಅನುಮೋದನೆ."
   },
-  "image": "/assets/popup-1767345167328-Announcement-image.png"
+  "images": ["/assets/popup-1767345167328-Announcement-image.png"]
 };

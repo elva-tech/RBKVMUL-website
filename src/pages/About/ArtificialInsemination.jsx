@@ -18,10 +18,10 @@ export default function ArtificialInsemination() {
           <p>{t("ai.intro")}</p>
         </div>
 
-        <div className="about-block">
+        {/* <div className="about-block">
           <h2>{t("ai.processTitle")}</h2>
           <p>{t("ai.processDesc")}</p>
-        </div>
+        </div> */}
 
         <div className="about-block">
           <h2>{t("ai.semenTitle")}</h2>

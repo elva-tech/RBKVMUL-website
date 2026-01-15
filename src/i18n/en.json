@@ -245,21 +245,21 @@
     "functions": {
       "title": "Main Functions",
       "list": [
-        "Matching technical and physical skills with operational requirements and forecasting labour demand.",
-        "Establishing clear processes, communicating organizational culture and values, providing job descriptions, assigning trainers, and explaining workers’ compensation.",
-        "Ensuring mandatory safety training, accident and injury reporting, emergency preparedness, personal hygiene standards, and drug and alcohol policies.",
-        "Promoting professionalism, respect, anti-harassment practices, confidentiality, conflict-of-interest management, and attendance discipline.",
-        "Providing fair wages and benefits to attract and retain skilled personnel while ensuring employee satisfaction.",
-        "Encouraging feedback, skill enhancement, and linking performance outcomes to quality and productivity goals.",
-        "Defining clear policies related to holidays, sick leave, and other statutory leave provisions.",
-        "Implementing strict regulations on minimum working age, working hours, and mandatory fitness certification.",
-        "Aligning HR practices with environmental and sustainability goals to promote values-driven commitment.",
-        "Ensuring that skilled and motivated employees directly contribute to improved milk quality and quantity.",
-        "Reducing high employee turnover commonly associated with farm-related work through effective HR management.",
-        "Ensuring compliance with all legal requirements, particularly those related to safety and youth employment.",
-        "Achieving operational efficiency and financial success through effective workforce management."
+        "Matching skills (technical for processing, physical for farm) with operational needs, forecasting labour demand.",
+        "Clear processes, sharing culture/values, providing job descriptions, assigning trainers, explaining worker's comp.",
+        "Mandatory safety training, accident/injury reporting, emergency plans, personal hygiene, drug/alcohol policies.",
+        "Professionalism, respect, anti-harassment, confidentiality, conflict of interest, attendance (punctuality, leave notification)",
+        "Fair pay, benefits to attract/retain talent, ensuring satisfaction.",
+        "Feedback, skill improvement, linking performance to quality/quantity goals.",
+        "Clear policies on holidays, sick leave, etc..",
+        "Strict rules on age (min 14), working hours (daytime, 4.5 hrs./day), and fitness certification.",
+        "Linking HR to environmental goals, promoting values-driven commitment. ",
+        "Skilled, motivated staff directly improves milk quality and quantity.",
+        "Good HR reduces high turnover common in farm work.",
+        "Meets legal requirements, especially around safety and youth employment.",
+        "Better management leads to operational efficiency and financial success. "
       ],
-      "summary": "Organizations should begin with essential policies related to safety, conduct, and leave, and gradually build comprehensive HR systems. Special focus should be given to integrating human resource practices with the unique operational requirements of dairy farming."
+      "summary": "Start with essential policies for safety, conduct, and leave, use templates, and build up comprehensive systems as you grow, focusing on integrating HR with the unique demands of dairy farming. "
     }
   },
 
@@ -274,37 +274,37 @@
       "title": "Our Key Objectives",
       "list": [
         "Profit maximization from the dairy sector.",
-        "Socio-economic stability of dairy farmers across the state.",
-        "Compliance with the Food Safety and Standards Act, 2006.",
-        "Ensuring the supply of fresh and safe milk to consumers.",
-        "Increasing rural employment opportunities through entrepreneurship.",
-        "Sustainable development of the dairy sector.",
-        "Strengthening organized dairy farming through co-operative institutions.",
-        "Value addition and improved marketing to ensure fair prices for farmers.",
-        "Innovation, research, and development for cost-effective production.",
-        "Providing adequate and quality services at the farmers’ doorstep.",
+        "Socio-economic stability of dairy farmers of the state.",
+        "Increase production of milk to ensure the availability of recommended minimum dietary requirement.",
+        "Compliance with Food Safety and Standards Act 2006.",
+        "To ensure fresh and safe milk to consumers of the state.",
+        "Increase Rural Employment Opportunities through Entrepreneurship.",
+        "Sustainable Development of the sector.",
+        "Strengthening of the organized Dairy farming sector through Co-operatives.",
+        "Value addition and improved marketing to provide fair price to the farmers.",
+        "Innovation, Research and Development for cost effective production.",
+        "Provide adequate and quality services at farmers’ door step.",
         "Technology transfer through effective extension activities.",
-        "Automation of milk collection and pricing systems of dairy co-operatives.",
-        "Unification of accounting and management systems of dairy co-operatives.",
-        "Creating strong networks among dairy co-operatives, the Dairy Development Department, and other stakeholders for efficient management."
-      ],
-      "note": "These objectives guide the Union’s operations and ensure continued service to farmer members and urban consumers while promoting rural development and sustainable dairy practices."
+        "Automate the milk collection and pricing system of the Dairy Co-operatives.",
+        "Unify the accounting and management system of the Dairy Co-operatives.",
+        "Creating a network between the Dairy Co-operatives, the Dairy Development Department and   other stake holders for efficient and effective management."
+      ]
     },
 
     "quality": {
       "title": "Quality & Food Safety",
       "list": [
-        "Ensuring healthy animals, clean housing, balanced feeding, and responsible use of antimicrobials.",
-        "Strict hand hygiene, use of clean protective attire, and reporting of illnesses to prevent contamination.",
-        "Maintaining cleanable facilities with proper drainage and regular sanitation of equipment such as milking machines and storage tanks.",
-        "Immediate cooling of milk, testing for antibiotics and contaminants at collection points, and maintaining the cold chain during transport.",
-        "Implementation of HACCP, pasteurization, and Good Manufacturing Practices (GMP) to control biological, chemical, and physical hazards.",
-        "Regular laboratory testing for fat, protein, bacterial counts, somatic cells, residues, and adulterants.",
-        "Maintaining detailed records at all stages to enable traceability, accountability, and rapid product recalls.",
-        "Commitment to producing safe and superior quality milk and milk products.",
-        "Meeting or exceeding all statutory requirements and consumer expectations.",
-        "Continuous improvement in quality and food safety performance.",
-        "Ensuring transparent communication of quality and food safety policies to all stakeholders."
+        "Healthy cows, clean housing, proper feeding, and responsible antimicrobial use are foundational.",
+        "Strict hand washing, clean attire (uniforms, hairnets, gloves), and reporting illnesses are crucial to prevent contamination.",
+        "Facilities must be cleanable, with proper drainage; equipment (milking machines, tanks) must be sanitized regularly.",
+        "Immediate cooling (to ≤8°C), testing for antibiotics/contaminants at pickup, and maintaining cold chain during transport.",
+        "Implementing HACCP, pasteurization, and GMP{/nav} (Good Manufacturing Practices) to control hazards like pathogens, allergens, and physical contaminants.",
+        "Regular lab checks for fat, protein, bacterial counts (coliforms), somatic cells, residues, and adulterants.",
+        "Maintaining detailed records for all stages to enable rapid recalls and accountability.",
+        "Commitment to producing safe, superior quality milk products.",
+        "Meeting or exceeding legal requirements and consumer expectations.",
+        "Continuous improvement in quality performance.",
+        "Open communication of the policy to all stakeholders. "
       ]
     }
   },
@@ -443,123 +443,117 @@
 
 
    "activities": {
-    "title": "Activities",
-
-    "procurementIntro": "The procurement process involves collecting milk from producers, ensuring quality through rigorous testing (fat, SNF, adulteration), rapid chilling for freshness, and transportation to the dairy plant through village collection and chilling centers. Farmers are paid based on milk quality, ensuring transparency and consistent, high-quality supply.",
-    "breakdown": "Here's a breakdown of the key stages:",
-
-    "sourcing": {
-      "title": "Sourcing & Collection",
-      "points": [
-        "Milk is delivered by farmers, often twice daily, to local collection centers managed by cooperatives or the dairy.",
-        "Dairies establish their own collection centers or appoint agents to collect milk from producers.",
-        "Farmers are trained in hygienic milking and handling practices to ensure clean milk."
-      ]
-    },
-
-    "testing": {
-      "title": "Quality Testing & Chilling",
-      "points": [
-        "Milk is weighed and tested for fat, Solids-Not-Fat (SNF), and adulteration at village level centers.",
-        "Milk is rapidly cooled to preserve freshness and prevent bacterial growth.",
-        "Samples are taken for detailed laboratory analysis before dispatch."
-      ]
-    },
-
-    "transport": {
-      "title": "Transportation & Processing",
-      "p1": "Chilled milk is transported in insulated tankers to the main dairy plant, often via chilling centers.",
-      "p2": "Upon arrival, milk undergoes further quality checks before pasteurization and processing."
-    },
-
-    "payment": {
-      "title": "Payment & Management",
-      "points": [
-        "Farmers are paid based on milk quantity and quality, usually at regular intervals.",
-        "Payment slips include quality parameters and payable amounts, with funds transferred to bank accounts."
-      ]
-    },
-
-    "goals": {
-      "title": "Key Goals",
-      "points": [
-        "Ensuring fair prices for milk producers.",
-        "Educating farmers on fodder enrichment, silage preparation, and azolla cultivation.",
-        "Maintaining high standards from farm to plant.",
-        "Building strong cold chains and organized collection routes."
-      ],
-      "summary": "This system relies heavily on technology and strong farmer relationships to ensure a reliable, high-quality milk supply chain."
-    }
+"title": "Activities",
+"procurementIntro": "The procurement process involves collecting milk from producers, ensuring quality through rigorous testing (fat, SNF, adulteration), chilling it quickly for freshness, and transporting it to the plant, often via village collection centers and chilling centers for eventual processing, with payment to farmers based on quality, emphasizing transparency and farmer support through cooperative models or direct systems to maintain a consistent, high-quality supply.",
+"breakdown": "Here's a breakdown of the key stages:",
+"sourcing": {
+"title": "Sourcing & Collection",
+"points": [
+"Milk is delivered from farmers (often twice daily) to local centers, often managed by cooperatives or the dairy itself.",
+"Dairies either establish their own centers (direct) or use agents/contractors to collect milk from producers.",
+"Dairies often train farmers in hygienic milking and handling to ensure clean milk."
+]
+},
+"testing": {
+"title": "Quality Testing & Chilling",
+"points": [
+"At the VLC, milk is weighed and tested for fat, Solids-Not-Fat (SNF), and adulteration (e.g., water).",
+"Milk is quickly cooled (e.g., to 4°C) in bulk coolers at the VLC or a chilling center to preserve quality and prevent bacterial growth.",
+"Samples are taken for more detailed lab analysis before dispatch."
+]
+},
+"transport": {
+"title": "Transportation & Processing",
+"p1": "Chilled milk is transported in insulated tankers to the main dairy plant, often via a chilling center for consolidation.",
+"p2": "Upon arrival at the dairy, milk undergoes further rigorous quality checks before processing (pasteurization, separation, etc.)."
+},
+"payment": {
+"title": "Payment & Management",
+"points": [
+"Farmers are paid based on the quantity and quality (fat/SNF content) of milk supplied, with payments often made periodically (e.g., every 10 days).",
+"Payment slips detail the quality parameters and amount due, with funds often transferred to bank accounts."
+]
+},
+"goals": {
+"title": "Key Goals",
+"points": [
+"Ensuring producers get fair prices.",
+"Maintaining high standards from farm to plant.",
+"Creating strong cold chains and organized collection routes."
+],
+"summary": "This system relies heavily on technology (like automated testing units) and strong farmer relationships to build a reliable, high-quality supply chain."
+}
   },
 
   "animalHealth": {
-    "title": "Animal Health Services",
-    "intro": "The animal health system is designed to ensure animal welfare, reduce operational costs, and maintain high-quality milk production.",
-    "coreTitle": "Core Components",
-    "coreP1": "The system focuses on prevention through biosecurity, vaccination, nutrition, housing, and staff training.",
-    "coreP2": "Early detection and prompt treatment help protect animal health and milk safety.",
-    "bioTitle": "Biosecurity & Prevention",
-    "bioPoints": [
-      "Limiting and screening new animal introductions.",
-      "Strategic vaccination and preventive treatments.",
-      "Maintaining clean housing, equipment, and water supplies.",
-      "Providing balanced feed and stress-free housing."
-    ]
-  },
+"title": "Animal Health Services",
+"intro": "The animal health process is a proactive, integrated system focusing on prevention (biosecurity, vaccination, good nutrition/housing, staff training), early detection (monitoring behaviour, temperature, milk quality), and swift, targeted treatment (veterinary protocols, isolation of sick animals, observing withdrawal times), all managed through detailed records to ensure welfare, reduce costs (like mastitis treatment), and maintain high-quality milk production, often using technology for continuous monitoring.",
+"coreTitle": "Here's a breakdown of the core components:",
+"coreP1": "The system focuses on prevention through biosecurity, vaccination, nutrition, housing, and staff training.",
+"corep2":"Early detection and prompt treatment help protect animal health and milk safety.",
+"bioTitle": "Biosecurity & Prevention",
+"bioPoints": [
+"Limiting new animal introductions and screening them thoroughly to prevent disease entry.",
+"Using vaccines and treatments strategically to build immunity.",
+"Maintaining clean housing, milking equipment, and water supplies to reduce pathogen loads.",
+"Providing balanced feed and suitable housing to minimize stress and disease risk."
+]
+},
 
-  "ai": {
-    "title": "Artificial Insemination & Emergency Activities",
-    "intro": "Artificial Insemination (AI) is a scientific breeding method that improves genetic quality without natural mating.",
-    "processTitle": "AI Process Overview",
-    "processDesc": "The AI procedure includes heat detection, semen thawing, insemination, and uterine deposition to ensure conception.",
-    "semenTitle": "Semen Collection & Processing",
-    "semenPoints": [
-      "Semen is collected from genetically superior bulls.",
-      "Semen is mixed with extenders for protection and nutrition.",
-      "Semen straws are frozen in liquid nitrogen at −196°C for long-term storage."
-    ]
-  },
+ "ai": {
+"title": "Artificial Insemination Emergency activites",
+"intro": "The artificial insemination (AI) process in dairy involves collecting bull semen, processing/freezing it in straws, and then a skilled technician manually depositing it into a cow's uterus using an \"AI gun\" and rectal palpation to pinpoint the cervix at the right time (heat/estrus) for fertilization, improving genetics and production without natural mating. Key steps include detecting heat, preparing the semen (thawing a frozen straw), inserting a lubricated arm into the rectum to guide the gun, passing the gun through the cervix, and depositing semen in the uterine body for conception.",
+"semenTitle": "Semen Collection & Processing (At AI Center)",
+"semenPoints": [
+"Semen is collected from genetically superior bulls.",
+"Mixed with extenders (milk, sugars, antibiotics) for nutrition and protection, then diluted.",
+"Placed in small plastic straws, frozen in liquid nitrogen at -196°C, and stored."
+]
+},
 
-  "fodder": {
-    "title": "Fodder Activity",
-    "intro": "Fodder production ensures balanced nutrition, improves milk yield, and supports sustainable dairy farming.",
-    "traditionalTitle": "Traditional & Field-Based Fodder Production",
-    "traditionalPoints": [
-      "Assessment of herd size, land, water, and climate.",
-      "Land preparation, sowing, irrigation, and pest control.",
-      "Harvesting at optimal growth stages for nutrition."
-    ],
-    "conservationTitle": "Conservation (Silage & Hay)",
-    "conservationPoints": [
-      "Fermenting green fodder in airtight silos as silage.",
-      "Sun-drying fodder to produce hay for storage."
-    ]
-  },
+"fodder": {
+"title": "Fodder Activity",
+"intro": "Fodder production in the dairy industry involves planning, cultivating specific crops (like maize, sorghum, legumes), or using modern techniques like hydroponics/sprouting for year-round green fodder, conserving surplus as silage/hay, processing crop residues into fortified blocks, and ensuring consistent quality for optimal animal nutrition, which all boost milk yield and farm sustainability. The process balances field growing, conservation (hay/silage), and innovative indoor methods to meet dairy herd nutritional needs.",
+"traditionalTitle": "Traditional & Field-Based Fodder Production",
+"traditionalPoints": [
+"Assess herd needs, available land, water, and climate to select suitable fodder crops (e.g., maize, sorghum, oats, like Desmanthus).",
+"Prepare land, sow seeds (often with fertilizers), irrigate (or rely on rain), and manage pests.",
+"Cut crops at optimal growth stages (e.g., maize at milk-dough stage) for maximum nutrients, using mowers and binders."
+],
+"conservationTitle": "Conservation(Silage/Hay)",
+"conservationPoints": [
+"Ferment chopped green fodder (maize, sorghum) in airtight silos to preserve nutrients.",
+"Dry cut fodder (grasses, legumes) in the sun, then bale it for storage."
+]
+},
 
-  "step": {
-    "title": "STEP & Processing Activities",
-    "stepTitle": "Support to Training and Employment Programme for Women (STEP)",
-    "stepDesc": "STEP empowers women through training, employment, and financial inclusion in the dairy sector.",
-    "stepPoints": [
-      "STEP: Financial and technical support for Women Dairy Cooperative Societies.",
-      "NPDD: Training on clean milk production, animal health, and nutrition.",
-      "NABARD: Support through Self Help Groups and concessional credit."
-    ],
-    "processingTitle": "Processing and Production Activity",
-    "processingDesc": "Dairy processing converts raw milk into safe products through systematic treatment and packaging.",
-    "coreSteps": [
-      "Milk collection, testing, cooling, and storage.",
-      "Filtration to remove physical impurities.",
-      "Cream separation and fat standardization.",
-      "Pasteurization and homogenization."
-    ],
-    "productSteps": [
-      "Fermentation for cultured products.",
-      "Butter production through churning.",
-      "Milk powder production via evaporation and spray drying.",
-      "Hygienic packaging and cold storage."
-    ]
-  },
+ "step": {
+"title": "Support to Training and Employment Programme for Women (STEP)",
+"stepTitle": "Key Support Programs",
+"stepDesc": "Women in the dairy industry are supported through various government and organizational programs, including the Support to Training and Employment Programme for Women (STEP), the National Programme for Dairy Development (NPDD), and schemes promoted by NABARD through women's Self Help Groups (SHGs).",
+"stepPoints": [
+"Support to Training and Employment Programme for Women (STEP): Funded by the Ministry of Women & Child Development, this program provides financial and technical assistance to implement agencies (like dairy cooperatives and NGOs) to organize women into dairy cooperative societies (WDCS). Training and employment opportunities are provided, including access to credit for purchasing livestock.",
+"National Programme for Dairy Development (NPDD): Implemented by the Department of Animal Husbandry and Dairying, this scheme provides financial assistance for training dairy farmers (including women) and staff of dairy cooperative societies on clean milk production, animal health, nutrition, and good management practices.",
+"NABARD Initiatives: The National Bank for Agriculture and Rural Development (NABARD) supports skill and entrepreneurship training for women through Micro Enterprise Development Programmes (MEDPs) and Livelihood and Enterprise Development Programmes (LEDPs), often delivered through SHGs. NABARD also provides concessional refinance to banks for loans given to women's SHGs."
+],
+"processingTitle": "Processing and Production Activity",
+"processingDesc": "Dairy processing turns raw milk into safe, consumable products through steps like collection, testing, filtration, pasteurization (heating to kill germs), homogenization (breaking fat for smoothness), standardization (adjusting fat), and product-specific steps (fermentation for yogurt, churning for butter), followed by packaging and distribution to ensure quality and shelf-life.",
+"coreSteps": [
+"Milk arrives from farms, is tested for quality, safety, and composition (fat/protein), then cooled and stored.",
+"Removes physical impurities and sediment.",
+"Centrifugal force separates milk into cream (high fat) and skim milk (low fat).",
+"Fat content is adjusted by blending cream and skim milk for consistent product quality (e.g., whole, low-fat milk).",
+"Heating milk to specific temperatures to destroy pathogens and extend shelf life.",
+"Breaks down fat globules under high pressure to prevent cream from rising, ensuring a uniform texture."
+],
+"productSteps": [
+"Involves adding bacterial cultures for fermentation and coagulation.",
+"Cream is churned to separate butterfat from buttermilk.",
+"Milk is concentrated in evaporators and spray-dried.",
+"Milk and products are filled into hygienic containers (cartons, bottles) to protect them from light, air, and recontamination.",
+"Chilled storage and refrigerated transport ensure freshness until it reaches consumers."
+]
+},
 
 
 

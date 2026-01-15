@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import confetti from "canvas-confetti";
 import { popupData } from "../data/popupData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "../styles/pages.css";
 
 export default function PopupBanner() {
   const { t, i18n } = useTranslation();
-  
-  // 1. Define the language variable (fixes ReferenceError)
   const currentLang = i18n.language || "en";
 
   const [open, setOpen] = useState(false);
@@ -15,7 +18,6 @@ export default function PopupBanner() {
 
   useEffect(() => {
     const seen = sessionStorage.getItem("popupSeen");
-    // Only trigger if popup is active in data and not seen in this session
     if (!seen && popupData?.active) {
       setOpen(true);
       sessionStorage.setItem("popupSeen", "true");
@@ -38,21 +40,8 @@ export default function PopupBanner() {
 
       const end = Date.now() + 2000;
       (function frame() {
-        confetti({
-          particleCount: 3,
-          angle: 60,
-          spread: 55,
-          origin: { x: 0 },
-          colors
-        });
-        confetti({
-          particleCount: 3,
-          angle: 120,
-          spread: 55,
-          origin: { x: 1 },
-          colors
-        });
-
+        confetti({ particleCount: 3, angle: 60, spread: 55, origin: { x: 0 }, colors });
+        confetti({ particleCount: 3, angle: 120, spread: 55, origin: { x: 1 }, colors });
         if (Date.now() < end) requestAnimationFrame(frame);
       })();
     }
@@ -64,17 +53,17 @@ export default function PopupBanner() {
     setTimeout(() => setAnimate(false), 350);
   };
 
-  // Exit if popup is closed or disabled
   if (!open || !popupData?.active) return null;
 
- return (
+  // Fallback for image list
+  const imageList = popupData.images || (popupData.image ? [popupData.image] : []);
+
+  return (
     <div className="popup-overlay">
       <div className="popup-content">
-        {/* Ribbon */}
         <span className="popup-ribbon">{t("popup.ribbon")}</span>
 
-        {/* Language Toggle */}
-        <div style={{ position: "absolute", top: "22px", right: "72px", zIndex: 2 }}>
+        <div style={{ position: "absolute", top: "22px", right: "72px", zIndex: 10 }}>
           <button
             className={`lang-toggle popup-lang-toggle ${animate ? "animate" : ""}`}
             onClick={() => switchLang(currentLang === "en" ? "ka" : "en")}
@@ -83,10 +72,8 @@ export default function PopupBanner() {
           </button>
         </div>
 
-        {/* Close */}
         <button className="popup-close" onClick={() => setOpen(false)}>✕</button>
 
-        {/* Dynamic Content */}
         <h2 className="popup-header">
           {popupData.title?.[currentLang] || popupData.title?.en}
         </h2>
@@ -100,12 +87,27 @@ export default function PopupBanner() {
         </p>
 
         <div className="popup-image-wrapper">
-          <img
-            src={popupData.image}
-            alt="Announcement"
-            className="popup-image"
-            onError={(e) => { e.target.src = "https://rbkvmul-website.vercel.app" + popupData.image; }}
-          />
+          <Swiper
+            spaceBetween={10}
+            centeredSlides={true}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            navigation={imageList.length > 1}
+            modules={[Autoplay, Pagination, Navigation]}
+            style={{ borderRadius: "8px" }}
+          >
+            {imageList.map((img, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={img}
+                  alt={`Announcement ${index}`}
+                  className="popup-image"
+                  style={{ width: "100%", display: "block" }}
+                  onError={(e) => { e.target.src = "https://rbkvmul-website.vercel.app" + img; }}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
