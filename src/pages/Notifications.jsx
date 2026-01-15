@@ -46,7 +46,7 @@ export default function Notifications() {
     <section style={styles.section}>
       <div style={styles.container}>
         <h2 style={styles.title}> Notifications</h2>
-        
+
         <ul style={styles.list}>
           {list.map((item) => (
             <li key={item.id} style={styles.item}>
@@ -54,48 +54,48 @@ export default function Notifications() {
                 <span style={styles.date}>📅 {item.date}</span>
                 <h3 style={styles.itemTitle}>{item.title?.en || item.title}</h3>
               </div>
-              
+
               {/* CONSISTENT: Only check fileUrl */}
-              {item.fileUrl && item.fileUrl.trim() && (
-                <a 
+              {/* {item.fileUrl && item.fileUrl.trim() && (
+                <a
                   href={item.fileUrl}
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={styles.button}
                 >
                   📎 View File
                 </a>
-                
-              )}
-          <button
-  onClick={async (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    try {
-      const response = await fetch(item.fileUrl);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      
-      // Extract filename from URL or use a default
-      const fileName = item.fileUrl.split('/').pop() || 'download';
-      link.setAttribute('download', fileName);
-      
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Download failed:", error);
-      // Fallback: just open in new tab if fetch fails
-      window.open(item.fileUrl, '_blank');
-    }
-  }}
-  style={{ ...styles.button, backgroundColor: '#6c757d', border: 'none', cursor: 'pointer' }}
->
-  📥 Download
-</button>
+
+              )} */}
+              <button
+                onClick={async (e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  try {
+                    const response = await fetch(item.fileUrl);
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+
+                    // Extract filename from URL or use a default
+                    const fileName = item.fileUrl.split('/').pop() || 'download';
+                    link.setAttribute('download', fileName);
+
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    window.URL.revokeObjectURL(url);
+                  } catch (error) {
+                    console.error("Download failed:", error);
+                    // Fallback: just open in new tab if fetch fails
+                    window.open(item.fileUrl, '_blank');
+                  }
+                }}
+                style={{ ...styles.button, backgroundColor: '#2a82cf', border: 'none', cursor: 'pointer' }}
+              >
+                📥 Download
+              </button>
             </li>
           ))}
         </ul>
