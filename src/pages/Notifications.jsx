@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
+// Import i18n hooks
+import { useTranslation } from "react-i18next";
 import "../styles/home.css";
 
 export default function Notifications() {
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  // Get current language from i18next
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language || "en";
 
   useEffect(() => {
     const url = `https://raw.githubusercontent.com/elva-tech/RBKVMUL-website/main/src/data/notofications.js?t=${Date.now()}`;
@@ -24,7 +30,9 @@ export default function Notifications() {
     return (
       <section style={styles.section}>
         <div style={styles.container}>
-          <h2 style={styles.title}> Notifications</h2>
+          <h2 style={styles.title}>
+            {currentLang === "ka" ? "ಪ್ರಕಟಣೆಗಳು" : "Notifications"}
+          </h2>
           <p style={styles.empty}>Loading...</p>
         </div>
       </section>
@@ -35,7 +43,9 @@ export default function Notifications() {
     return (
       <section style={styles.section}>
         <div style={styles.container}>
-          <h2 style={styles.title}>Notifications</h2>
+          <h2 style={styles.title}>
+            {currentLang === "ka" ? "ಪ್ರಕಟಣೆಗಳು" : "Notifications"}
+          </h2>
           <p style={styles.empty}>No notifications</p>
         </div>
       </section>
@@ -45,28 +55,21 @@ export default function Notifications() {
   return (
     <section style={styles.section}>
       <div style={styles.container}>
-        <h2 style={styles.title}> Notifications</h2>
+        <h2 style={styles.title}>
+          {currentLang === "ka" ? "ಪ್ರಕಟಣೆಗಳು" : "Notifications"}
+        </h2>
 
         <ul style={styles.list}>
           {list.map((item) => (
             <li key={item.id} style={styles.item}>
               <div style={styles.content}>
                 <span style={styles.date}>📅 {item.date}</span>
-                <h3 style={styles.itemTitle}>{item.title?.en || item.title}</h3>
+                {/* Fixed Title Logic: Use currentLang to pick en or ka */}
+                <h3 style={styles.itemTitle}>
+                  {item.title?.[currentLang] || item.title?.en || item.title}
+                </h3>
               </div>
 
-              {/* CONSISTENT: Only check fileUrl */}
-              {/* {item.fileUrl && item.fileUrl.trim() && (
-                <a
-                  href={item.fileUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={styles.button}
-                >
-                  📎 View File
-                </a>
-
-              )} */}
               <button
                 onClick={async (e) => {
                   e.preventDefault();
@@ -78,7 +81,6 @@ export default function Notifications() {
                     const link = document.createElement('a');
                     link.href = url;
 
-                    // Extract filename from URL or use a default
                     const fileName = item.fileUrl.split('/').pop() || 'download';
                     link.setAttribute('download', fileName);
 
@@ -88,13 +90,12 @@ export default function Notifications() {
                     window.URL.revokeObjectURL(url);
                   } catch (error) {
                     console.error("Download failed:", error);
-                    // Fallback: just open in new tab if fetch fails
                     window.open(item.fileUrl, '_blank');
                   }
                 }}
                 style={{ ...styles.button, backgroundColor: '#2a82cf', border: 'none', cursor: 'pointer' }}
               >
-                📥 Download
+                {currentLang === "ka" ? "ಡೌನ್‌ಲೋಡ್" : "Download"}
               </button>
             </li>
           ))}
