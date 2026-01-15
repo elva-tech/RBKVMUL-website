@@ -55,15 +55,15 @@ export default function PopupBanner() {
 
   if (!open || !popupData?.active) return null;
 
-  // Fallback for image list
-  const imageList = popupData.images || (popupData.image ? [popupData.image] : []);
+  const imageList = popupData.images || (popupData.images ? [popupData.images] : []);
 
   return (
     <div className="popup-overlay">
+      {/* The 'popup-content' class handles the pop-up entrance animation from your CSS */}
       <div className="popup-content">
         <span className="popup-ribbon">{t("popup.ribbon")}</span>
 
-        <div style={{ position: "absolute", top: "22px", right: "72px", zIndex: 10 }}>
+        <div style={{ position: "absolute", top: "20px", left: "260px", zIndex: 10 }}>
           <button
             className={`lang-toggle popup-lang-toggle ${animate ? "animate" : ""}`}
             onClick={() => switchLang(currentLang === "en" ? "ka" : "en")}
@@ -88,7 +88,9 @@ export default function PopupBanner() {
 
         <div className="popup-image-wrapper">
           <Swiper
-            spaceBetween={10}
+            effect={"slide"} 
+            speed={400} 
+            spaceBetween={0}
             centeredSlides={true}
             autoplay={{ delay: 3500, disableOnInteraction: false }}
             pagination={{ clickable: true }}
@@ -102,7 +104,14 @@ export default function PopupBanner() {
                   src={img}
                   alt={`Announcement ${index}`}
                   className="popup-image"
-                  style={{ width: "100%", display: "block" }}
+                  style={{ 
+                    width: "100%", 
+                    display: "block",
+                    // Lock image style so it doesn't zoom
+                    transform: "none",
+                    transition: "none",
+                    animation: "none"
+                  }}
                   onError={(e) => { e.target.src = "https://rbkvmul-website.vercel.app" + img; }}
                 />
               </SwiperSlide>

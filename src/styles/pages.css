@@ -467,8 +467,8 @@
 /* 5) CLOSE BUTTON */
 .popup-close {
   position: absolute;
-  top: 15px;
-  right: 18px;
+  top: 12px;
+  right: 9px;
   background: rgba(0, 0, 0, 0.65);
   color: #fff;
   border: none;
