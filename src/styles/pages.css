@@ -563,7 +563,7 @@
 /* 12) MOBILE */
 @media (max-width: 600px) {
   .popup-content {
-    width: 96%;
+    width: 90%;
     border-radius: 16px;
   }
 

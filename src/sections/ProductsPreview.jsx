@@ -48,7 +48,7 @@ export default function ProductsPreview() {
         </Swiper>
 
         <div className="products-cta">
-          <a href="/products">
+          <a href="products/kmf">
             {t("productsPreview.viewAllProducts")}
           </a>
         </div>
