@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "../../styles/pages.css";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,9 +11,8 @@ import "swiper/css/pagination";
 const QualityPolicy = () => {
   const { t } = useTranslation();
 
-  // The helper function now correctly uses the 'img' parameter from the map
   const renderSwiper = (images) => (
-    <div className="about-banner" style={{ padding: '10px 0' }}>
+    <div className="about-banner" style={{ margin: '20px 0' }}>
       <Swiper 
         modules={[Navigation, Pagination, Autoplay]} 
         navigation 
@@ -24,7 +24,7 @@ const QualityPolicy = () => {
             <img 
               src={img} 
               alt={`Slide ${i}`} 
-              style={{ width: '100%', height: '350px', objectFit: 'contain' }} 
+              style={{ width: '100%', height: 'auto', maxHeight: '350px', objectFit: 'contain', backgroundColor: '#f9f9f9' }} 
             />
           </SwiperSlide>
         ))}
@@ -37,15 +37,14 @@ const QualityPolicy = () => {
       <div className="about-container">
         <h1>{t("qualityPolicy.title")}</h1>
         
-        <div className="about-block" style={{textAlign: 'center', backgroundColor: '#f0f4f8', padding: '30px', borderRadius: '12px'}}>
-          <h2 style={{fontStyle: 'italic', color: '#0a4da2'}}>{t("qualityPolicy.motto")}</h2>
+        <div className="about-block" style={{textAlign: 'center', backgroundColor: '#f0f4f8', padding: '30px', borderRadius: '12px', marginBottom: '30px'}}>
+          <h2 style={{fontStyle: 'italic', color: '#0a4da2', margin: 0}}>{t("qualityPolicy.motto")}</h2>
         </div>
 
         <div className="about-block">
           <p>{t("qualityPolicy.intro")}</p>
         </div>
 
-        {/* Updated with your specific image paths */}
         {renderSwiper(["/union-operations/image-12.png"])}
 
         <div className="about-block">
@@ -56,10 +55,8 @@ const QualityPolicy = () => {
         <div className="about-block">
           <h2>{t("qualityPolicy.chemicalTitle")}</h2>
           <p>{t("qualityPolicy.chemicalDesc")}</p>
-          <p className="about-note"><strong>{t("qualityPolicy.sampling")}</strong></p>
+          <p className="about-note" style={{marginTop: '10px'}}><strong>{t("qualityPolicy.sampling")}</strong></p>
         </div>
-
-        
 
         {renderSwiper(["/union-operations/image-11.png"])}
 
@@ -76,8 +73,6 @@ const QualityPolicy = () => {
             <li style={{fontWeight: 'bold', color: '#0a4da2'}}>{t("qualityPolicy.snf")}</li>
           </ul>
         </div>
-
-        
 
         {renderSwiper(["/union-operations/image-11.png", "/union-operations/image-12.png"])}
 

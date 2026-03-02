@@ -6,11 +6,12 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "../../styles/pages.css";
 
 const BallariDairy = () => {
   const { i18n } = useTranslation();
 
-  // INLINE JSON CONTENT
+  // Hardcoded content to bypass JSON fetching issues
   const content = {
     en: {
       title: "Ballari Dairy",
@@ -36,33 +37,12 @@ const BallariDairy = () => {
     }
   };
 
-  // Switch content based on active language (defaults to 'en' if 'kn' isn't selected)
+  // Language selection logic
   const lang = i18n.language.startsWith("kn") || i18n.language.startsWith("ka") ? "kn" : "en";
   const t = content[lang];
 
-  const renderSwiper = (images) => (
-    <div className="about-banner" style={{ padding: '10px 0' }}>
-      <Swiper 
-        modules={[Navigation, Pagination, Autoplay]} 
-        navigation 
-        pagination={{ clickable: true }} 
-        autoplay={{ delay: 4000 }}
-      >
-        {images.map((img, i) => (
-          <SwiperSlide key={i}>
-            <img 
-              src={img} 
-              alt={`Slide ${i}`} 
-              style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '15px' }} 
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  );
-
   return (
-    <div className="about-page">
+    <section className="about-page">
       <div className="about-container">
         <h1>{t.title}</h1>
 
@@ -70,7 +50,22 @@ const BallariDairy = () => {
           <p>{t.description}</p>
         </div>
 
-        {renderSwiper(["/union-operations/image-8.png", "/union-operations/image-10.png"])}
+        {/* Using your existing about-banner CSS class */}
+        <div className="about-banner">
+          <Swiper 
+            modules={[Navigation, Pagination, Autoplay]} 
+            navigation 
+            pagination={{ clickable: true }} 
+            autoplay={{ delay: 4000 }}
+          >
+            <SwiperSlide>
+              <img src="/union-operations/image-8.png" alt="Ballari Dairy 1" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="/union-operations/image-10.png" alt="Ballari Dairy 2" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
 
         <div className="about-block">
           <h2>{t.capacityTitle}</h2>
@@ -82,7 +77,7 @@ const BallariDairy = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
