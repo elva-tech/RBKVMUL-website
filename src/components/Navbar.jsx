@@ -182,10 +182,10 @@ export default function Navbar() {
 <div className="dropdown">
   <span className="dropdown-title">{t("nav.units")}</span>
   <div className="dropdown-menu">
+    <NavLink to="/unit/ballari-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.ballari", "Ballari Dairy")}</NavLink>
     <NavLink to="/unit/raichur-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.raichur")}</NavLink>
     <NavLink to="/unit/budhagumpa-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.budhagumpa")}</NavLink>
     <NavLink to="/unit/chilling-centers" onClick={closeMenu}>{t("nav.unitsDropdown.chilling")}</NavLink>
-    <NavLink to="/unit/ballari-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.ballari", "Ballari Dairy")}</NavLink>
   </div>
 </div>
 
