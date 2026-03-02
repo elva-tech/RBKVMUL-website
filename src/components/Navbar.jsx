@@ -23,32 +23,28 @@ export default function Navbar() {
     <header className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <div className="navbar-logo">
+        {/* <div className="navbar-logo">
           <NavLink to="/" onClick={closeMenu}>
             RBKVMUL
           </NavLink>
-        </div>
+        </div> */}
 
         <img
           style={{ height: "55px", borderRadius: "5px" }}
           src="/images/puneet-rajumumar-nandini.jpeg"
           alt="logo"
         />
-        <img
-          style={{ height: "83px", borderRadius: "5px" }}
-          src="/images/logo2.png"
-          alt="logo"
-        />
+      
 
         {/* Language Toggle */}
-       <button
-       className="lang-toggle"
-  onClick={() => {
-    i18n.changeLanguage(i18n.language === "en" ? "ka" : "en");
-  }}
->
-  {i18n.language === "en" ? "ಕನ್ನಡ " : "English"}
-</button>
+        <button
+          className="lang-toggle"
+          onClick={() => {
+            i18n.changeLanguage(i18n.language === "en" ? "ka" : "en");
+          }}
+        >
+          {i18n.language === "en" ? "ಕನ್ನಡ " : "English"}
+        </button>
 
 
         {/* Hamburger */}
@@ -67,32 +63,42 @@ export default function Navbar() {
             {t("nav.home")}
           </NavLink>
 
-          {/* ABOUT */}
-          <div className="dropdown">
-            <span className="dropdown-title">
-              {t("nav.aboutUs")}
-            </span>
-            <div className="dropdown-menu">
-              <NavLink to="/about/company-profile" onClick={closeMenu}>
-                {t("nav.aboutUsDropdown.companyProfile")}
-              </NavLink>
-              <NavLink to="/about/mission-vision" onClick={closeMenu}>
-                {t("nav.aboutUsDropdown.missionVision")}
-              </NavLink>
-              <NavLink to="/about/board" onClick={closeMenu}>
-                {t("nav.aboutUsDropdown.boardOfDirectors")}
-              </NavLink>
-              <NavLink to="/about/human-resources" onClick={closeMenu}>
-                {t("nav.aboutUsDropdown.humanResources")}
-              </NavLink>
-              <NavLink to="/about/objectives" onClick={closeMenu}>
-                {t("nav.aboutUsDropdown.objectives")}
-              </NavLink>
-              <NavLink to="/about/culture" onClick={closeMenu}>
-                {t("nav.aboutUsDropdown.culturalHeritage")}
-              </NavLink>
-            </div>
-          </div>
+       {/* ABOUT */}
+<div className="dropdown">
+  <span className="dropdown-title">
+    {t("nav.aboutUs")}
+  </span>
+  <div className="dropdown-menu">
+    <NavLink to="/about/company-profile" onClick={closeMenu}>
+      {t("nav.aboutUsDropdown.companyProfile")}
+    </NavLink>
+    <NavLink to="/about/mission-vision" onClick={closeMenu}>
+      {t("nav.aboutUsDropdown.missionVision")}
+    </NavLink>
+
+    {/* SUB-PARENT: Management */}
+    <div className="dropdown-sub">
+      <span className="dropdown-sub-title">
+        {t("nav.management", "Management")} ▸
+      </span>
+      <div className="dropdown-sub-menu">
+        <NavLink to="/management/president-message" onClick={closeMenu}>
+          {t("nav.managementDropdown.presidentMessage", "President's Message")}
+        </NavLink>
+        <NavLink to="/about/board" onClick={closeMenu}>
+          {t("nav.managementDropdown.boardOfDirectors", "Board of Directors")}
+        </NavLink>
+      </div>
+    </div>
+
+    <NavLink to="/about/objectives" onClick={closeMenu}>
+      {t("nav.aboutUsDropdown.objectives")}
+    </NavLink>
+    <NavLink to="/about/culture" onClick={closeMenu}>
+      {t("nav.aboutUsDropdown.culturalHeritage")}
+    </NavLink>
+  </div>
+</div>
 
           {/* PRODUCTS */}
           <div className="dropdown">
@@ -100,9 +106,9 @@ export default function Navbar() {
               {t("nav.products")}
             </span>
             <div className="dropdown-menu">
-              <NavLink to="/products" onClick={closeMenu}>
+              {/* <NavLink to="/products" onClick={closeMenu}>
                 {t("products.filterAll", "All Products")}
-              </NavLink>
+              </NavLink> */}
               <NavLink to="/products/kmf" onClick={closeMenu}>
                 {t("products.filterKMF", "KMF Products")}
               </NavLink>
@@ -116,9 +122,9 @@ export default function Navbar() {
             {t("nav.news")}
           </NavLink>
 
-       <NavLink to="/notifications" onClick={closeMenu}>
+          <NavLink to="/notifications" onClick={closeMenu}>
             {t("nav.notifications", "Notifications")}
-          </NavLink> 
+          </NavLink>
 
           {/* ACTIVITIES */}
           <div className="dropdown">
@@ -141,13 +147,57 @@ export default function Navbar() {
               <NavLink to="/about/step-processing" onClick={closeMenu}>
                 {t("nav.activitiesDropdown.stepProcessing")}
               </NavLink>
+              <NavLink to="/activities/human-resources" onClick={closeMenu}>
+                {t("nav.aboutUsDropdown.humanResources")}
+              </NavLink>
+              <NavLink to="/activities/programs" onClick={closeMenu}>
+               {t("nav.activitiesDropdown.fieldPrograms")}
+              </NavLink>
+
             </div>
           </div>
+      {/* UNION */}
+<div className="dropdown">
+  <span className="dropdown-title">{t("nav.union")}</span>
+  <div className="dropdown-menu">
+    <NavLink to="/union/profile" onClick={closeMenu}>{t("nav.unionDropdown.profile")}</NavLink>
+    <NavLink to="/union/objectives" onClick={closeMenu}>{t("nav.unionDropdown.objectives")}</NavLink>
+    <NavLink to="/union/quality-policy" onClick={closeMenu}>{t("nav.unionDropdown.qualityPolicy")}</NavLink>
+    <NavLink to="/union/corporate" onClick={closeMenu}>{t("nav.unionDropdown.corporate")}</NavLink>
+  </div>
+</div>
+
+{/* OPERATIONS */}
+<div className="dropdown">
+  <span className="dropdown-title">{t("nav.operations")}</span>
+  <div className="dropdown-menu">
+    <NavLink to="/operations/procurement" onClick={closeMenu}>{t("nav.operationsDropdown.procurement")}</NavLink>
+    <NavLink to="/operations/dairy-engineering" onClick={closeMenu}>{t("nav.operationsDropdown.dairyEngineering")}</NavLink>
+    <NavLink to="/operations/marketing" onClick={closeMenu}>{t("nav.operationsDropdown.marketing")}</NavLink>
+    <NavLink to="/operations/finance" onClick={closeMenu}>{t("nav.operationsDropdown.finance")}</NavLink>
+  </div>
+</div>
+
+{/* UNITS */}
+<div className="dropdown">
+  <span className="dropdown-title">{t("nav.units")}</span>
+  <div className="dropdown-menu">
+    <NavLink to="/unit/raichur-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.raichur")}</NavLink>
+    <NavLink to="/unit/budhagumpa-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.budhagumpa")}</NavLink>
+    <NavLink to="/unit/chilling-centers" onClick={closeMenu}>{t("nav.unitsDropdown.chilling")}</NavLink>
+    <NavLink to="/unit/ballari-dairy" onClick={closeMenu}>{t("nav.unitsDropdown.ballari", "Ballari Dairy")}</NavLink>
+  </div>
+</div>
 
           <NavLink to="/contact" onClick={closeMenu}>
             {t("nav.contact")}
           </NavLink>
         </nav>
+          <img
+          style={{ height: "83px", borderRadius: "5px" }}
+          src="/images/logo2.png"
+          alt="logo"
+        />
       </div>
     </header>
   );

@@ -9,7 +9,7 @@ export const news = [
       "en": "The Honorable Chief Minister laid the foundation stone",
       "ka": "ಮಾನ್ಯ ಮುಖ್ಯಮಂತ್ರಿಗಳು ಮೆಗಾ ಡೈರಿಯ ಭೂಮಿಪೂಜೆಯನ್ನು ನೆರವೇರಿಸಿದರು"
     },
-    "image": "/images/1767340363805-2.jpg"
+    "image": "/assets/news-1.png"
   },
   {
     "id": 1767340102482,
@@ -21,6 +21,6 @@ export const news = [
       "en": "The Honorable Chief Minister laid the foundation stone",
       "ka": "ಮಾನ್ಯ ಮುಖ್ಯಮಂತ್ರಿಗಳು ಮೆಗಾ ಡೈರಿಯ ಭೂಮಿಪೂಜೆಯನ್ನು ನೆರವೇರಿಸಿದರು"
     },
-    "image": "/images/1767340102479-1.jpg"
+    "image": "/assets/news-2.png"
   }
 ];

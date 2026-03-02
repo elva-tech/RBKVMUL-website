@@ -13,6 +13,6 @@ export const popupData = {
     "ka": "ಬಳ್ಳಾರಿ ತಾಲೂಕು ಕೊಳಗಲ್ ಗಾರ್ಮಾದಲ್ಲಿ ಬರಲಿರುವ ಮೆಗಾ ಡೈರಿ. ಕರ್ನಾಟಕ ಗಣಿಗಾರಿಕೆ ಪರಿಸರ ಪುನಃಸ್ಥಾಪನೆ ನಿಗಮ (ಕೆಎಂಇಆರ್‌ಸಿ) ನಿಂದ ಅನುಮೋದನೆ."
   },
   "images": [
-    "/assets/popup-1767345167328-Announcement-image.png"
+    "/assets/pop-up.png"
   ]
 };

@@ -1,41 +1,61 @@
 {
-  "nav": {
+ "nav": {
     "home": "Home",
     "aboutUs": "About Us",
     "products": "Products",
+    "filterKMF": "KMF Products",
+    "filterRBKVMUL": "RBKVMUL Products",
     "news": "News",
     "notifications": "Notifications",
     "activities": "Activities",
     "contact": "Contact",
-
     "aboutUsDropdown": {
       "companyProfile": "Company Profile",
       "missionVision": "Mission & Vision",
-      "boardOfDirectors": "Board of Directors",
       "humanResources": "Human Resources",
       "objectives": "Objectives",
       "culturalHeritage": "Cultural Heritage"
     },
-
+    "management": "Management",
+    "managementDropdown": {
+      "presidentMessage": "President's Message",
+      "boardOfDirectors": "Board of Directors"
+    },
     "activitiesDropdown": {
       "animalHealthServices": "Animal Health Services",
       "activities": "Activities",
       "artificialInsemination": "Artificial Insemination & Emergency Activities",
       "fodderActivity": "Fodder Activity",
-      "stepProcessing": "STEP & Processing Activities"
+      "stepProcessing": "STEP & Processing Activities",
+      "fieldPrograms": "Field Programs"
+    },
+    "union": "Union",
+    "unionDropdown": {
+      "profile": "Union Profile",
+      "objectives": "Union Objectives",
+      "qualityPolicy": "Quality Policy",
+      "corporate": "Corporate Info"
+    },
+    "operations": "Operations",
+    "operationsDropdown": {
+      "procurement": "Procurement & Input",
+      "dairyEngineering": "Dairy & Engineering",
+      "marketing": "Marketing",
+      "finance": "Finance"
+    },
+    "units": "Units",
+    "unitsDropdown": {
+      "raichur": "Raichur Dairy",
+      "budhagumpa": "Budhagumpa Dairy",
+      "chilling": "Chilling Centers",
+      "ballari": "Ballari Dairy"
     }
   },
-
-  
-
-
-
   "footer": {
     "quickLinks": "Quick Links",
     "addressTitle": "Address",
     "contactTitle": "Contact",
     "legalTitle": "Legal",
-
     "links": {
       "home": "Home",
       "companyProfile": "Company Profile",
@@ -45,13 +65,11 @@
       "termsConditions": "Terms and Conditions",
       "refundPolicy": "Refund Policy"
     },
-
     "address": {
       "line1": "RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA Milk Union Ltd.",
       "line2": "Sanjay Gandhi Nagar,",
       "line3": "Ballari - 583104, Karnataka"
     },
-
     "contact": {
       "phoneLabel": "Ph:",
       "phone": "9591999522",
@@ -59,32 +77,18 @@
       "tollFree": "1800 425 6108",
       "email": "misrbkmul@gmail.com"
     },
-
     "copyright": "All rights reserved.",
     "designedBy": "Designed & Developed by"
   },
-
-
-
-
   "topInfoBar": {
     "unionName": "RAICHUR, BALLARI, KOPPALA & VIJAYANAGARA MILK UNION LIMITED"
   },
-
-
-
-  
   "hero": {
     "titleLine1": "Fresh & Truly Pure.",
     "titleLine2": "A Taste of Countryside.",
     "subtitle": " ensures high quality dairy products sourced directly from farmers and delivered with trust, nutrition, and care.",
     "cta": "Explore Our Products"
   },
-
-
-
-
-  
   "highlights": {
     "quality": {
       "title": "Quality You Can Trust",
@@ -99,73 +103,47 @@
       "description": "State-of-the-art chilling and processing facilities across Karnataka ensure consistent quality."
     }
   },
-
-
-
-
-   "aboutOverview": {
+  "aboutOverview": {
     "title": "About Us",
-
     "para1": "The development of the dairy sector in the region was formally initiated in 1989 with the establishment of the Raichur & Bellary Co-operative Milk Producers’ Societies Union Ltd. during 1989–90. The Union was formed to strengthen organized milk production and marketing by bringing rural milk producers under a structured co-operative framework. From its inception, the Union aimed to create a sustainable system that would benefit farmers economically while ensuring a steady supply of quality milk to consumers.",
-
     "para2": "The operational jurisdiction of the Union initially extended across the entire Raichur District, covering four talukas, and the Bellary District, comprising seven talukas. By organizing village-level milk producers into co-operative societies, the Union enabled farmers to collectively market their milk, access veterinary and technical services, and receive fair and timely payments. This approach significantly reduced exploitation by middlemen and improved income stability for rural households.",
-
     "para3": "The Union adopted the AMUL co-operative model, which emphasizes farmer ownership, democratic management, and transparent operations. Dairying was promoted as a major subsidiary occupation, particularly for small and marginal farmers, with the objective of achieving socio-economic upliftment in rural areas. Through this model, the Union not only enhanced milk production and productivity but also contributed to employment generation and improved livelihoods.",
-
     "para4": "Subsequently, the Union expanded its operational area by including Koppal District, leading to its reconstitution as the Raichur, Bellary & Koppal Co-operative Milk Producers’ Societies Union Ltd. This expansion strengthened the regional dairy network and reinforced the Union’s role in rural development, making dairying a reliable and sustainable source of income for farmers across the three districts."
   },
-
-
-
-
-   "productsPreview": {
+  "productsPreview": {
     "dairyProductsTitle": "Our Dairy Products",
     "dairyProductsSubtitle": "A wide range of fresh and high-quality milk and milk products delivered with care and trust.",
     "viewAllProducts": "View All Products"
   },
-
-
-
-
   "stats": {
     "farmers": "Farmer Members",
     "processingCapacity": "Milk Processing Capacity (LLPD)",
     "products": "Product Varieties",
     "collectionCenters": "Milk Collection Centers"
   },
-
-
-
-
-    "privacy": {
+  "privacy": {
     "title": "Privacy Policy",
-
     "overview": {
       "title": "Overview",
       "text": "This Privacy Policy describes the information collected by us (RBKVMUL – Raichur, Ballari, Koppala & Vijayanagara Milk Union Ltd.) through our mobile applications and related services and how we use that information."
     },
-
     "children": {
       "title": "Information of Children",
       "text": "Our services do not address anyone under the age of 13 as our services are not relevant to children. We do not knowingly collect personally identifiable information from children under 13."
     },
-
     "personalInfo": {
       "title": "Personal Information",
       "text": "For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to location, name, address, mobile number, device model, and Android version."
     },
-
     "location": {
       "title": "Location",
       "para1": "This app collects location data to enable Check-in/Check-out functionality even when the app is closed or not in use. A notification is displayed to the user when location is being captured. Users are prompted before location capture starts.",
       "para2": "Once the user enables check-out, the location capture is stopped. We do not share the captured location with external sources."
     },
-
     "advertising": {
       "title": "Advertising",
       "text": "We do not allow third-party banner advertisements. We have no intention to introduce them, but if we ever do, this policy will be updated accordingly."
     },
-
     "sharing": {
       "title": "Sharing of Information",
       "para1": "We value your trust in providing your personal information and strive to use commercially acceptable means of protecting it. We do not share personally identifiable information such as name, address, email, or phone number with other companies.",
@@ -173,39 +151,27 @@
       "para3": "Payment gateways and payment processing services are compliant with industry standards (PCI compliant service providers). Users are advised not to share full credit or debit card details through unencrypted platforms.",
       "para4": "Where a Customer ID and password are used to access the platform, users are responsible for keeping these credentials confidential and should not share them with anyone."
     },
-
     "support": {
       "title": "When You Request Support, You May Send Us Email",
       "text": "Users may contact us with questions about the use of our mobile applications. If a support request is submitted, we may receive the user's email address and other information provided in relation to the request."
     },
-
     "contact": {
       "title": "Contact Us",
       "text": "If you have any questions or concerns regarding this Privacy Policy, please contact us at:",
       "emailLabel": "Email:",
       "email": "misrbkmul@gmail.com"
     },
-
     "changes": {
       "title": "Changes to this Privacy Policy",
       "text": "This Privacy Policy may be updated from time to time. The use of information we collect is subject to the Privacy Policy in effect at the time such information is collected."
     }
   },
-
-
-
-
-   "companyProfile": {
+  "companyProfile": {
     "title": "Company Profile",
     "description": "The development of the dairy sector was initiated in the year 1989. RBKVMUL (Raichur, Ballari, Koppala & Vijayanagara Milk Union Ltd.) was established during 1989–90, with its operational area extending across the entire Raichur District comprising four talukas and the Ballari District comprising seven talukas. The Union undertook the organization of milk co-operatives following the AMUL co-operative model, with the primary objective of achieving socio-economic upliftment of farmers in rural areas by promoting dairying as a major subsidiary occupation. Subsequently, the Union expanded its jurisdiction by including Koppala District, leading to its reconstitution as the Raichur, Ballari & Koppala Co-operative Milk Producers’ Societies Union Ltd."
   },
-
-
-
-
-   "missionVision": {
+  "missionVision": {
     "title": "Mission & Vision",
-
     "mission": {
       "title": "Our Mission",
       "points": [
@@ -215,7 +181,6 @@
       ],
       "note": "Our Union is committed to the socio-economic development of its member milk producers by adopting advanced technology to make dairying a profitable business. Through dedicated workmanship, the Union aims to provide the best services to its members and consumers and achieve a leading position in Karnataka."
     },
-
     "values": {
       "title": "Our Values",
       "list": [
@@ -229,19 +194,12 @@
       ]
     }
   },
-
-
-
-
-
-   "humanResources": {
+  "humanResources": {
     "title": "HR Department",
-
     "objectives": {
       "title": "Objectives",
       "description": "Human Resource policies in the dairy industry cover core areas such as recruitment (skilled and unskilled), training (safety and technical), compensation, performance management, and statutory compliance. These policies place strong emphasis on workplace safety, prevention of harassment, leave management, and ethical conduct, along with specific regulations related to youth and child labour. Effective HR practices improve quality and productivity, reduce employee turnover, and enhance farm profitability by aligning people management with dairy operations and sustainability goals."
     },
-
     "functions": {
       "title": "Main Functions",
       "list": [
@@ -262,14 +220,98 @@
       "summary": "Start with essential policies for safety, conduct, and leave, use templates, and build up comprehensive systems as you grow, focusing on integrating HR with the unique demands of dairy farming. "
     }
   },
-
-
-
-
-
+  "management": {
+  "president": {
+    "title": "President's Message",
+    "name": "Shri. K. Raghavendra Hitnal",
+    "messageTitle": "Leading with Vision & Commitment",
+    "description": "Welcome to the official portal of RBKVMUL. Our union stands as a pillar of strength for thousands of milk producers across the region. We are committed to ensuring fair prices for our farmers while delivering the freshest, highest-quality Nandini milk and products to our consumers.",
+    "visionTitle": "Our Goal",
+    "visionDesc": "To empower rural communities through a sustainable cooperative model, focusing on technological advancement in dairy farming and socio-economic growth for every member of our union.",
+    "closing": "Together, we continue the legacy of the White Revolution."
+  }
+},
+  "board": {
+    "title": "Board of Directors",
+    "members": [
+      {
+        "name": "Shri K. Raghavendra Hitnal",
+        "role": "President R.B.C.O. Milk Union and M.L.A",
+        "city": "Koppal Assembly Constituency"
+      },
+      {
+        "name": "Mr. N Satyanarayana",
+        "role": "Vice President"
+      },
+      {
+        "name": "Shri L.B.P Bheemanayaka",
+        "role": "Director and Former M.L.A",
+        "city": "H.B Halli"
+      },
+      {
+        "name": "Shri Amargundappa",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Bheemanagouda",
+        "role": "Director"
+      },
+      {
+        "name": "Shri H. Muralasidappa",
+        "role": "Director"
+      },
+      {
+        "name": "Shrimati N. Sitaramalakshmi",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Krishna Reddy",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Bhaghola Chidananda",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Praveenakumara",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Manjunadha",
+        "role": "Director"
+      },
+      {
+        "name": "Shrimati H. Ratnamma",
+        "role": "Director"
+      },
+      {
+        "name": "Shrimati Kamalavva",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Vishwanath Mahanthappa Malakuda",
+        "role": "Director"
+      },
+      {
+        "name": "Shri Dhawal Paanchal",
+        "role": "Director"
+      },
+      {
+        "name": "Shri P. Ramakrushappa",
+        "role": "Director"
+      },
+      {
+        "name": "Dr. Hanumantha Naik",
+        "role": "Director"
+      },
+      {
+        "name": "Shri B.R Prabhushankar",
+        "role": "Managing Director"
+      }
+    ]
+  },
   "objectives": {
     "title": "Objectives",
-
     "key": {
       "title": "Our Key Objectives",
       "list": [
@@ -290,7 +332,6 @@
         "Creating a network between the Dairy Co-operatives, the Dairy Development Department and   other stake holders for efficient and effective management."
       ]
     },
-
     "quality": {
       "title": "Quality & Food Safety",
       "list": [
@@ -308,87 +349,78 @@
       ]
     }
   },
-
-
-
-
-"cultural": {
-  "title": "Heritage & Cultural Landmarks",
-  "ballari": {
-    "title": "Ballari: The Heartland of History & Wildlife",
-    "sites": [
-      {
-        "name": "Kanaka Durgamma Temple",
-        "info": "The Kanaka Durgamma Temple is the spiritual heart of Ballari, dedicated to the city's presiding deity. Historically, the goddess is viewed as the celestial protector of the region, and the temple sits at a point that has seen the rise and fall of various local dynasties.\n\nDuring the annual Jatra festival, the city transforms into a vibrant hub of devotion. Thousands of pilgrims participate in the chariot pulling, representing a deep-rooted cultural bond that transcends modern urban life and keeps ancient traditions alive."
-      },
-      {
-        "name": "Daroji Sloth Bear Sanctuary",
-        "info": "Established in 1994, this is Asia's first dedicated sanctuary for the Sloth Bear. The terrain is a rugged, boulder-strewn landscape of dry deciduous forests, providing a perfect natural fortress for bears that have inhabited these rocky hillocks for centuries.\n\nVisitors can observe bears emerging from caves at dusk from a safe watchtower. The sanctuary is also a biodiversity hotspot, home to leopards, hyenas, and over 200 bird species, making it a premier eco-tourism destination in North Karnataka."
-      },
-      {
-        "name": "Kumaraswamy Temple, Sandur",
-        "info": "Located in the lush green mountains of Sandur, this 8th-11th century temple complex is a rare architectural gem from the Chalukya and Rashtrakuta eras. The temple is famous for being the first to be dedicated to Lord Kartikeya in South India.\n\nSandur was famously described by Mahatma Gandhi as 'See Sandur in September' due to its breathtaking monsoon beauty. The temple offers a serene spiritual retreat, surrounded by iron-ore rich hills that create a unique red-and-green landscape unlike anywhere else."
-      }
-    ]
+  "cultural": {
+    "title": "Heritage & Cultural Landmarks",
+    "ballari": {
+      "title": "Ballari: The Heartland of History & Wildlife",
+      "sites": [
+        {
+          "name": "Kanaka Durgamma Temple",
+          "info": "The Kanaka Durgamma Temple is the spiritual heart of Ballari, dedicated to the city's presiding deity. Historically, the goddess is viewed as the celestial protector of the region, and the temple sits at a point that has seen the rise and fall of various local dynasties.\n\nDuring the annual Jatra festival, the city transforms into a vibrant hub of devotion. Thousands of pilgrims participate in the chariot pulling, representing a deep-rooted cultural bond that transcends modern urban life and keeps ancient traditions alive."
+        },
+        {
+          "name": "Daroji Sloth Bear Sanctuary",
+          "info": "Established in 1994, this is Asia's first dedicated sanctuary for the Sloth Bear. The terrain is a rugged, boulder-strewn landscape of dry deciduous forests, providing a perfect natural fortress for bears that have inhabited these rocky hillocks for centuries.\n\nVisitors can observe bears emerging from caves at dusk from a safe watchtower. The sanctuary is also a biodiversity hotspot, home to leopards, hyenas, and over 200 bird species, making it a premier eco-tourism destination in North Karnataka."
+        },
+        {
+          "name": "Kumaraswamy Temple, Sandur",
+          "info": "Located in the lush green mountains of Sandur, this 8th-11th century temple complex is a rare architectural gem from the Chalukya and Rashtrakuta eras. The temple is famous for being the first to be dedicated to Lord Kartikeya in South India.\n\nSandur was famously described by Mahatma Gandhi as 'See Sandur in September' due to its breathtaking monsoon beauty. The temple offers a serene spiritual retreat, surrounded by iron-ore rich hills that create a unique red-and-green landscape unlike anywhere else."
+        }
+      ]
+    },
+    "koppal": {
+      "title": "Koppal: The Kashi of the South",
+      "sites": [
+        {
+          "name": "Gavi Siddeshwara Matha",
+          "info": "An ancient cave monastery that stands as a powerhouse of social service and the Lingayat tradition. It is globally recognized for its 'Trividha Dasoha'—the selfless provision of free food, education, and spiritual shelter to all seekers regardless of caste.\n\nThe annual Koppal Jatra held here is the largest in the region, often called the 'Fair of the South.' It is a massive display of community spirit where millions gather to celebrate the philosophy of 'Work is Worship' and witness the grand chariot procession."
+        },
+        {
+          "name": "Mahadeva Temple, Itagi",
+          "info": "Built in 1112 AD by the Western Chalukyas, this temple is hailed in historical inscriptions as the 'Devalaya Chakravarti' (Emperor among Temples). Its soapstone carvings and intricate pillar designs are considered the pinnacle of medieval craftsmanship.\n\nThe temple is dedicated to Lord Shiva and features a large closed hall with 68 pillars. Its architectural finesse rivals that of Belur and Halebidu, making it a mandatory stop for students of Indian art history and architecture."
+        },
+        {
+          "name": "Kuknur Navalinga Temple",
+          "info": "This 9th-century complex consists of nine shrines dedicated to Lord Shiva, representing the early evolution of Dravidian architecture. The temples were built by the Rashtrakutas and are known for their distinct clusters and ancient scripts carved into the stone.\n\nKuknur is a significant center for pilgrims and historians alike. The site provides a quiet, meditative atmosphere where one can appreciate the transition of temple building styles from the early medieval period to the later Chalukyan glory."
+        }
+      ]
+    },
+    "raichur": {
+      "title": "Raichur: The Land of Forts and Gold",
+      "sites": [
+        {
+          "name": "Hatti Gold Mines",
+          "info": "Hatti is one of the oldest gold mines in the world, with a history of extraction dating back to the Ashokan period. It remains the only functional gold-producing mine in India today, blending ancient mining heritage with modern industrial technology.\n\nThe site is a symbol of Raichur's strategic economic importance through the ages. It offers a fascinating look at how natural mineral wealth has shaped the migration, economy, and geopolitical struggles of the Krishna-Tungabhadra Doab."
+        },
+        {
+          "name": "Raichur Fort",
+          "info": "Built in 1294 AD, the Raichur Fort is famous for its massive stone masonry and 12-meter high walls constructed without the use of mortar. It contains inscriptions in Sanskrit, Telugu, and Arabic, reflecting the diverse cultures that ruled here.\n\nThe fort has been a bone of contention between the Vijayanagara Empire and the Bahmani Sultanate. Today, it stands as a testament to medieval military engineering, featuring the iconic 'Navrang' wall and a massive stone lift used to move heavy blocks."
+        },
+        {
+          "name": "Maski Ashokan Edict",
+          "info": "Maski is a world-renowned archaeological site where a minor rock edict of Emperor Ashoka was discovered in 1915. It was the first edict to explicitly mention the name 'Ashoka' instead of the usual title 'Devanampriya.'\n\nThis discovery was a turning point in Indian historiography, confirming the identity of the great Mauryan emperor. The site is a pilgrimage for history buffs, proving Raichur’s ancient connection to one of the greatest empires in human history."
+        }
+      ]
+    },
+    "vijayanagara": {
+      "title": "Vijayanagara: The Eternal Empire",
+      "sites": [
+        {
+          "name": "Hampi UNESCO World Heritage Site",
+          "info": "Hampi is the sprawling ruin of the 14th-century Vijayanagara Empire capital. It is an open-air museum featuring over 1,600 surviving monuments, including the active Virupaksha Temple, royal palaces, and aquatic structures.\n\nAs a UNESCO site, it attracts global travelers who come to see the musical pillars and the Stone Chariot. It represents the height of South Indian Hindu culture, art, and administrative brilliance before the city was destroyed in 1565."
+        },
+        {
+          "name": "Tungabhadra (TB) Dam",
+          "info": "A marvel of modern Indian engineering, this multipurpose dam was constructed across the Tungabhadra River. It provides vital irrigation and power to three states and is a symbol of post-independence progress in the region.\n\nThe dam area features a beautiful Japanese garden, musical fountains, and a deer park. During the monsoon, when the gates are opened, the roaring waters create a spectacular sight that draws thousands of tourists for weekend getaways."
+        },
+        {
+          "name": "Mylara Lingeshwara Temple",
+          "info": "Located in Hoovina Hadagali, this temple is dedicated to Lord Mylara, an incarnation of Shiva. It is famous for the unique 'Goravara Kunitha' folk dance and the 'Karnika' (prophecy) delivered during the annual fair.\n\nThe temple acts as a cultural anchor for the farming community, where ancient folk traditions are preserved by the 'Goravas'—devotees dressed in black woolen blankets and bear-skin headgear, performing ancient rhythmic rituals."
+        }
+      ]
+    }
   },
-  "koppal": {
-    "title": "Koppal: The Kashi of the South",
-    "sites": [
-      {
-        "name": "Gavi Siddeshwara Matha",
-        "info": "An ancient cave monastery that stands as a powerhouse of social service and the Lingayat tradition. It is globally recognized for its 'Trividha Dasoha'—the selfless provision of free food, education, and spiritual shelter to all seekers regardless of caste.\n\nThe annual Koppal Jatra held here is the largest in the region, often called the 'Fair of the South.' It is a massive display of community spirit where millions gather to celebrate the philosophy of 'Work is Worship' and witness the grand chariot procession."
-      },
-      {
-        "name": "Mahadeva Temple, Itagi",
-        "info": "Built in 1112 AD by the Western Chalukyas, this temple is hailed in historical inscriptions as the 'Devalaya Chakravarti' (Emperor among Temples). Its soapstone carvings and intricate pillar designs are considered the pinnacle of medieval craftsmanship.\n\nThe temple is dedicated to Lord Shiva and features a large closed hall with 68 pillars. Its architectural finesse rivals that of Belur and Halebidu, making it a mandatory stop for students of Indian art history and architecture."
-      },
-      {
-        "name": "Kuknur Navalinga Temple",
-        "info": "This 9th-century complex consists of nine shrines dedicated to Lord Shiva, representing the early evolution of Dravidian architecture. The temples were built by the Rashtrakutas and are known for their distinct clusters and ancient scripts carved into the stone.\n\nKuknur is a significant center for pilgrims and historians alike. The site provides a quiet, meditative atmosphere where one can appreciate the transition of temple building styles from the early medieval period to the later Chalukyan glory."
-      }
-    ]
-  },
-  "raichur": {
-    "title": "Raichur: The Land of Forts and Gold",
-    "sites": [
-      {
-        "name": "Hatti Gold Mines",
-        "info": "Hatti is one of the oldest gold mines in the world, with a history of extraction dating back to the Ashokan period. It remains the only functional gold-producing mine in India today, blending ancient mining heritage with modern industrial technology.\n\nThe site is a symbol of Raichur's strategic economic importance through the ages. It offers a fascinating look at how natural mineral wealth has shaped the migration, economy, and geopolitical struggles of the Krishna-Tungabhadra Doab."
-      },
-      {
-        "name": "Raichur Fort",
-        "info": "Built in 1294 AD, the Raichur Fort is famous for its massive stone masonry and 12-meter high walls constructed without the use of mortar. It contains inscriptions in Sanskrit, Telugu, and Arabic, reflecting the diverse cultures that ruled here.\n\nThe fort has been a bone of contention between the Vijayanagara Empire and the Bahmani Sultanate. Today, it stands as a testament to medieval military engineering, featuring the iconic 'Navrang' wall and a massive stone lift used to move heavy blocks."
-      },
-      {
-        "name": "Maski Ashokan Edict",
-        "info": "Maski is a world-renowned archaeological site where a minor rock edict of Emperor Ashoka was discovered in 1915. It was the first edict to explicitly mention the name 'Ashoka' instead of the usual title 'Devanampriya.'\n\nThis discovery was a turning point in Indian historiography, confirming the identity of the great Mauryan emperor. The site is a pilgrimage for history buffs, proving Raichur’s ancient connection to one of the greatest empires in human history."
-      }
-    ]
-  },
-  "vijayanagara": {
-    "title": "Vijayanagara: The Eternal Empire",
-    "sites": [
-      {
-        "name": "Hampi UNESCO World Heritage Site",
-        "info": "Hampi is the sprawling ruin of the 14th-century Vijayanagara Empire capital. It is an open-air museum featuring over 1,600 surviving monuments, including the active Virupaksha Temple, royal palaces, and aquatic structures.\n\nAs a UNESCO site, it attracts global travelers who come to see the musical pillars and the Stone Chariot. It represents the height of South Indian Hindu culture, art, and administrative brilliance before the city was destroyed in 1565."
-      },
-      {
-        "name": "Tungabhadra (TB) Dam",
-        "info": "A marvel of modern Indian engineering, this multipurpose dam was constructed across the Tungabhadra River. It provides vital irrigation and power to three states and is a symbol of post-independence progress in the region.\n\nThe dam area features a beautiful Japanese garden, musical fountains, and a deer park. During the monsoon, when the gates are opened, the roaring waters create a spectacular sight that draws thousands of tourists for weekend getaways."
-      },
-      {
-        "name": "Mylara Lingeshwara Temple",
-        "info": "Located in Hoovina Hadagali, this temple is dedicated to Lord Mylara, an incarnation of Shiva. It is famous for the unique 'Goravara Kunitha' folk dance and the 'Karnika' (prophecy) delivered during the annual fair.\n\nThe temple acts as a cultural anchor for the farming community, where ancient folk traditions are preserved by the 'Goravas'—devotees dressed in black woolen blankets and bear-skin headgear, performing ancient rhythmic rituals."
-      }
-    ]
-  }
-  },
-
-
-
-
-
-   "products": {
+  "products": {
     "categories": {
       "milk": "Milk",
       "curd": "Curd",
@@ -423,142 +455,133 @@
       "rusk": "Rusk",
       "strawberrySundae": "Strawberry Sundae",
       "sweets": "Sweets",
-        "filterAll": "All Products",
+      "filterAll": "All Products",
       "filterKMF": "KMF Products",
       "filterRBKVMUL": "RBKVMUL Products"
     }
-    
   },
-
-
-
-
-   "contact": {
+  "contact": {
     "title": "Verghese Kurien",
-    "subtitle": "Father of the White Revolution"
+    "subtitle": "Father of the White Revolution",
+    "feedback": "Feedback",
+    "complaints": "Complaints",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "subject": "Subject",
+    "purchasedAt": "Purchased At",
+    "message": "Message",
+    "complaintDetails": "Complaint Details",
+    "submit": "Submit Form"
   },
-
-
-
-
-
-   "activities": {
-"title": "Activities",
-"procurementIntro": "The procurement process involves collecting milk from producers, ensuring quality through rigorous testing (fat, SNF, adulteration), chilling it quickly for freshness, and transporting it to the plant, often via village collection centers and chilling centers for eventual processing, with payment to farmers based on quality, emphasizing transparency and farmer support through cooperative models or direct systems to maintain a consistent, high-quality supply.",
-"breakdown": "Here's a breakdown of the key stages:",
-"sourcing": {
-"title": "Sourcing & Collection",
-"points": [
-"Milk is delivered from farmers (often twice daily) to local centers, often managed by cooperatives or the dairy itself.",
-"Dairies either establish their own centers (direct) or use agents/contractors to collect milk from producers.",
-"Dairies often train farmers in hygienic milking and handling to ensure clean milk."
-]
-},
-"testing": {
-"title": "Quality Testing & Chilling",
-"points": [
-"At the VLC, milk is weighed and tested for fat, Solids-Not-Fat (SNF), and adulteration (e.g., water).",
-"Milk is quickly cooled (e.g., to 4°C) in bulk coolers at the VLC or a chilling center to preserve quality and prevent bacterial growth.",
-"Samples are taken for more detailed lab analysis before dispatch."
-]
-},
-"transport": {
-"title": "Transportation & Processing",
-"p1": "Chilled milk is transported in insulated tankers to the main dairy plant, often via a chilling center for consolidation.",
-"p2": "Upon arrival at the dairy, milk undergoes further rigorous quality checks before processing (pasteurization, separation, etc.)."
-},
-"payment": {
-"title": "Payment & Management",
-"points": [
-"Farmers are paid based on the quantity and quality (fat/SNF content) of milk supplied, with payments often made periodically (e.g., every 10 days).",
-"Payment slips detail the quality parameters and amount due, with funds often transferred to bank accounts."
-]
-},
-"goals": {
-"title": "Key Goals",
-"points": [
-"Ensuring producers get fair prices.",
-"Maintaining high standards from farm to plant.",
-"Creating strong cold chains and organized collection routes."
-],
-"summary": "This system relies heavily on technology (like automated testing units) and strong farmer relationships to build a reliable, high-quality supply chain."
-}
+  "activities": {
+    "title": "Activities",
+    "procurementIntro": "The procurement process involves collecting milk from producers, ensuring quality through rigorous testing (fat, SNF, adulteration), chilling it quickly for freshness, and transporting it to the plant, often via village collection centers and chilling centers for eventual processing, with payment to farmers based on quality, emphasizing transparency and farmer support through cooperative models or direct systems to maintain a consistent, high-quality supply.",
+    "breakdown": "Here's a breakdown of the key stages:",
+    "sourcing": {
+      "title": "Sourcing & Collection",
+      "points": [
+        "Milk is delivered from farmers (often twice daily) to local centers, often managed by cooperatives or the dairy itself.",
+        "Dairies either establish their own centers (direct) or use agents/contractors to collect milk from producers.",
+        "Dairies often train farmers in hygienic milking and handling to ensure clean milk."
+      ]
+    },
+    "testing": {
+      "title": "Quality Testing & Chilling",
+      "points": [
+        "At the VLC, milk is weighed and tested for fat, Solids-Not-Fat (SNF), and adulteration (e.g., water).",
+        "Milk is quickly cooled (e.g., to 4°C) in bulk coolers at the VLC or a chilling center to preserve quality and prevent bacterial growth.",
+        "Samples are taken for more detailed lab analysis before dispatch."
+      ]
+    },
+    "transport": {
+      "title": "Transportation & Processing",
+      "p1": "Chilled milk is transported in insulated tankers to the main dairy plant, often via a chilling center for consolidation.",
+      "p2": "Upon arrival at the dairy, milk undergoes further rigorous quality checks before processing (pasteurization, separation, etc.)."
+    },
+    "payment": {
+      "title": "Payment & Management",
+      "points": [
+        "Farmers are paid based on the quantity and quality (fat/SNF content) of milk supplied, with payments often made periodically (e.g., every 10 days).",
+        "Payment slips detail the quality parameters and amount due, with funds often transferred to bank accounts."
+      ]
+    },
+    "goals": {
+      "title": "Key Goals",
+      "points": [
+        "Ensuring producers get fair prices.",
+        "Maintaining high standards from farm to plant.",
+        "Creating strong cold chains and organized collection routes."
+      ],
+      "summary": "This system relies heavily on technology (like automated testing units) and strong farmer relationships to build a reliable, high-quality supply chain."
+    }
   },
-
   "animalHealth": {
-"title": "Animal Health Services",
-"intro": "The animal health process is a proactive, integrated system focusing on prevention (biosecurity, vaccination, good nutrition/housing, staff training), early detection (monitoring behaviour, temperature, milk quality), and swift, targeted treatment (veterinary protocols, isolation of sick animals, observing withdrawal times), all managed through detailed records to ensure welfare, reduce costs (like mastitis treatment), and maintain high-quality milk production, often using technology for continuous monitoring.",
-"coreTitle": "Here's a breakdown of the core components:",
-"coreP1": "The system focuses on prevention through biosecurity, vaccination, nutrition, housing, and staff training.",
-"corep2":"Early detection and prompt treatment help protect animal health and milk safety.",
-"bioTitle": "Biosecurity & Prevention",
-"bioPoints": [
-"Limiting new animal introductions and screening them thoroughly to prevent disease entry.",
-"Using vaccines and treatments strategically to build immunity.",
-"Maintaining clean housing, milking equipment, and water supplies to reduce pathogen loads.",
-"Providing balanced feed and suitable housing to minimize stress and disease risk."
-]
-},
-
- "ai": {
-"title": "Artificial Insemination Emergency activites",
-"intro": "The artificial insemination (AI) process in dairy involves collecting bull semen, processing/freezing it in straws, and then a skilled technician manually depositing it into a cow's uterus using an \"AI gun\" and rectal palpation to pinpoint the cervix at the right time (heat/estrus) for fertilization, improving genetics and production without natural mating. Key steps include detecting heat, preparing the semen (thawing a frozen straw), inserting a lubricated arm into the rectum to guide the gun, passing the gun through the cervix, and depositing semen in the uterine body for conception.",
-"semenTitle": "Semen Collection & Processing (At AI Center)",
-"semenPoints": [
-"Semen is collected from genetically superior bulls.",
-"Mixed with extenders (milk, sugars, antibiotics) for nutrition and protection, then diluted.",
-"Placed in small plastic straws, frozen in liquid nitrogen at -196°C, and stored."
-]
-},
-
-"fodder": {
-"title": "Fodder Activity",
-"intro": "Fodder production in the dairy industry involves planning, cultivating specific crops (like maize, sorghum, legumes), or using modern techniques like hydroponics/sprouting for year-round green fodder, conserving surplus as silage/hay, processing crop residues into fortified blocks, and ensuring consistent quality for optimal animal nutrition, which all boost milk yield and farm sustainability. The process balances field growing, conservation (hay/silage), and innovative indoor methods to meet dairy herd nutritional needs.",
-"traditionalTitle": "Traditional & Field-Based Fodder Production",
-"traditionalPoints": [
-"Assess herd needs, available land, water, and climate to select suitable fodder crops (e.g., maize, sorghum, oats, like Desmanthus).",
-"Prepare land, sow seeds (often with fertilizers), irrigate (or rely on rain), and manage pests.",
-"Cut crops at optimal growth stages (e.g., maize at milk-dough stage) for maximum nutrients, using mowers and binders."
-],
-"conservationTitle": "Conservation(Silage/Hay)",
-"conservationPoints": [
-"Ferment chopped green fodder (maize, sorghum) in airtight silos to preserve nutrients.",
-"Dry cut fodder (grasses, legumes) in the sun, then bale it for storage."
-]
-},
-
- "step": {
-"title": "Support to Training and Employment Programme for Women (STEP)",
-"stepTitle": "Key Support Programs",
-"stepDesc": "Women in the dairy industry are supported through various government and organizational programs, including the Support to Training and Employment Programme for Women (STEP), the National Programme for Dairy Development (NPDD), and schemes promoted by NABARD through women's Self Help Groups (SHGs).",
-"stepPoints": [
-"Support to Training and Employment Programme for Women (STEP): Funded by the Ministry of Women & Child Development, this program provides financial and technical assistance to implement agencies (like dairy cooperatives and NGOs) to organize women into dairy cooperative societies (WDCS). Training and employment opportunities are provided, including access to credit for purchasing livestock.",
-"National Programme for Dairy Development (NPDD): Implemented by the Department of Animal Husbandry and Dairying, this scheme provides financial assistance for training dairy farmers (including women) and staff of dairy cooperative societies on clean milk production, animal health, nutrition, and good management practices.",
-"NABARD Initiatives: The National Bank for Agriculture and Rural Development (NABARD) supports skill and entrepreneurship training for women through Micro Enterprise Development Programmes (MEDPs) and Livelihood and Enterprise Development Programmes (LEDPs), often delivered through SHGs. NABARD also provides concessional refinance to banks for loans given to women's SHGs."
-],
-"processingTitle": "Processing and Production Activity",
-"processingDesc": "Dairy processing turns raw milk into safe, consumable products through steps like collection, testing, filtration, pasteurization (heating to kill germs), homogenization (breaking fat for smoothness), standardization (adjusting fat), and product-specific steps (fermentation for yogurt, churning for butter), followed by packaging and distribution to ensure quality and shelf-life.",
-"coreSteps": [
-"Milk arrives from farms, is tested for quality, safety, and composition (fat/protein), then cooled and stored.",
-"Removes physical impurities and sediment.",
-"Centrifugal force separates milk into cream (high fat) and skim milk (low fat).",
-"Fat content is adjusted by blending cream and skim milk for consistent product quality (e.g., whole, low-fat milk).",
-"Heating milk to specific temperatures to destroy pathogens and extend shelf life.",
-"Breaks down fat globules under high pressure to prevent cream from rising, ensuring a uniform texture."
-],
-"productSteps": [
-"Involves adding bacterial cultures for fermentation and coagulation.",
-"Cream is churned to separate butterfat from buttermilk.",
-"Milk is concentrated in evaporators and spray-dried.",
-"Milk and products are filled into hygienic containers (cartons, bottles) to protect them from light, air, and recontamination.",
-"Chilled storage and refrigerated transport ensure freshness until it reaches consumers."
-]
-},
-
-
-
-
-
+    "title": "Animal Health Services",
+    "intro": "The animal health process is a proactive, integrated system focusing on prevention (biosecurity, vaccination, good nutrition/housing, staff training), early detection (monitoring behaviour, temperature, milk quality), and swift, targeted treatment (veterinary protocols, isolation of sick animals, observing withdrawal times), all managed through detailed records to ensure welfare, reduce costs (like mastitis treatment), and maintain high-quality milk production, often using technology for continuous monitoring.",
+    "coreTitle": "Here's a breakdown of the core components:",
+    "coreP1": "The system focuses on prevention through biosecurity, vaccination, nutrition, housing, and staff training.",
+    "corep2": "Early detection and prompt treatment help protect animal health and milk safety.",
+    "bioTitle": "Biosecurity & Prevention",
+    "bioPoints": [
+      "Limiting new animal introductions and screening them thoroughly to prevent disease entry.",
+      "Using vaccines and treatments strategically to build immunity.",
+      "Maintaining clean housing, milking equipment, and water supplies to reduce pathogen loads.",
+      "Providing balanced feed and suitable housing to minimize stress and disease risk."
+    ]
+  },
+  "ai": {
+    "title": "Artificial Insemination Emergency activites",
+    "intro": "The artificial insemination (AI) process in dairy involves collecting bull semen, processing/freezing it in straws, and then a skilled technician manually depositing it into a cow's uterus using an \"AI gun\" and rectal palpation to pinpoint the cervix at the right time (heat/estrus) for fertilization, improving genetics and production without natural mating. Key steps include detecting heat, preparing the semen (thawing a frozen straw), inserting a lubricated arm into the rectum to guide the gun, passing the gun through the cervix, and depositing semen in the uterine body for conception.",
+    "semenTitle": "Semen Collection & Processing (At AI Center)",
+    "semenPoints": [
+      "Semen is collected from genetically superior bulls.",
+      "Mixed with extenders (milk, sugars, antibiotics) for nutrition and protection, then diluted.",
+      "Placed in small plastic straws, frozen in liquid nitrogen at -196°C, and stored."
+    ]
+  },
+  "fodder": {
+    "title": "Fodder Activity",
+    "intro": "Fodder production in the dairy industry involves planning, cultivating specific crops (like maize, sorghum, legumes), or using modern techniques like hydroponics/sprouting for year-round green fodder, conserving surplus as silage/hay, processing crop residues into fortified blocks, and ensuring consistent quality for optimal animal nutrition, which all boost milk yield and farm sustainability. The process balances field growing, conservation (hay/silage), and innovative indoor methods to meet dairy herd nutritional needs.",
+    "traditionalTitle": "Traditional & Field-Based Fodder Production",
+    "traditionalPoints": [
+      "Assess herd needs, available land, water, and climate to select suitable fodder crops (e.g., maize, sorghum, oats, like Desmanthus).",
+      "Prepare land, sow seeds (often with fertilizers), irrigate (or rely on rain), and manage pests.",
+      "Cut crops at optimal growth stages (e.g., maize at milk-dough stage) for maximum nutrients, using mowers and binders."
+    ],
+    "conservationTitle": "Conservation(Silage/Hay)",
+    "conservationPoints": [
+      "Ferment chopped green fodder (maize, sorghum) in airtight silos to preserve nutrients.",
+      "Dry cut fodder (grasses, legumes) in the sun, then bale it for storage."
+    ]
+  },
+  "step": {
+    "title": "Support to Training and Employment Programme for Women (STEP)",
+    "stepTitle": "Key Support Programs",
+    "stepDesc": "Women in the dairy industry are supported through various government and organizational programs, including the Support to Training and Employment Programme for Women (STEP), the National Programme for Dairy Development (NPDD), and schemes promoted by NABARD through women's Self Help Groups (SHGs).",
+    "stepPoints": [
+      "Support to Training and Employment Programme for Women (STEP): Funded by the Ministry of Women & Child Development, this program provides financial and technical assistance to implement agencies (like dairy cooperatives and NGOs) to organize women into dairy cooperative societies (WDCS). Training and employment opportunities are provided, including access to credit for purchasing livestock.",
+      "National Programme for Dairy Development (NPDD): Implemented by the Department of Animal Husbandry and Dairying, this scheme provides financial assistance for training dairy farmers (including women) and staff of dairy cooperative societies on clean milk production, animal health, nutrition, and good management practices.",
+      "NABARD Initiatives: The National Bank for Agriculture and Rural Development (NABARD) supports skill and entrepreneurship training for women through Micro Enterprise Development Programmes (MEDPs) and Livelihood and Enterprise Development Programmes (LEDPs), often delivered through SHGs. NABARD also provides concessional refinance to banks for loans given to women's SHGs."
+    ],
+    "processingTitle": "Processing and Production Activity",
+    "processingDesc": "Dairy processing turns raw milk into safe, consumable products through steps like collection, testing, filtration, pasteurization (heating to kill germs), homogenization (breaking fat for smoothness), standardization (adjusting fat), and product-specific steps (fermentation for yogurt, churning for butter), followed by packaging and distribution to ensure quality and shelf-life.",
+    "coreSteps": [
+      "Milk arrives from farms, is tested for quality, safety, and composition (fat/protein), then cooled and stored.",
+      "Removes physical impurities and sediment.",
+      "Centrifugal force separates milk into cream (high fat) and skim milk (low fat).",
+      "Fat content is adjusted by blending cream and skim milk for consistent product quality (e.g., whole, low-fat milk).",
+      "Heating milk to specific temperatures to destroy pathogens and extend shelf life.",
+      "Breaks down fat globules under high pressure to prevent cream from rising, ensuring a uniform texture."
+    ],
+    "productSteps": [
+      "Involves adding bacterial cultures for fermentation and coagulation.",
+      "Cream is churned to separate butterfat from buttermilk.",
+      "Milk is concentrated in evaporators and spray-dried.",
+      "Milk and products are filled into hygienic containers (cartons, bottles) to protect them from light, air, and recontamination.",
+      "Chilled storage and refrigerated transport ensure freshness until it reaches consumers."
+    ]
+  },
   "popup": {
     "ribbon": "New",
     "close": "Close popup",
@@ -567,12 +590,6 @@
     "description": "Upcoming Mega Dairy at Bellary Taluka Kolagal Grama. Approved by Karnataka Mining Environment Restoration Corporation (KMERC).",
     "imageAlt": "Mega Dairy Outline Announcement"
   },
-
-
-
-
-
-  
   "refund": {
     "title": "Refund Policy",
     "cancellation_returns": {
@@ -684,5 +701,219 @@
       "title": "Cancellation of order",
       "paragraph": "RBKVMUL reserves the right to cancel any order without any explanation for doing so, under situation where RBKVMUL is not able to meet the requirement of the order placed or order so placed/cancelled does not comply with the RBKVMUL policy or for any other reason. However, RBKVMUL will ensure that any communication of cancellation of an order, so cancelled, is intimated within appropriate time to the concerned person and any applicable refund will be made in reasonable time."
     }
+  },
+  "unionProfile": {
+    "title": "Union Profile",
+    "para1": "The Raichur, Ballari, Koppal and Vijayanagara Districts Milk Producers Cooperative Societies Union Limited, Ballari (known as RBKVMUL) is a cooperative milk Union established in the year 1988 and registered under Karnataka State Cooperative Societies Act, 1959. The operational area of the Union covers Raichur, Ballari, Koppal and Vijayanagara districts in Karnataka state.",
+    "para2": "The Union undertook the organization of Milk Co-operatives in the ‘AMUL Pattern’ with the main objective of socio-economic reformation of farmers, agricultural laborers, and other needy persons in rural areas through dairying as a subsidiary occupation. It aims to supply quality milk and milk products to consumers within the union area.",
+    "para3": "Milk collected from Societies is pooled, processed at the Dairy, and packed into various sizes. It is then routed to urban areas via a retailer network. The Union pays remunerative prices to producers and provides technical services at subsidized rates. Under the Government of Karnataka's 'Ksheerabhagya' program, the Union successfully provides milk to school children."
+  },
+  "unionObjectives": {
+    "title": "Union Objectives",
+    "points": [
+      "To provide quality milk and milk products to urban consumers at competitive price.",
+      "To facilitate rural development by providing opportunities for self-employment at village level, thereby preventing migration to urban areas.",
+      "To provide technical input services like veterinary services, artificial insemination, and supply of balanced cattle feed.",
+      "To provide assured market & remunerative price for the milk produced by the farmer members.",
+      "To organize Dairy Co-operative Societies at village level and disseminate good dairy animal husbandry practices.",
+      "To implement cost reduction in each stage of collection, processing, and distribution.",
+      "To make everyone aware of energy conservation in the Dairy.",
+      "To minimize customers complaints and achieve customer satisfaction.",
+      "To set goals/targets at all levels to achieve continuous improvement.",
+      "To train all workers for exposure to advanced technology for efficient operations.",
+      "To develop quality consciousness among all producers and employees."
+    ]
+  },
+  "qualityPolicy": {
+    "title": "Quality Policy",
+    "motto": "RBKVMUL is committed to producers’ welfare through customer delight by adopting continuous improvement and ensuring pure and hygienic milk and milk products.",
+    "intro": "Quality is the total commitment to customer satisfaction, environmental protection, sustainable development of stakeholders, and achieving market leadership. At Shivamogga Co-operative Milk Union, quality control officers continuously monitor and verify product quality at every stage of production to ensure safe and hygienic milk and milk products.",
+    "qcTitle": "Quality Control",
+    "qcDesc": "Shivamogga Co-operative Milk Union procures approximately 6.58 lakh kg of milk per day. Quality analysis is carried out at multiple levels including MPCS, BMC, CC, and dairy processing units before production. All operations comply with FSSAI regulations to ensure consumer safety. Advanced laboratory facilities and modern testing methods are used to maintain high quality standards. The union follows GMP and GHP practices across all stages of processing.",
+    "chemicalTitle": "Chemical Quality of Milk",
+    "chemicalDesc": "Milk is the natural secretion obtained from healthy animals and should be free from colostrum. It contains essential nutrients such as water, fats, carbohydrates, proteins, and minerals, making it a complete food.",
+    "sampling": "Sampling of Milk: After thorough mixing, a representative sample is collected depending on the type of container for accurate analysis.",
+    "platformTitle": "Platform Tests",
+    "organo": "Organoleptic Test: Visual and smell-based inspection to detect abnormalities in color, odor, or contamination.",
+    "cob": "Clot on Boiling Test: Determines milk stability and acidity. Milk with acidity above 0.17% fails this test.",
+    "sediment": "Sediment Test: Measures cleanliness by detecting dirt and dust particles in milk.",
+    "alcohol": "Alcohol Test: Evaluates milk stability for heat processing and detects abnormal milk.",
+    "acidity": "Acidity Test: Indicates bacterial activity and suitability of milk for processing.",
+    "adulterants": "Detection of Adulterants: Ensures milk is free from harmful or fraudulent substances through advanced lab testing.",
+    "fat": "Fat Determination: Uses Gerber method to measure fat content, which defines commercial value.",
+    "snf": "SNF Estimation: SNF = (CLR/4) + 0.25 × Fat% + 0.35 (used for accurate quality assessment).",
+    "microTitle": "Microbiological Analysis",
+    "mbrt": "MBRT Test: Measures microbial load based on dye reduction time.",
+    "phosphatase": "Phosphatase Test: Confirms effectiveness of pasteurization.",
+    "spc": "Standard Plate Count: Determines bacterial count (CFU/ml) to assess milk hygiene."
+  },
+  "programs": {
+    "title": "Field Programs",
+    "list": [
+      {
+        "title": "Health & Nutrition Awareness Program",
+        "location": "Koradakera Society, Kushtagi Taluk",
+        "description": "A health and nutrition awareness program along with a health camp was organized for priority sector members under Ksheera Sanjeevini Phase IV."
+      },
+      {
+        "title": "Health & Nutrition Camp",
+        "location": "Devalapur, Kanakagiri Taluk",
+        "description": "A health and nutrition awareness program along with a health camp was conducted under Ksheera Sanjeevini Phase IV."
+      },
+      {
+        "title": "Cattle Health Camp",
+        "location": "Tondihal Society, Yelburga Taluk",
+        "description": "A cattle health camp was organized under Ksheera Sanjeevini Phase V."
+      },
+      {
+        "title": "Cheque Distribution Program",
+        "location": "Tondihal Society, Yelburga Taluk",
+        "description": "Cheque distribution was carried out for members towards purchase of cattle."
+      },
+      {
+        "title": "Legal Awareness Program",
+        "location": "Koppal District",
+        "description": "A legal awareness program was conducted under Ksheera Sanjeevini Phase V for members of Tondihal & Matarangi (Yelburga), Dotihal (Kushtagi), Bevinahal (Karatagi), Belagatti and Raghunathanhalli (Koppal)."
+      },
+      {
+        "title": "Dairy Field Visit",
+        "location": "Budugump Dairy, Koppal",
+        "description": "Members from six societies of Koppal district were taken for a field visit to Budugump Dairy."
+      },
+      {
+        "title": "Fodder & Cattle Feed Program",
+        "location": "—",
+        "description": "A program focused on fodder production and cattle feed management was conducted."
+      },
+      {
+        "title": "Cattle Feed Plant Visit",
+        "location": "Hospet",
+        "description": "Members from societies in Raichur district were taken to visit the cattle feed plant at Hospet."
+      },
+      {
+        "title": "Field Visit",
+        "location": "Sindhanur Taluk",
+        "description": "A field visit was organized for members of Sindhanur taluk."
+      }
+    ]
+  },
+  "unionCorporate": {
+    "title": "Corporate Information",
+    "fields": {
+      "corporate": "corporate",
+      "registration": "Registration Details",
+      "headOffice": "Head Office",
+      "gstin": "GSTIN",
+      "pan": "PAN",
+      "documents": "Registered Documents"
+    },
+    "placeholder": "Details will be updated soon."
+  },
+  "activitiesExtra": {
+    "procurement": {
+      "title": "Procurement & Input",
+      "desc": "RBKVMUL ensures efficient milk procurement through a structured network of village-level collection centers supported by modern technology and farmer-oriented services.",
+      "points": [
+        "Milk is collected twice daily from farmers through cooperative societies.",
+        "Automated milk collection units ensure accuracy in weight and quality testing.",
+        "Quality parameters such as fat and SNF are tested instantly.",
+        "Transparent pricing system ensures fair and timely payment to farmers.",
+        "Digital payment systems eliminate delays and ensure accountability.",
+        "Veterinary services including vaccination and treatment are provided.",
+        "Artificial insemination services improve cattle productivity.",
+        "Balanced cattle feed and mineral mixtures are supplied.",
+        "Farmer awareness programs are conducted regularly.",
+        "Training on clean milk production and animal health is provided."
+      ]
+    },
+    "dairyEngineering": {
+      "title": "Dairy & Engineering",
+      "desc": "RBKVMUL operates modern dairy plants equipped with advanced processing and engineering systems to ensure efficiency, safety, and quality.",
+      "points": [
+        "Milk undergoes pasteurization to eliminate harmful bacteria.",
+        "Homogenization ensures uniform consistency of milk.",
+        "Automated packaging systems maintain hygiene standards.",
+        "Bulk milk coolers preserve freshness at collection points.",
+        "Cold chain systems ensure safe transportation.",
+        "Engineering teams handle preventive and breakdown maintenance.",
+        "Energy-efficient systems reduce operational costs.",
+        "Quality control labs monitor every stage of processing.",
+        "Strict GMP and GHP practices are followed.",
+        "Continuous modernization of plant machinery is implemented."
+      ]
+    },
+    "marketing": {
+      "title": "Marketing",
+      "desc": "RBKVMUL focuses on delivering high-quality dairy products to consumers through a strong distribution network and consistent brand value.",
+      "points": [
+        "Wide distribution network covering rural and urban markets.",
+        "Daily supply chain ensures fresh product availability.",
+        "Focus on brand trust and customer satisfaction.",
+        "Competitive pricing strategy for mass reach.",
+        "Retailer and distributor network management.",
+        "Promotion of dairy products through campaigns.",
+        "Introduction of value-added products.",
+        "Cold storage logistics ensure product quality.",
+        "Customer feedback systems improve service quality.",
+        "Expansion into new markets and regions."
+      ]
+    },
+    "finance": {
+      "title": "Finance",
+      "desc": "The finance department ensures transparency, accountability, and efficient financial management across all operations.",
+      "points": [
+        "Timely payments to farmers based on milk quality.",
+        "Budget planning and financial forecasting.",
+        "Cost control measures across operations.",
+        "Transparent accounting and auditing practices.",
+        "Monitoring revenue and expenditure.",
+        "Ensuring compliance with financial regulations.",
+        "Efficient fund allocation and utilization.",
+        "Digital financial systems for accuracy.",
+        "Financial reporting and performance tracking.",
+        "Support for sustainable growth initiatives."
+      ]
+    },
+  "units": {
+    "raichur": {
+      "title": "Raichur Dairy",
+      "points": [
+        "Major milk processing unit of RBKVMUL.",
+        "Handles large-scale milk collection and processing.",
+        "Equipped with modern machinery and testing laboratories.",
+        "Ensures hygienic production and packaging.",
+        "Supports distribution across multiple districts.",
+        "Maintains strict quality control standards.",
+        "Implements advanced dairy technologies.",
+        "Plays a key role in farmer support and payments."
+      ]
+    },
+    "budhagumpa": {
+      "title": "Budhagumpa Dairy",
+      "points": [
+        "Supports regional milk processing operations.",
+        "Strengthens supply chain efficiency.",
+        "Handles storage and transportation of milk.",
+        "Ensures quality preservation at every stage.",
+        "Acts as a supporting processing unit.",
+        "Improves operational coverage in surrounding areas."
+      ]
+    },
+    "raichurCenter": {
+      "title": "Raichur Chilling Unit",
+      "points": [
+        "Located strategically to support nearby milk collection centers.",
+        "Ensures rapid cooling of milk immediately after procurement.",
+        "Maintains temperature below 4°C to preserve freshness.",
+        "Equipped with bulk milk coolers and storage tanks.",
+        "Acts as an intermediate hub before transportation to dairy plants.",
+        "Prevents bacterial growth and spoilage during transit.",
+        "Improves overall milk quality and shelf life.",
+        "Supports efficient logistics and supply chain operations.",
+        "Regular quality checks are conducted before dispatch.",
+        "Ensures hygienic handling and storage practices."
+      ]
+    }
+  }
   }
 }

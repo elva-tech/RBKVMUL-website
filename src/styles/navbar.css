@@ -16,7 +16,7 @@
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 16px 24px;
   display: flex;
@@ -120,6 +120,7 @@
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+  order: 2; /* Ensures it stays at the end of the flex container */
 }
 
 .hamburger .bar {
@@ -312,3 +313,79 @@
   }
 }
 
+/* --- SUB-DROPDOWN LOGIC --- */
+
+/* Sub-parent container */
+.dropdown-sub {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-sub-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--dark-gray);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown-sub-title:hover {
+  background-color: var(--light-gray);
+  color: var(--primary-blue);
+}
+
+/* Sub-menu (Desktop) */
+.dropdown-sub-menu {
+  position: absolute;
+  left: 100%; /* Opens to the side */
+  top: 0;
+  background-color: var(--white);
+  border: 1px solid var(--border-gray);
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.2s ease;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 0;
+}
+
+/* Show Sub-menu on Hover */
+.dropdown-sub:hover > .dropdown-sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Mobile Sub-menu Logic */
+@media (max-width: 992px) {
+  .dropdown-sub-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none; /* Controlled by hover below */
+    background-color: #f1f5f9; /* Slightly darker than light-gray for contrast */
+    box-shadow: none;
+    border: none;
+  }
+
+  /* Indent mobile sub-links */
+  .dropdown-sub-menu a {
+    padding-left: 40px !important;
+  }
+
+  .dropdown-sub:hover .dropdown-sub-menu {
+    display: flex;
+  }
+
+  .dropdown-sub-title {
+    border-bottom: 1px solid var(--border-gray);
+    padding: 15px 25px; /* Matches your other mobile links */
+  }
+}
