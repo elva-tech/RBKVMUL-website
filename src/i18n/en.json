@@ -73,7 +73,7 @@
     "contact": {
       "phoneLabel": "Ph:",
       "phone": "9591999522",
-      "tollFreeLabel": "Toll free:",
+      "tollFreeLabel": "Toll Free:",
       "tollFree": "1800 425 6108",
       "email": "misrbkmul@gmail.com"
     },
@@ -129,7 +129,7 @@
     },
     "children": {
       "title": "Information of Children",
-      "text": "Our services do not address anyone under the age of 13 as our services are not relevant to children. We do not knowingly collect personally identifiable information from children under 13."
+      "text": "Our services are not intended for children under the age of 13. We do not knowingly collect personal information from children. We do not knowingly collect personally identifiable information from children under 13."
     },
     "personalInfo": {
       "title": "Personal Information",
@@ -152,7 +152,7 @@
       "para4": "Where a Customer ID and password are used to access the platform, users are responsible for keeping these credentials confidential and should not share them with anyone."
     },
     "support": {
-      "title": "When You Request Support, You May Send Us Email",
+      "title": "When You Request Contact Support, You May Send Us Email",
       "text": "Users may contact us with questions about the use of our mobile applications. If a support request is submitted, we may receive the user's email address and other information provided in relation to the request."
     },
     "contact": {
@@ -175,7 +175,7 @@
     "mission": {
       "title": "Our Mission",
       "points": [
-        "1.To promote producer-oriented viable co-operative societies to impart impetus to rural income, dairy productivity, and rural employment.",
+        "1.To promote producer-oriented viable co-operative societies to boost rural income, dairy productivity, and rural employment.",
         "2.To bridge the gap between the price of milk procurement and the sale price.",
         "3.To develop business acumen in marketing and trading disciplines to serve consumers with quality milk and enhance the income of milk producers."
       ],
@@ -209,8 +209,8 @@
         "Professionalism, respect, anti-harassment, confidentiality, conflict of interest, attendance (punctuality, leave notification)",
         "Fair pay, benefits to attract/retain talent, ensuring satisfaction.",
         "Feedback, skill improvement, linking performance to quality/quantity goals.",
-        "Clear policies on holidays, sick leave, etc..",
-        "Strict rules on age (min 14), working hours (daytime, 4.5 hrs./day), and fitness certification.",
+        "Clear policies on holidays, sick leave, etc.",
+        "Strict rules on age (min 14), working hours (daytime, 4.5 hours per day), and fitness certification.",
         "Linking HR to environmental goals, promoting values-driven commitment. ",
         "Skilled, motivated staff directly improves milk quality and quantity.",
         "Good HR reduces high turnover common in farm work.",
@@ -329,7 +329,7 @@
         "Technology transfer through effective extension activities.",
         "Automate the milk collection and pricing system of the Dairy Co-operatives.",
         "Unify the accounting and management system of the Dairy Co-operatives.",
-        "Creating a network between the Dairy Co-operatives, the Dairy Development Department and   other stake holders for efficient and effective management."
+        "Creating a network between the Dairy Co-operatives, the Dairy Development Department and  other stakeholders for efficient and effective management."
       ]
     },
     "quality": {
