@@ -110,10 +110,10 @@ export default function Navbar() {
                 {t("products.filterAll", "All Products")}
               </NavLink> */}
               <NavLink to="/products/kmf" onClick={closeMenu}>
-                {t("products.filterKMF", "KMF Products")}
+                {t("nav.filterKMF", "KMF Products")}
               </NavLink>
               <NavLink to="/products/rbkvmul" onClick={closeMenu}>
-                {t("products.filterRBKVMUL", "RBKVMUL Products")}
+               {t("nav.filterRBKVMUL", "RBKVMUL Products")}
               </NavLink>
             </div>
           </div>
