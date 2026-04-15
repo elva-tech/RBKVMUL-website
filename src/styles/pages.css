@@ -244,7 +244,7 @@
 
 .board-image {
   width: 100%;
-  height: 415px; 
+  aspect-ratio: 3 / 4; /* keeps consistent card shape */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,8 +254,8 @@
 .board-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  object-position: center; 
+  object-fit: cover;
+  object-position: top; /* better for faces */
 }
 
 .board-info {
