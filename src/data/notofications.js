@@ -1,14 +1,5 @@
 export const notifications = [
   {
-    "id": 1784697028163,
-    "title": {
-      "en": "Circular No. 133 (Liquor Sourcing)",
-      "ka": "ಸುತ್ತೋಲೆ ಸಂಖ್ಯೆ 133 (ಮದ್ಯ ಪೂರೈಕೆ)"
-    },
-    "date": "2026-07-22",
-    "fileUrl": "https://raw.githubusercontent.com/elva-tech/RBKVMUL-website/main/public/pdfs/notif-1784697025372-Rbkvmul-notification.pdf"
-  },
-  {
     "id": 1768506834196,
     "title": {
       "en": "milk union",
