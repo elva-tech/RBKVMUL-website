@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import AppRouter from "./AppRouter";
 import TopInfoBar from "./components/TopInfoBar";
 import PopupBanner from "./components/PopupBanner";
+import RecruitmentTicker from "./components/RecruitmentTicker";
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
     <PopupBanner />
     <TopInfoBar />
       <Navbar />
+      <RecruitmentTicker />
       <AppRouter/>
       <Footer />
     </>

@@ -5,7 +5,9 @@
 html, body, #root {
   height: 100%;
    width: 100%;
-  /* overflow-x: hidden; */
+  /* "clip" rather than "hidden": hidden makes this a scroll container and breaks
+     position: sticky on the navbar and .culture-image-wrapper */
+  overflow-x: clip;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none;     /* IE 10 and Consumer Preview */
   -moz-user-select: none;    /* Firefox */
