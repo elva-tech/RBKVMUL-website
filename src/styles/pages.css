@@ -19,6 +19,9 @@
          /* footer */
 
 .footer {
+  /* #root is a full-height column flexbox, so this soaks up the leftover
+     space and keeps the footer at the bottom on short pages */
+  margin-top: auto;
   background: linear-gradient(
     to bottom,
     #ffffff 0%,

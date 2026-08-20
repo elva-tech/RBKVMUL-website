@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 
 /* ABOUT */
@@ -16,11 +16,11 @@ import Cultural from "./pages/About/Cultural"
 /* PRODUCTS */
 import AllProducts from "./pages/Products/AllProducts";
 
-import RBKVMUL from "./pages/Products/RBKVMUL/RBKVMUL";
+// import RBKVMUL from "./pages/Products/RBKVMUL/RBKVMUL";
 import Milk from "./pages/Products/RBKVMUL/Milk";
 import Curd from "./pages/Products/RBKVMUL/Curd";
 
-import KMF from "./pages/Products/KMF/KMF";
+// import KMF from "./pages/Products/KMF/KMF";
 // import Ghee from "./pages/Products/KMF/Ghee";
 // import Butter from "./pages/Products/KMF/Butter";
 // import Paneer from "./pages/Products/KMF/Paneer";
@@ -97,13 +97,14 @@ export default function AppRouter() {
 
 
       {/* PRODUCTS */}
-      {/* <Route path="/products" element={<AllProducts />} /> */}
+      <Route path="/products" element={<AllProducts />} />
 
-      <Route path="/products/rbkvmul" element={<RBKVMUL />} />
+      {/* KMF/RBKVMUL are one combined page now; old links still land somewhere */}
+      <Route path="/products/rbkvmul" element={<Navigate to="/products" replace />} />
       {/* <Route path="/products/rbkvmul/milk" element={<Milk />} />
       <Route path="/products/rbkvmul/curd" element={<Curd />} /> */}
 
-      <Route path="/products/kmf" element={<KMF />} />
+      <Route path="/products/kmf" element={<Navigate to="/products" replace />} />
       {/* <Route path="/products/kmf/ghee" element={<Ghee />} /> */}
       {/* <Route path="/products/kmf/butter" element={<Butter />} /> */}
       {/* <Route path="/products/kmf/paneer" element={<Paneer />} /> */}

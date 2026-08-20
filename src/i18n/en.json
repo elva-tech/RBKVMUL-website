@@ -807,11 +807,37 @@
     "fields": {
       "corporate": "corporate",
       "registration": "Registration Details",
-      "headOffice": "Head Office",
+      "headOffice": "Principal Place of Business",
       "gstin": "GSTIN",
       "pan": "PAN",
-      "documents": "Registered Documents"
+      "documents": "Registered Documents",
+      "legalName": "Legal Name",
+      "tradeName": "Trade Name",
+      "constitution": "Constitution of Business",
+      "registrationType": "Type of Registration",
+      "dateOfLiability": "Date of Liability",
+      "certificateIssued": "Date of Issue of Certificate",
+      "additionalPlaces": "Additional Places of Business"
     },
+    "values": {
+      "legalName": "RAICHUR BALLARI & KOPPAL DIST CO OP MILK PRODUCERS SOCITIES UNION NIYAMITHA",
+      "tradeName": "R B K M U LTD BELLARY",
+      "constitution": "Society / Club / Trust / AOP",
+      "gstin": "29AACAR9912P1ZP",
+      "registrationType": "Regular",
+      "dateOfLiability": "01/07/2017",
+      "certificateIssued": "04/02/2019",
+      "headOffice": "Ground Floor, 1, Ballari Dairy, Sanjay Gandhi Nagar, Cantonment, Ballari (Bellary), Karnataka - 583104"
+    },
+    "places": [
+      "1, Ground Floor, Raichur Dairy, Hyderabad Road, Yarmaras, Raichur, Karnataka - 584101",
+      "1, Ground Floor, Dadesuguru Chilling Centre, Sindanoor Route, Dadesugur Village, Raichur, Karnataka - 584167",
+      "Budhagumpa Dairy, Survey No. 21/2, Irakal Gada Hobali, Koppal, Karnataka - 583228",
+      "Dhadesugur Chilling Centre, Dhadesugur, Sindhnur, Raichur, Karnataka - 584167",
+      "Ittigi Chilling Centre, H B Halli Road, Ittigi Post, Huvina Hadagali Taluk, Ballari (Bellary), Karnataka - 583220",
+      "Kudligi Chilling Centre, Hospet Road, NH-13, Kudligi, Ballari (Bellary), Karnataka - 583135",
+      "Hagarnur Chilling Centre, Hagarnur, Hadagali Taluk, Ballari (Bellary), Karnataka - 583217"
+    ],
     "placeholder": "Details will be updated soon."
   },
   "activitiesExtra": {

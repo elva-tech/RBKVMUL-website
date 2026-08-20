@@ -101,22 +101,9 @@ export default function Navbar() {
 </div>
 
           {/* PRODUCTS */}
-          <div className="dropdown">
-            <span className="dropdown-title">
-              {t("nav.products")}
-            </span>
-            <div className="dropdown-menu">
-              {/* <NavLink to="/products" onClick={closeMenu}>
-                {t("products.filterAll", "All Products")}
-              </NavLink> */}
-              <NavLink to="/products/kmf" onClick={closeMenu}>
-                {t("nav.filterKMF", "KMF Products")}
-              </NavLink>
-              <NavLink to="/products/rbkvmul" onClick={closeMenu}>
-               {t("nav.filterRBKVMUL", "RBKVMUL Products")}
-              </NavLink>
-            </div>
-          </div>
+          <NavLink to="/products" onClick={closeMenu}>
+            {t("nav.products")}
+          </NavLink>
 
           <NavLink to="/news" onClick={closeMenu}>
             {t("nav.news")}

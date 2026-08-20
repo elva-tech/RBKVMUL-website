@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 import { products } from "../data/products";
 
@@ -48,9 +49,9 @@ export default function ProductsPreview() {
         </Swiper>
 
         <div className="products-cta">
-          <a href="products/kmf">
+          <Link to="/products">
             {t("productsPreview.viewAllProducts")}
-          </a>
+          </Link>
         </div>
 
       </div>

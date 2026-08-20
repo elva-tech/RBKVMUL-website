@@ -1,17 +1,26 @@
 import { useTranslation } from "react-i18next";
 import "../../styles/pages.css";
 
+/* Source: GST Registration Certificate, GSTIN 29AACAR9912P1ZP (issued 04/02/2019).
+   Labels and values both live in the translation files so the table follows
+   the language toggle. */
+const fields = [
+  "legalName",
+  "tradeName",
+  "constitution",
+  "gstin",
+  // "pan",
+  "registrationType",
+  "dateOfLiability",
+  "certificateIssued",
+  "headOffice"
+];
+
 export default function UnionCorporate() {
   const { t } = useTranslation();
 
-  const fields = [
-    "corporate",
-    "registration",
-    "headOffice",
-    "gstin",
-    "pan",
-    "documents"
-  ];
+  const places = t("unionCorporate.places", { returnObjects: true });
+  const additionalPlaces = Array.isArray(places) ? places : [];
 
   return (
     <section className="about-page">
@@ -21,39 +30,41 @@ export default function UnionCorporate() {
         <div className="about-block">
           <table className="custom-table">
             <tbody>
-              <tr>
-                {/* LEFT BIG COLUMN */}
-                <td
-                  rowSpan={fields.length}
-                  style={{
-                    fontWeight: "600",
-                    width: "25%",
-                    verticalAlign: "top"
-                  }}
-                >
-                  {t("unionCorporate.title")}
-                </td>
-
-                {/* FIRST ROW (dynamic) */}
-                <td style={{ width: "30%", fontWeight: "500" }}>
-                  {t(`unionCorporate.fields.${fields[0]}`)}
-                </td>
-                <td>
-                  {t("unionCorporate.placeholder")}
-                </td>
-              </tr>
-
-              {/* REST ROWS */}
-              {fields.slice(1).map((key) => (
+              {fields.map((key, index) => (
                 <tr key={key}>
-                  <td style={{ fontWeight: "500" }}>
+                  {/* LEFT BIG COLUMN */}
+                  {index === 0 && (
+                    <td
+                      rowSpan={fields.length + 1}
+                      style={{
+                        fontWeight: "600",
+                        width: "25%",
+                        verticalAlign: "top"
+                      }}
+                    >
+                      {t("unionCorporate.title")}
+                    </td>
+                  )}
+
+                  <td style={{ width: "30%", fontWeight: "500" }}>
                     {t(`unionCorporate.fields.${key}`)}
                   </td>
-                  <td>
-                    {t("unionCorporate.placeholder")}
-                  </td>
+                  <td>{t(`unionCorporate.values.${key}`)}</td>
                 </tr>
               ))}
+
+              <tr>
+                <td style={{ width: "30%", fontWeight: "500" }}>
+                  {t("unionCorporate.fields.additionalPlaces")}
+                </td>
+                <td>
+                  <ol style={{ paddingLeft: "18px", lineHeight: "1.8" }}>
+                    {additionalPlaces.map((place) => (
+                      <li key={place}>{place}</li>
+                    ))}
+                  </ol>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
