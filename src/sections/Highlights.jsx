@@ -9,7 +9,7 @@ export default function Highlights() {
     <section className="highlights">
       <div className="highlights-container">
 
-        <div className="highlight-card animate-slide-up">
+        <div className="highlight-card reveal">
           <div className="highlight-icon">
             <FaCheckCircle />
           </div>
@@ -17,7 +17,7 @@ export default function Highlights() {
           <p>{t("highlights.quality.description")}</p>
         </div>
 
-        <div className="highlight-card animate-slide-up delay-1">
+        <div className="highlight-card reveal">
           <div className="highlight-icon">
             <FaUsers />
           </div>
@@ -25,7 +25,7 @@ export default function Highlights() {
           <p>{t("highlights.farmers.description")}</p>
         </div>
 
-        <div className="highlight-card animate-slide-up delay-2">
+        <div className="highlight-card reveal">
           <div className="highlight-icon">
             <FaIndustry />
           </div>

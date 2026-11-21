@@ -55,7 +55,7 @@ export default function Stats() {
 
   return (
     <section className="stats">
-      <div className="stats-container">
+      <div className="stats-container reveal">
 
         <StatItem value={32000} label={t("stats.farmers")} />
         <StatItem value={2.4} label={t("stats.processingCapacity")} />

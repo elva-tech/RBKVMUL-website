@@ -14,7 +14,7 @@ export default function ProductsPreview() {
     <section className="products-preview">
       <div className="products-container">
 
-        <div className="products-header">
+        <div className="products-header reveal">
           <h2>{t("productsPreview.dairyProductsTitle")}</h2>
           <p>{t("productsPreview.dairyProductsSubtitle")}</p>
         </div>

@@ -1,22 +1,24 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import "swiper/css/navigation";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
 export default function TopBanner() {
   const bannerImages = [
-    "/images/statue.jpeg",
     "/images/nandini-p.jpeg",
-"/homeScreen-imgs/image-1.png",
-    "/images/kanaka-d1.png",
+    "/images/statue.jpeg",
     "/homeScreen-imgs/image-2.png",
- "/images/hampi.png",
-     "/homeScreen-imgs/p-1.png",
-     "/assets/image-1.png",
-     "/homeScreen-imgs/image-3.png",
-    
+    "/images/gavi-banner.png",
+    "/homeScreen-imgs/image-1.png",
+    "/images/hampi.png",
+    "/homeScreen-imgs/p-1.png",
+    "/images/kgf-banner.png",
+    "/homeScreen-imgs/image-3.png",
+    "/images/TB-dam.png",
+
 
 
   ];
@@ -25,11 +27,28 @@ export default function TopBanner() {
     <section className="hero-banner-section">
       <div className="hero-banner-wrapper">
         <Swiper
+          effect="coverflow"
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={1.3}
+          coverflowEffect={{
+            rotate: 22,
+            stretch: 0,
+            depth: 180,
+            modifier: 1,
+            slideShadows: true
+          }}
+          /* One full-width slide on phones, 3D peek of the neighbours above that */
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            769: { slidesPerView: 1.3 }
+          }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
+          speed={900}
           loop={true}
           pagination={{ clickable: true }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
           className="hero-swiper"
         >
           {bannerImages.map((src, index) => (
@@ -40,7 +59,7 @@ export default function TopBanner() {
             </SwiperSlide>
           ))}
         </Swiper>
-         {/* <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -90,7 +109,7 @@ export default function TopBanner() {
 //       {/* SLIGHTLY SMALLER CONTAINER */}
 //       <div
 //         style={{
-//           width: "380px",     
+//           width: "380px",
 //           maxWidth: "100%",
 //         }}
 //       >

@@ -6,7 +6,7 @@ export default function AboutOverview() {
 
   return (
     <section className="about-overview">
-      <div className="about-container">
+      <div className="about-container reveal">
 
         {/* Top image */}
         <div className="about-banner">
