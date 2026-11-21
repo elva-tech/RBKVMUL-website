@@ -38,9 +38,11 @@ export default function TopBanner() {
             modifier: 1,
             slideShadows: true
           }}
-          /* One full-width slide on phones, 3D peek of the neighbours above that */
+          /* Neighbours peek in at every size; just less on small screens so
+             the main image stays big enough to read */
           breakpoints={{
-            0: { slidesPerView: 1 },
+            0: { slidesPerView: 1.12 },
+            480: { slidesPerView: 1.18 },
             769: { slidesPerView: 1.3 }
           }}
           autoplay={{ delay: 3500, disableOnInteraction: false }}
